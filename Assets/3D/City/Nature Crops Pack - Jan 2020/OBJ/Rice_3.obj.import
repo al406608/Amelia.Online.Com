@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://wr82e3h1ajpn"
+path="res://.godot/imported/Rice_3.obj-de969fef780dd02950530120b9de09cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Rice_3.obj-de969fef780dd02950530120b9de09cb.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Rice_3.obj"
+dest_files=["res://.godot/imported/Rice_3.obj-de969fef780dd02950530120b9de09cb.mesh", "res://.godot/imported/Rice_3.obj-de969fef780dd02950530120b9de09cb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

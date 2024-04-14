@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cdx8q6h41f6d5"
+path="res://.godot/imported/Streetlight_Triple.obj-1aad8ca266fa6c15936d2cb3e1f925c3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Streetlight_Triple.obj-1aad8ca266fa6c15936d2cb3e1f925c3.mesh"]
+
+source_file="res://Assets/3D/City/Street Pack by @Quaternius/OBJ/Streetlight_Triple.obj"
+dest_files=["res://.godot/imported/Streetlight_Triple.obj-1aad8ca266fa6c15936d2cb3e1f925c3.mesh", "res://.godot/imported/Streetlight_Triple.obj-1aad8ca266fa6c15936d2cb3e1f925c3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

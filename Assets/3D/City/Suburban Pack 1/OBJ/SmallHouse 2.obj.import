@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dm20533txlkm6"
+path="res://.godot/imported/SmallHouse 2.obj-e48863768f7acbd676b20266515d33da.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SmallHouse 2.obj-e48863768f7acbd676b20266515d33da.mesh"]
+
+source_file="res://Assets/3D/City/Suburban Pack 1/OBJ/SmallHouse 2.obj"
+dest_files=["res://.godot/imported/SmallHouse 2.obj-e48863768f7acbd676b20266515d33da.mesh", "res://.godot/imported/SmallHouse 2.obj-e48863768f7acbd676b20266515d33da.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c552n3jrnjjdy"
+path="res://.godot/imported/2Story_GableRoof_Base.obj-6379a9cbb965944d60488b4723a9ac25.mesh"
+
+[deps]
+
+files=["res://.godot/imported/2Story_GableRoof_Base.obj-6379a9cbb965944d60488b4723a9ac25.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Base Modular Buildings/OBJ/2Story_GableRoof_Base.obj"
+dest_files=["res://.godot/imported/2Story_GableRoof_Base.obj-6379a9cbb965944d60488b4723a9ac25.mesh", "res://.godot/imported/2Story_GableRoof_Base.obj-6379a9cbb965944d60488b4723a9ac25.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

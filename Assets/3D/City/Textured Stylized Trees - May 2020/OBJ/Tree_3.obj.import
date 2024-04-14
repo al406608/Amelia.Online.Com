@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c1reib4h26pdc"
+path="res://.godot/imported/Tree_3.obj-05312ca9e239e47d6c725ee9d5abcb5f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Tree_3.obj-05312ca9e239e47d6c725ee9d5abcb5f.mesh"]
+
+source_file="res://Assets/3D/City/Textured Stylized Trees - May 2020/OBJ/Tree_3.obj"
+dest_files=["res://.godot/imported/Tree_3.obj-05312ca9e239e47d6c725ee9d5abcb5f.mesh", "res://.godot/imported/Tree_3.obj-05312ca9e239e47d6c725ee9d5abcb5f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

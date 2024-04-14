@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://brf8mg6kvoklb"
+path="res://.godot/imported/HouseWithFlatRoof.obj-377a061a87fe1fa299ab29624ba5dc9b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/HouseWithFlatRoof.obj-377a061a87fe1fa299ab29624ba5dc9b.mesh"]
+
+source_file="res://Assets/3D/City/Suburban Pack 1/OBJ/HouseWithFlatRoof.obj"
+dest_files=["res://.godot/imported/HouseWithFlatRoof.obj-377a061a87fe1fa299ab29624ba5dc9b.mesh", "res://.godot/imported/HouseWithFlatRoof.obj-377a061a87fe1fa299ab29624ba5dc9b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

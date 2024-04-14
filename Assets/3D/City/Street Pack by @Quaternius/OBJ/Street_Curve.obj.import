@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ca01278520qfi"
+path="res://.godot/imported/Street_Curve.obj-72b62150828ce2fc1f89735e72f928ba.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Street_Curve.obj-72b62150828ce2fc1f89735e72f928ba.mesh"]
+
+source_file="res://Assets/3D/City/Street Pack by @Quaternius/OBJ/Street_Curve.obj"
+dest_files=["res://.godot/imported/Street_Curve.obj-72b62150828ce2fc1f89735e72f928ba.mesh", "res://.godot/imported/Street_Curve.obj-72b62150828ce2fc1f89735e72f928ba.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

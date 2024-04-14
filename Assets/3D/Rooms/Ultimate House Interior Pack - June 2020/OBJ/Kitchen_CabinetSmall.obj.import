@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clu3sjhstl7en"
+path="res://.godot/imported/Kitchen_CabinetSmall.obj-3ba582c65a9fa0f05a4ffcf37ed5f88d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Kitchen_CabinetSmall.obj-3ba582c65a9fa0f05a4ffcf37ed5f88d.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Kitchen_CabinetSmall.obj"
+dest_files=["res://.godot/imported/Kitchen_CabinetSmall.obj-3ba582c65a9fa0f05a4ffcf37ed5f88d.mesh", "res://.godot/imported/Kitchen_CabinetSmall.obj-3ba582c65a9fa0f05a4ffcf37ed5f88d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://mguats81vuld"
+path="res://.godot/imported/Houseplant_5.obj-363ac572983d2379df0fdee3b26aa321.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Houseplant_5.obj-363ac572983d2379df0fdee3b26aa321.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Houseplant_5.obj"
+dest_files=["res://.godot/imported/Houseplant_5.obj-363ac572983d2379df0fdee3b26aa321.mesh", "res://.godot/imported/Houseplant_5.obj-363ac572983d2379df0fdee3b26aa321.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cwxsj77s1n07m"
+path="res://.godot/imported/Column_SquareBig.obj-98fee273c002b487b9812c48d17edf63.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Column_SquareBig.obj-98fee273c002b487b9812c48d17edf63.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Column_SquareBig.obj"
+dest_files=["res://.godot/imported/Column_SquareBig.obj-98fee273c002b487b9812c48d17edf63.mesh", "res://.godot/imported/Column_SquareBig.obj-98fee273c002b487b9812c48d17edf63.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

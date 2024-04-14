@@ -1,0 +1,367 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cqfscgndx206n"
+path="res://.godot/imported/modular_house_pack.fbx-2a790f5441c124c97598b0c4a4499558.scn"
+
+[deps]
+
+source_file="res://Assets/3D/Rooms/modular_housepack/modular_house_pack.fbx"
+dest_files=["res://.godot/imported/modular_house_pack.fbx-2a790f5441c124c97598b0c4a4499558.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=100.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"door": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/door.tres"
+},
+"glass": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/glass.tres"
+},
+"ground_large1": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/ground_large1.tres"
+},
+"ground_large2": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/ground_large2.tres"
+},
+"ground_large3": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/ground_large3.tres"
+},
+"ground_large4": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/ground_large4.tres"
+},
+"ground_large5": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/ground_large5.tres"
+},
+"ground_large6": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/ground_large6.tres"
+},
+"ground_large7": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/ground_large7.tres"
+},
+"metal": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/metal.tres"
+},
+"wallDown": {
+"use_external/enabled": true,
+"use_external/path": ""
+},
+"wallUp": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Rooms/modular_housepack/textures/wallUp.tres"
+}
+},
+"meshes": {
+"Root Scene_Cube_000": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_000.res"
+},
+"Root Scene_Cube_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_001.res"
+},
+"Root Scene_Cube_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_002.res"
+},
+"Root Scene_Cube_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_003.res"
+},
+"Root Scene_Cube_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_004.res"
+},
+"Root Scene_Cube_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_005.res"
+},
+"Root Scene_Cube_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_006.res"
+},
+"Root Scene_Cube_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_009.res"
+},
+"Root Scene_Cube_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_011.res"
+},
+"Root Scene_Cube_012": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_012.res"
+},
+"Root Scene_Cube_014": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_014.res"
+},
+"Root Scene_Cube_015": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_015.res"
+},
+"Root Scene_Cube_016": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_016.res"
+},
+"Root Scene_Cube_018": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_018.res"
+},
+"Root Scene_Cube_019": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_019.res"
+},
+"Root Scene_Plane_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_001.res"
+},
+"Root Scene_Plane_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_002.res"
+},
+"Root Scene_Plane_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_003.res"
+},
+"Root Scene_Plane_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_004.res"
+},
+"Root Scene_Plane_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_005.res"
+},
+"Root Scene_Plane_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_006.res"
+},
+"Root Scene_Plane_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_007.res"
+},
+"Root Scene_Plane_017": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_017.res"
+},
+"Root Scene_Plane_020": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_020.res"
+},
+"Root Scene_Plane_023": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_023.res"
+},
+"Root Scene_Plane_026": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_026.res"
+},
+"Root Scene_Plane_029": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_029.res"
+},
+"Root Scene_Plane_061": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_061.res"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

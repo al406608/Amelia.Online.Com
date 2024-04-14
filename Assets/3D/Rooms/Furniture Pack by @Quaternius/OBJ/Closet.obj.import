@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b0y3vuqk2hyfe"
+path="res://.godot/imported/Closet.obj-abbdc34ef2fd4d06a4fc133ca66d2f40.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Closet.obj-abbdc34ef2fd4d06a4fc133ca66d2f40.mesh"]
+
+source_file="res://Assets/3D/Rooms/Furniture Pack by @Quaternius/OBJ/Closet.obj"
+dest_files=["res://.godot/imported/Closet.obj-abbdc34ef2fd4d06a4fc133ca66d2f40.mesh", "res://.godot/imported/Closet.obj-abbdc34ef2fd4d06a4fc133ca66d2f40.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

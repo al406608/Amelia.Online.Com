@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b6df1c6y1ubs2"
+path="res://.godot/imported/CoffeeTable.obj-9e041601736d3959e4bfb3d58633f93e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/CoffeeTable.obj-9e041601736d3959e4bfb3d58633f93e.mesh"]
+
+source_file="res://Assets/3D/Rooms/Furniture Pack by @Quaternius/OBJ/CoffeeTable.obj"
+dest_files=["res://.godot/imported/CoffeeTable.obj-9e041601736d3959e4bfb3d58633f93e.mesh", "res://.godot/imported/CoffeeTable.obj-9e041601736d3959e4bfb3d58633f93e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dsudewd3agxew"
+path="res://.godot/imported/Table_RoundSmall2.obj-bd0bcf42f4d275181b07869ee8c45f28.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Table_RoundSmall2.obj-bd0bcf42f4d275181b07869ee8c45f28.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Table_RoundSmall2.obj"
+dest_files=["res://.godot/imported/Table_RoundSmall2.obj-bd0bcf42f4d275181b07869ee8c45f28.mesh", "res://.godot/imported/Table_RoundSmall2.obj-bd0bcf42f4d275181b07869ee8c45f28.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

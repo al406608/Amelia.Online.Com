@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bf1ls0n7ql3ls"
+path="res://.godot/imported/Kitchen_Sink.obj-5657bd9b758a8ed90fdcc7adc4d897dc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Kitchen_Sink.obj-5657bd9b758a8ed90fdcc7adc4d897dc.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Kitchen_Sink.obj"
+dest_files=["res://.godot/imported/Kitchen_Sink.obj-5657bd9b758a8ed90fdcc7adc4d897dc.mesh", "res://.godot/imported/Kitchen_Sink.obj-5657bd9b758a8ed90fdcc7adc4d897dc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

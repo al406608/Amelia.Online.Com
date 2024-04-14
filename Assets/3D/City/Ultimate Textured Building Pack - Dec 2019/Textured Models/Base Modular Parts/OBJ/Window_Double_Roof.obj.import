@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhx06u6knkh3d"
+path="res://.godot/imported/Window_Double_Roof.obj-4d849e1b99cef8564f169309a997ef4c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Window_Double_Roof.obj-4d849e1b99cef8564f169309a997ef4c.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Base Modular Parts/OBJ/Window_Double_Roof.obj"
+dest_files=["res://.godot/imported/Window_Double_Roof.obj-4d849e1b99cef8564f169309a997ef4c.mesh", "res://.godot/imported/Window_Double_Roof.obj-4d849e1b99cef8564f169309a997ef4c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

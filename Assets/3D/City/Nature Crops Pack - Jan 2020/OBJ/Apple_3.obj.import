@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d0iea2qne5s1k"
+path="res://.godot/imported/Apple_3.obj-29c4467aeaf917cc748cff3e3971315e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Apple_3.obj-29c4467aeaf917cc748cff3e3971315e.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Apple_3.obj"
+dest_files=["res://.godot/imported/Apple_3.obj-29c4467aeaf917cc748cff3e3971315e.mesh", "res://.godot/imported/Apple_3.obj-29c4467aeaf917cc748cff3e3971315e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

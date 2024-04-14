@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://binx7mneqbjgi"
+path="res://.godot/imported/Flowers_Harvested.obj-0ce9010e6b23d69661ca57e7eaca5f4f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Flowers_Harvested.obj-0ce9010e6b23d69661ca57e7eaca5f4f.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Flowers_Harvested.obj"
+dest_files=["res://.godot/imported/Flowers_Harvested.obj-0ce9010e6b23d69661ca57e7eaca5f4f.mesh", "res://.godot/imported/Flowers_Harvested.obj-0ce9010e6b23d69661ca57e7eaca5f4f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

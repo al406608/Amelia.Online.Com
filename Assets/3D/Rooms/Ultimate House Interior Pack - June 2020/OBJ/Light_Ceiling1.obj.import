@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://daqiv4wjmdtkq"
+path="res://.godot/imported/Light_Ceiling1.obj-15f8d6dd0441b415b81592624283efa8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Light_Ceiling1.obj-15f8d6dd0441b415b81592624283efa8.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Light_Ceiling1.obj"
+dest_files=["res://.godot/imported/Light_Ceiling1.obj-15f8d6dd0441b415b81592624283efa8.mesh", "res://.godot/imported/Light_Ceiling1.obj-15f8d6dd0441b415b81592624283efa8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

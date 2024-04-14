@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cil035gvxaubj"
+path="res://.godot/imported/Bricks_RightStraight.obj-d6bf991de0ac77acc9e02d9247527c06.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Bricks_RightStraight.obj-d6bf991de0ac77acc9e02d9247527c06.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Base Modular Parts/OBJ/Bricks_RightStraight.obj"
+dest_files=["res://.godot/imported/Bricks_RightStraight.obj-d6bf991de0ac77acc9e02d9247527c06.mesh", "res://.godot/imported/Bricks_RightStraight.obj-d6bf991de0ac77acc9e02d9247527c06.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

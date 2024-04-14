@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcvai5qm00l70"
+path="res://.godot/imported/Carrot_2.obj-6f2a13171a59db68154348fa2a314fcf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Carrot_2.obj-6f2a13171a59db68154348fa2a314fcf.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Carrot_2.obj"
+dest_files=["res://.godot/imported/Carrot_2.obj-6f2a13171a59db68154348fa2a314fcf.mesh", "res://.godot/imported/Carrot_2.obj-6f2a13171a59db68154348fa2a314fcf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

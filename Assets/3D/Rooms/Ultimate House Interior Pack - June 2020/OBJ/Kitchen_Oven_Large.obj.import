@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dqo2ay8amagum"
+path="res://.godot/imported/Kitchen_Oven_Large.obj-06ab1f1644036c8cb5c913e0e2e35f8c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Kitchen_Oven_Large.obj-06ab1f1644036c8cb5c913e0e2e35f8c.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Kitchen_Oven_Large.obj"
+dest_files=["res://.godot/imported/Kitchen_Oven_Large.obj-06ab1f1644036c8cb5c913e0e2e35f8c.mesh", "res://.godot/imported/Kitchen_Oven_Large.obj-06ab1f1644036c8cb5c913e0e2e35f8c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dwy2fvt1pt08v"
+path="res://.godot/imported/2Story_Wide_2Doors.obj-03897969104f118712db8297e21d5af0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/2Story_Wide_2Doors.obj-03897969104f118712db8297e21d5af0.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Finished Textured Buildings/OBJ/2Story_Wide_2Doors.obj"
+dest_files=["res://.godot/imported/2Story_Wide_2Doors.obj-03897969104f118712db8297e21d5af0.mesh", "res://.godot/imported/2Story_Wide_2Doors.obj-03897969104f118712db8297e21d5af0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

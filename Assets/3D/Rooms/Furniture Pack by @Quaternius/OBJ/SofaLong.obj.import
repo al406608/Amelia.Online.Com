@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bbicxet7teqhg"
+path="res://.godot/imported/SofaLong.obj-f4772f43caf14b5306bd943d6f12a6fa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SofaLong.obj-f4772f43caf14b5306bd943d6f12a6fa.mesh"]
+
+source_file="res://Assets/3D/Rooms/Furniture Pack by @Quaternius/OBJ/SofaLong.obj"
+dest_files=["res://.godot/imported/SofaLong.obj-f4772f43caf14b5306bd943d6f12a6fa.mesh", "res://.godot/imported/SofaLong.obj-f4772f43caf14b5306bd943d6f12a6fa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

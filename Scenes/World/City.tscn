@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhy5s2h5btejf"]
+
+[ext_resource type="PackedScene" uid="uid://ddqwlfvfijwub" path="res://Assets/3D/City/City Buildings/City Buildings.blend" id="1_0tb4t"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.1774, 141.537, 207.734)
+
+[node name="City Buildings" parent="." instance=ExtResource("1_0tb4t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.039, 118.809, 193.073)

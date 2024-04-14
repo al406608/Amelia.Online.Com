@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://du7llpuj3lhbp"
+path="res://.godot/imported/Door_7.obj-18e9e2d318ebc84f44601662e7e97b1e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Door_7.obj-18e9e2d318ebc84f44601662e7e97b1e.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Door_7.obj"
+dest_files=["res://.godot/imported/Door_7.obj-18e9e2d318ebc84f44601662e7e97b1e.mesh", "res://.godot/imported/Door_7.obj-18e9e2d318ebc84f44601662e7e97b1e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

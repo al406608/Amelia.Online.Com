@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgqwtmnvbh4ul"
+path="res://.godot/imported/Cactus_4.obj-cba677003bd8357b5530ff2e87407921.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cactus_4.obj-cba677003bd8357b5530ff2e87407921.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Cactus_4.obj"
+dest_files=["res://.godot/imported/Cactus_4.obj-cba677003bd8357b5530ff2e87407921.mesh", "res://.godot/imported/Cactus_4.obj-cba677003bd8357b5530ff2e87407921.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

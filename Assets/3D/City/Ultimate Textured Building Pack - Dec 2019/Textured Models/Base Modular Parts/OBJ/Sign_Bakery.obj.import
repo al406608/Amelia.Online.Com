@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cif7qj2hdnb5k"
+path="res://.godot/imported/Sign_Bakery.obj-e6b0bdcfe2f71c2d9d671b21a93b24be.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Sign_Bakery.obj-e6b0bdcfe2f71c2d9d671b21a93b24be.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Base Modular Parts/OBJ/Sign_Bakery.obj"
+dest_files=["res://.godot/imported/Sign_Bakery.obj-e6b0bdcfe2f71c2d9d671b21a93b24be.mesh", "res://.godot/imported/Sign_Bakery.obj-e6b0bdcfe2f71c2d9d671b21a93b24be.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

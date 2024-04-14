@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dp7eslyjaibt"
+path="res://.godot/imported/DeadTree_9.obj-90c7a6d7f14c19a3847adcddc1673ffd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/DeadTree_9.obj-90c7a6d7f14c19a3847adcddc1673ffd.mesh"]
+
+source_file="res://Assets/3D/City/Textured Stylized Trees - May 2020/OBJ/DeadTree_9.obj"
+dest_files=["res://.godot/imported/DeadTree_9.obj-90c7a6d7f14c19a3847adcddc1673ffd.mesh", "res://.godot/imported/DeadTree_9.obj-90c7a6d7f14c19a3847adcddc1673ffd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

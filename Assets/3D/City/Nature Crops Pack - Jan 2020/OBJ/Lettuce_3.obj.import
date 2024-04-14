@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://db5et4p6xkjs1"
+path="res://.godot/imported/Lettuce_3.obj-0f3a4a0f198b680d18bbe711eadf695f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Lettuce_3.obj-0f3a4a0f198b680d18bbe711eadf695f.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Lettuce_3.obj"
+dest_files=["res://.godot/imported/Lettuce_3.obj-0f3a4a0f198b680d18bbe711eadf695f.mesh", "res://.godot/imported/Lettuce_3.obj-0f3a4a0f198b680d18bbe711eadf695f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

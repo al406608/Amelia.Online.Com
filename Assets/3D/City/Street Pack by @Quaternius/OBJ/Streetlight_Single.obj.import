@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d2swwk3o1epo1"
+path="res://.godot/imported/Streetlight_Single.obj-99a95354ae21c024107e4eca0a0500ae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Streetlight_Single.obj-99a95354ae21c024107e4eca0a0500ae.mesh"]
+
+source_file="res://Assets/3D/City/Street Pack by @Quaternius/OBJ/Streetlight_Single.obj"
+dest_files=["res://.godot/imported/Streetlight_Single.obj-99a95354ae21c024107e4eca0a0500ae.mesh", "res://.godot/imported/Streetlight_Single.obj-99a95354ae21c024107e4eca0a0500ae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

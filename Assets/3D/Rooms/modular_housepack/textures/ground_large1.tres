@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://de8g31pfuy3bq"]
+
+[ext_resource type="Texture2D" uid="uid://c0dr73g2pll6c" path="res://Assets/3D/Rooms/modular_housepack/textures/marble (1).png" id="1_y3qk2"]
+
+[resource]
+resource_name = "ground_large1"
+albedo_texture = ExtResource("1_y3qk2")

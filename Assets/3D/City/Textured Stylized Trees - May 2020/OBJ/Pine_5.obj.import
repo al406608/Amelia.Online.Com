@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcr3ayfoh3nmg"
+path="res://.godot/imported/Pine_5.obj-9d2d6691266b5b825d96d3b1f6d65e02.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Pine_5.obj-9d2d6691266b5b825d96d3b1f6d65e02.mesh"]
+
+source_file="res://Assets/3D/City/Textured Stylized Trees - May 2020/OBJ/Pine_5.obj"
+dest_files=["res://.godot/imported/Pine_5.obj-9d2d6691266b5b825d96d3b1f6d65e02.mesh", "res://.godot/imported/Pine_5.obj-9d2d6691266b5b825d96d3b1f6d65e02.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

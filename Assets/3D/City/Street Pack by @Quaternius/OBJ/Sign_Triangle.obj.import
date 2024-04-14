@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cc4mdu8driyx"
+path="res://.godot/imported/Sign_Triangle.obj-011971b971be5eb21e7371f7511df14c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Sign_Triangle.obj-011971b971be5eb21e7371f7511df14c.mesh"]
+
+source_file="res://Assets/3D/City/Street Pack by @Quaternius/OBJ/Sign_Triangle.obj"
+dest_files=["res://.godot/imported/Sign_Triangle.obj-011971b971be5eb21e7371f7511df14c.mesh", "res://.godot/imported/Sign_Triangle.obj-011971b971be5eb21e7371f7511df14c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

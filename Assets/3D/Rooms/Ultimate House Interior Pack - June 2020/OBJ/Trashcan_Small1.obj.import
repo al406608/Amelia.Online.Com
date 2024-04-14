@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcn7ci5ytqd7l"
+path="res://.godot/imported/Trashcan_Small1.obj-0fef4af206a36a6fcd140d2e925b90b8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Trashcan_Small1.obj-0fef4af206a36a6fcd140d2e925b90b8.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Trashcan_Small1.obj"
+dest_files=["res://.godot/imported/Trashcan_Small1.obj-0fef4af206a36a6fcd140d2e925b90b8.mesh", "res://.godot/imported/Trashcan_Small1.obj-0fef4af206a36a6fcd140d2e925b90b8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

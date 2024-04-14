@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwmuwrtcxxeup"
+path="res://.godot/imported/1Story_Sign_Base.obj-ae135a5f1723cebbf928cfef766e9638.mesh"
+
+[deps]
+
+files=["res://.godot/imported/1Story_Sign_Base.obj-ae135a5f1723cebbf928cfef766e9638.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Base Modular Buildings/OBJ/1Story_Sign_Base.obj"
+dest_files=["res://.godot/imported/1Story_Sign_Base.obj-ae135a5f1723cebbf928cfef766e9638.mesh", "res://.godot/imported/1Story_Sign_Base.obj-ae135a5f1723cebbf928cfef766e9638.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

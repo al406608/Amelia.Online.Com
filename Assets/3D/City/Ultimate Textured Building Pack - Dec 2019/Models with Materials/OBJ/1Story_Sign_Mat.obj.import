@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dkbvapb24j7pd"
+path="res://.godot/imported/1Story_Sign_Mat.obj-dcbe13e01bfad432458d9d9ac20afa02.mesh"
+
+[deps]
+
+files=["res://.godot/imported/1Story_Sign_Mat.obj-dcbe13e01bfad432458d9d9ac20afa02.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Models with Materials/OBJ/1Story_Sign_Mat.obj"
+dest_files=["res://.godot/imported/1Story_Sign_Mat.obj-dcbe13e01bfad432458d9d9ac20afa02.mesh", "res://.godot/imported/1Story_Sign_Mat.obj-dcbe13e01bfad432458d9d9ac20afa02.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

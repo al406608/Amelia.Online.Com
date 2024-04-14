@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d14yc5clj0amt"
+path="res://.godot/imported/3Story_Small.obj-1eff0a07e7bad5c630c86bd6d7bf9c45.mesh"
+
+[deps]
+
+files=["res://.godot/imported/3Story_Small.obj-1eff0a07e7bad5c630c86bd6d7bf9c45.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Finished Textured Buildings/OBJ/3Story_Small.obj"
+dest_files=["res://.godot/imported/3Story_Small.obj-1eff0a07e7bad5c630c86bd6d7bf9c45.mesh", "res://.godot/imported/3Story_Small.obj-1eff0a07e7bad5c630c86bd6d7bf9c45.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cctb6k2v4fxwi"
+path="res://.godot/imported/Birch_4.obj-313c89c7a1f2783d2b957e36619fdc13.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Birch_4.obj-313c89c7a1f2783d2b957e36619fdc13.mesh"]
+
+source_file="res://Assets/3D/City/Textured Stylized Trees - May 2020/OBJ/Birch_4.obj"
+dest_files=["res://.godot/imported/Birch_4.obj-313c89c7a1f2783d2b957e36619fdc13.mesh", "res://.godot/imported/Birch_4.obj-313c89c7a1f2783d2b957e36619fdc13.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

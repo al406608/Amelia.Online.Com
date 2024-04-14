@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://djrp8jv3swv1"
+path="res://.godot/imported/PalmTree_4.obj-c2db54b8713333982d5499a0295f61fc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/PalmTree_4.obj-c2db54b8713333982d5499a0295f61fc.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/PalmTree_4.obj"
+dest_files=["res://.godot/imported/PalmTree_4.obj-c2db54b8713333982d5499a0295f61fc.mesh", "res://.godot/imported/PalmTree_4.obj-c2db54b8713333982d5499a0295f61fc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dk7b4piewkqa1"
+path="res://.godot/imported/3Story_Balcony_Mat.obj-fc208cf418df6de81e4905f59ee1afa1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/3Story_Balcony_Mat.obj-fc208cf418df6de81e4905f59ee1afa1.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Models with Materials/OBJ/3Story_Balcony_Mat.obj"
+dest_files=["res://.godot/imported/3Story_Balcony_Mat.obj-fc208cf418df6de81e4905f59ee1afa1.mesh", "res://.godot/imported/3Story_Balcony_Mat.obj-fc208cf418df6de81e4905f59ee1afa1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://tgvloun8ltki"
+path="res://.godot/imported/1Story_RoundRoof_Base.obj-0a81272e68f212f3d1237bd13b05a7f3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/1Story_RoundRoof_Base.obj-0a81272e68f212f3d1237bd13b05a7f3.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Base Modular Buildings/OBJ/1Story_RoundRoof_Base.obj"
+dest_files=["res://.godot/imported/1Story_RoundRoof_Base.obj-0a81272e68f212f3d1237bd13b05a7f3.mesh", "res://.godot/imported/1Story_RoundRoof_Base.obj-0a81272e68f212f3d1237bd13b05a7f3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

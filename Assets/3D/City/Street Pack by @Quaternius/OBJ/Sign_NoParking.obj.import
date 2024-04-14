@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cxj42nts5c23w"
+path="res://.godot/imported/Sign_NoParking.obj-27a22d897d30a1a838857245af49a2e3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Sign_NoParking.obj-27a22d897d30a1a838857245af49a2e3.mesh"]
+
+source_file="res://Assets/3D/City/Street Pack by @Quaternius/OBJ/Sign_NoParking.obj"
+dest_files=["res://.godot/imported/Sign_NoParking.obj-27a22d897d30a1a838857245af49a2e3.mesh", "res://.godot/imported/Sign_NoParking.obj-27a22d897d30a1a838857245af49a2e3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

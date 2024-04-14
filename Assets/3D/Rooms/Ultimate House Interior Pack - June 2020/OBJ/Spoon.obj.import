@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://i8b6bplqs6ll"
+path="res://.godot/imported/Spoon.obj-95e416e2ff035b27b83efef6c0f539ad.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Spoon.obj-95e416e2ff035b27b83efef6c0f539ad.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Spoon.obj"
+dest_files=["res://.godot/imported/Spoon.obj-95e416e2ff035b27b83efef6c0f539ad.mesh", "res://.godot/imported/Spoon.obj-95e416e2ff035b27b83efef6c0f539ad.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

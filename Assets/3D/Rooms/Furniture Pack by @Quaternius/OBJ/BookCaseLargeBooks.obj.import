@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dxsd28arr3ijn"
+path="res://.godot/imported/BookCaseLargeBooks.obj-ae2dfb16ad5e018ad934a514b1751b9e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/BookCaseLargeBooks.obj-ae2dfb16ad5e018ad934a514b1751b9e.mesh"]
+
+source_file="res://Assets/3D/Rooms/Furniture Pack by @Quaternius/OBJ/BookCaseLargeBooks.obj"
+dest_files=["res://.godot/imported/BookCaseLargeBooks.obj-ae2dfb16ad5e018ad934a514b1751b9e.mesh", "res://.godot/imported/BookCaseLargeBooks.obj-ae2dfb16ad5e018ad934a514b1751b9e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

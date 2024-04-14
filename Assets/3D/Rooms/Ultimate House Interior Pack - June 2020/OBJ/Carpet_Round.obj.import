@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://222ara8fa32o"
+path="res://.godot/imported/Carpet_Round.obj-9db323df77505c9ea7d5cab1699b354f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Carpet_Round.obj-9db323df77505c9ea7d5cab1699b354f.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Carpet_Round.obj"
+dest_files=["res://.godot/imported/Carpet_Round.obj-9db323df77505c9ea7d5cab1699b354f.mesh", "res://.godot/imported/Carpet_Round.obj-9db323df77505c9ea7d5cab1699b354f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://071ogjtojvo1"
+path="res://.godot/imported/Couch_Medium1.obj-c3268ec7a1426d9a2c84fa80e90c1683.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Couch_Medium1.obj-c3268ec7a1426d9a2c84fa80e90c1683.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Couch_Medium1.obj"
+dest_files=["res://.godot/imported/Couch_Medium1.obj-c3268ec7a1426d9a2c84fa80e90c1683.mesh", "res://.godot/imported/Couch_Medium1.obj-c3268ec7a1426d9a2c84fa80e90c1683.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

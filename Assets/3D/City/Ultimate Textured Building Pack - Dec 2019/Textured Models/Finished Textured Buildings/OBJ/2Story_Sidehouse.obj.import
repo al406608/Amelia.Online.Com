@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://f35yi74q6qxu"
+path="res://.godot/imported/2Story_Sidehouse.obj-0432078c67b0131b2fec685095c2e56a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/2Story_Sidehouse.obj-0432078c67b0131b2fec685095c2e56a.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Finished Textured Buildings/OBJ/2Story_Sidehouse.obj"
+dest_files=["res://.godot/imported/2Story_Sidehouse.obj-0432078c67b0131b2fec685095c2e56a.mesh", "res://.godot/imported/2Story_Sidehouse.obj-0432078c67b0131b2fec685095c2e56a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

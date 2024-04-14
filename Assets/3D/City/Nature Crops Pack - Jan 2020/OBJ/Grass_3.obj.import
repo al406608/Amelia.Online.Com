@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://2prcf113p4wy"
+path="res://.godot/imported/Grass_3.obj-5cae57bdbd4d202e30ba2287c1b3e30e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Grass_3.obj-5cae57bdbd4d202e30ba2287c1b3e30e.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Grass_3.obj"
+dest_files=["res://.godot/imported/Grass_3.obj-5cae57bdbd4d202e30ba2287c1b3e30e.mesh", "res://.godot/imported/Grass_3.obj-5cae57bdbd4d202e30ba2287c1b3e30e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

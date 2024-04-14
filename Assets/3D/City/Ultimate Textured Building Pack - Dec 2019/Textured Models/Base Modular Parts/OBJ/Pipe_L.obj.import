@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dl1vwgw0ud7ww"
+path="res://.godot/imported/Pipe_L.obj-b8d48f811ea615b556e5b6c5e985ec61.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Pipe_L.obj-b8d48f811ea615b556e5b6c5e985ec61.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Base Modular Parts/OBJ/Pipe_L.obj"
+dest_files=["res://.godot/imported/Pipe_L.obj-b8d48f811ea615b556e5b6c5e985ec61.mesh", "res://.godot/imported/Pipe_L.obj-b8d48f811ea615b556e5b6c5e985ec61.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

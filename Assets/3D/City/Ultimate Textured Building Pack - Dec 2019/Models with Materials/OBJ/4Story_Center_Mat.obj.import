@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://11lui84bgdhx"
+path="res://.godot/imported/4Story_Center_Mat.obj-5a0fae455d7b7cc4ae9423ec8a9c7bc3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/4Story_Center_Mat.obj-5a0fae455d7b7cc4ae9423ec8a9c7bc3.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Models with Materials/OBJ/4Story_Center_Mat.obj"
+dest_files=["res://.godot/imported/4Story_Center_Mat.obj-5a0fae455d7b7cc4ae9423ec8a9c7bc3.mesh", "res://.godot/imported/4Story_Center_Mat.obj-5a0fae455d7b7cc4ae9423ec8a9c7bc3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

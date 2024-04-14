@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://boo8ttecornvv"
+path="res://.godot/imported/Mushroom_4.obj-fd0d4beca5ed4dce76facd1c36a6312e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Mushroom_4.obj-fd0d4beca5ed4dce76facd1c36a6312e.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Mushroom_4.obj"
+dest_files=["res://.godot/imported/Mushroom_4.obj-fd0d4beca5ed4dce76facd1c36a6312e.mesh", "res://.godot/imported/Mushroom_4.obj-fd0d4beca5ed4dce76facd1c36a6312e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

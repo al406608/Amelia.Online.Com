@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://di45rebjwlqtm"]
+
+[ext_resource type="Texture2D" uid="uid://dqxdkp326wtb4" path="res://Assets/3D/Rooms/modular_housepack/textures/wall (2).jpg" id="1_ltl1o"]
+
+[resource]
+resource_name = "wallUp"
+albedo_texture = ExtResource("1_ltl1o")
+metallic = 0.4
+roughness = 0.415087

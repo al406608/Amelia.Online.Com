@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://u07pxevies27"
+path="res://.godot/imported/Street_Empty_Water.obj-283581bbd369d3c299a33f8360e4f225.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Street_Empty_Water.obj-283581bbd369d3c299a33f8360e4f225.mesh"]
+
+source_file="res://Assets/3D/City/Street Pack by @Quaternius/OBJ/Street_Empty_Water.obj"
+dest_files=["res://.godot/imported/Street_Empty_Water.obj-283581bbd369d3c299a33f8360e4f225.mesh", "res://.godot/imported/Street_Empty_Water.obj-283581bbd369d3c299a33f8360e4f225.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

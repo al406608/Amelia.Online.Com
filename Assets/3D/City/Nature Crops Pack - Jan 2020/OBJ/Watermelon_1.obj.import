@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://5jcw5rpxugvh"
+path="res://.godot/imported/Watermelon_1.obj-24d87eb80c43c63d0d57a5fcd4988ed3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Watermelon_1.obj-24d87eb80c43c63d0d57a5fcd4988ed3.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Watermelon_1.obj"
+dest_files=["res://.godot/imported/Watermelon_1.obj-24d87eb80c43c63d0d57a5fcd4988ed3.mesh", "res://.godot/imported/Watermelon_1.obj-24d87eb80c43c63d0d57a5fcd4988ed3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

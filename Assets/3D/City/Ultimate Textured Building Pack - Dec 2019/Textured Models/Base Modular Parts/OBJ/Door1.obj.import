@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b8p75r1stxv6i"
+path="res://.godot/imported/Door1.obj-5fea60a63254574c34b9db8692e3b301.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Door1.obj-5fea60a63254574c34b9db8692e3b301.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Base Modular Parts/OBJ/Door1.obj"
+dest_files=["res://.godot/imported/Door1.obj-5fea60a63254574c34b9db8692e3b301.mesh", "res://.godot/imported/Door1.obj-5fea60a63254574c34b9db8692e3b301.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

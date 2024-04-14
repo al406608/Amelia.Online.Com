@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsgkeu6ngdswo"
+path="res://.godot/imported/DeadBirch_9.obj-c97fb42125d66e78b58373f78404439a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/DeadBirch_9.obj-c97fb42125d66e78b58373f78404439a.mesh"]
+
+source_file="res://Assets/3D/City/Textured Stylized Trees - May 2020/OBJ/DeadBirch_9.obj"
+dest_files=["res://.godot/imported/DeadBirch_9.obj-c97fb42125d66e78b58373f78404439a.mesh", "res://.godot/imported/DeadBirch_9.obj-c97fb42125d66e78b58373f78404439a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

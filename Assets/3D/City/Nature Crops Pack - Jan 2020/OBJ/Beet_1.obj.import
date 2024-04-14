@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://vyuc1yy27w1l"
+path="res://.godot/imported/Beet_1.obj-45a9616cfe060d69a044100f693fa66c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Beet_1.obj-45a9616cfe060d69a044100f693fa66c.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Beet_1.obj"
+dest_files=["res://.godot/imported/Beet_1.obj-45a9616cfe060d69a044100f693fa66c.mesh", "res://.godot/imported/Beet_1.obj-45a9616cfe060d69a044100f693fa66c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

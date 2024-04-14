@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dmcbtgxajasrr"
+path="res://.godot/imported/Apple_Harvested.obj-b5a729a3989c9bc31d021c732aa3199f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Apple_Harvested.obj-b5a729a3989c9bc31d021c732aa3199f.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Apple_Harvested.obj"
+dest_files=["res://.godot/imported/Apple_Harvested.obj-b5a729a3989c9bc31d021c732aa3199f.mesh", "res://.godot/imported/Apple_Harvested.obj-b5a729a3989c9bc31d021c732aa3199f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

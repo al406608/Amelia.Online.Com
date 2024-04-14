@@ -1,0 +1,127 @@
+[gd_scene load_steps=8 format=3 uid="uid://dx7dj34b13mtj"]
+
+[ext_resource type="Texture2D" uid="uid://b6fuy4k4kvumw" path="res://Assets/UI/Backgrounds/bridge_8.png" id="1_5gner"]
+[ext_resource type="Texture2D" uid="uid://d2f1rdj14won1" path="res://Assets/UI/wenrexaassetsui_scifi/PNG/Grid.png" id="2_8ulsc"]
+[ext_resource type="Texture2D" uid="uid://dgef4vqj4ra8" path="res://Assets/UI/wenrexaassetsui_scifi/PNG/MainPanel01.png" id="3_ko61c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ganxe"]
+font_size = 80
+outline_size = 15
+outline_color = Color(0.501961, 0.203922, 0.796078, 1)
+shadow_size = 20
+shadow_color = Color(0.168627, 0.121569, 0.27451, 0.666667)
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1inf"]
+bg_color = Color(0.168627, 0.0313726, 0.341176, 1)
+border_width_left = 5
+border_width_bottom = 5
+border_color = Color(0.337255, 0.282353, 0.788235, 1)
+border_blend = true
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_edrlc"]
+bg_color = Color(0.34902, 0.270588, 0.458824, 1)
+border_color = Color(0.337255, 0.282353, 0.788235, 1)
+border_blend = true
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhlau"]
+bg_color = Color(0.0705882, 0.00784314, 0.164706, 1)
+border_color = Color(0.337255, 0.282353, 0.788235, 1)
+border_blend = true
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="Node2D" type="CenterContainer"]
+custom_minimum_size = Vector2(1820, 980)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Background" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1820, 980)
+layout_mode = 2
+texture = ExtResource("1_5gner")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Grid" type="TextureRect" parent="."]
+modulate = Color(0.0509804, 0.00392157, 0.819608, 1)
+custom_minimum_size = Vector2(1820, 980)
+layout_mode = 2
+texture = ExtResource("2_8ulsc")
+stretch_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "amelia.Online.com"
+label_settings = SubResource("LabelSettings_ganxe")
+horizontal_alignment = 1
+
+[node name="MainPanel01" type="TextureRect" parent="VBoxContainer"]
+self_modulate = Color(0, 0.470588, 0.470588, 1)
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 2
+texture = ExtResource("3_ko61c")
+expand_mode = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(350, 200)
+layout_mode = 2
+
+[node name="Separator" type="VBoxContainer" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1inf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_edrlc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lhlau")
+text = "START"
+
+[node name="Button2" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1inf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_edrlc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lhlau")
+text = "SETTINGS"
+
+[node name="Button3" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1inf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_edrlc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lhlau")
+text = "CREDITS"
+
+[node name="Button4" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_h1inf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_edrlc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lhlau")
+text = "EXIT"

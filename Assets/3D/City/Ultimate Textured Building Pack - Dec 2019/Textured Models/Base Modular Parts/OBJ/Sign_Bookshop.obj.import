@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://vy6v1vtl0a5h"
+path="res://.godot/imported/Sign_Bookshop.obj-2f9367bd32a187771251b95cebcec682.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Sign_Bookshop.obj-2f9367bd32a187771251b95cebcec682.mesh"]
+
+source_file="res://Assets/3D/City/Ultimate Textured Building Pack - Dec 2019/Textured Models/Base Modular Parts/OBJ/Sign_Bookshop.obj"
+dest_files=["res://.godot/imported/Sign_Bookshop.obj-2f9367bd32a187771251b95cebcec682.mesh", "res://.godot/imported/Sign_Bookshop.obj-2f9367bd32a187771251b95cebcec682.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

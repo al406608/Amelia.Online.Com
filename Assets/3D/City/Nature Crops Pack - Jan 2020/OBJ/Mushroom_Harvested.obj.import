@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://m6xli7mm3ruk"
+path="res://.godot/imported/Mushroom_Harvested.obj-340cb08a1f0a3f031670e5357178f6ae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Mushroom_Harvested.obj-340cb08a1f0a3f031670e5357178f6ae.mesh"]
+
+source_file="res://Assets/3D/City/Nature Crops Pack - Jan 2020/OBJ/Mushroom_Harvested.obj"
+dest_files=["res://.godot/imported/Mushroom_Harvested.obj-340cb08a1f0a3f031670e5357178f6ae.mesh", "res://.godot/imported/Mushroom_Harvested.obj-340cb08a1f0a3f031670e5357178f6ae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

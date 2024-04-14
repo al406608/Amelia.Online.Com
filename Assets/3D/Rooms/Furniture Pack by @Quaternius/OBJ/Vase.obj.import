@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://doic3sh7owgvs"
+path="res://.godot/imported/Vase.obj-88368acf5daed4b972239a4fc3a88190.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Vase.obj-88368acf5daed4b972239a4fc3a88190.mesh"]
+
+source_file="res://Assets/3D/Rooms/Furniture Pack by @Quaternius/OBJ/Vase.obj"
+dest_files=["res://.godot/imported/Vase.obj-88368acf5daed4b972239a4fc3a88190.mesh", "res://.godot/imported/Vase.obj-88368acf5daed4b972239a4fc3a88190.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

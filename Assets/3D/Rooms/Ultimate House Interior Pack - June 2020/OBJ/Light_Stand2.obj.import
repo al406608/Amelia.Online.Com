@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cxeyya1kml56v"
+path="res://.godot/imported/Light_Stand2.obj-ec7dd57b1edca81a6266dbc4e82c231a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Light_Stand2.obj-ec7dd57b1edca81a6266dbc4e82c231a.mesh"]
+
+source_file="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Light_Stand2.obj"
+dest_files=["res://.godot/imported/Light_Stand2.obj-ec7dd57b1edca81a6266dbc4e82c231a.mesh", "res://.godot/imported/Light_Stand2.obj-ec7dd57b1edca81a6266dbc4e82c231a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

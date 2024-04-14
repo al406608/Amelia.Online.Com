@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b7hhnf087wfje"
+path="res://.godot/imported/ChairHandle.obj-5f15f6eadf579a65f72a1b9eb549a6a1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ChairHandle.obj-5f15f6eadf579a65f72a1b9eb549a6a1.mesh"]
+
+source_file="res://Assets/3D/Rooms/Furniture Pack by @Quaternius/OBJ/ChairHandle.obj"
+dest_files=["res://.godot/imported/ChairHandle.obj-5f15f6eadf579a65f72a1b9eb549a6a1.mesh", "res://.godot/imported/ChairHandle.obj-5f15f6eadf579a65f72a1b9eb549a6a1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

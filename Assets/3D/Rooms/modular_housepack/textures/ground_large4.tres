@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://4rb4b432px86"]
+
+[ext_resource type="Texture2D" uid="uid://g5pqjk2pe1ki" path="res://Assets/3D/Rooms/modular_housepack/textures/others/MARBL03.JPG" id="1_j5noo"]
+
+[resource]
+resource_name = "ground_large4"
+albedo_texture = ExtResource("1_j5noo")
+metallic = 0.4
+roughness = 0.415087
