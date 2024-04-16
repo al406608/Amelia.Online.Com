@@ -176,12 +176,12 @@ size = Vector3(2.68164, 2.61328, 2.3689)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0kk0x"]
 
-[sub_resource type="Sky" id="Sky_btrfj"]
+[sub_resource type="Sky" id="Sky_vjx17"]
 sky_material = SubResource("ProceduralSkyMaterial_0kk0x")
 
 [sub_resource type="Environment" id="Environment_sva37"]
 background_mode = 2
-sky = SubResource("Sky_btrfj")
+sky = SubResource("Sky_vjx17")
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
 ssao_enabled = true

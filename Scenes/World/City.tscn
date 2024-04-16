@@ -1,11 +1,70 @@
-[gd_scene load_steps=2 format=3 uid="uid://bhy5s2h5btejf"]
+[gd_scene load_steps=11 format=3 uid="uid://bhy5s2h5btejf"]
 
-[ext_resource type="PackedScene" uid="uid://ddqwlfvfijwub" path="res://Assets/3D/City/City Buildings/City Buildings.blend" id="1_0tb4t"]
+[ext_resource type="PackedScene" uid="uid://rnfp70oxcxdc" path="res://Assets/3D/City/Bus_stop/Model_city.tscn" id="1_kv7ng"]
+[ext_resource type="Texture2D" uid="uid://dgx6h5k7kr1n0" path="res://Assets/3D/City/Bus_stop/Skybox/Skybox_01.png" id="2_qk500"]
+[ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="3_txycf"]
 
-[node name="Node3D" type="Node3D"]
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_ikd3d"]
+panorama = ExtResource("2_qk500")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.1774, 141.537, 207.734)
+[sub_resource type="Sky" id="Sky_cqikp"]
+sky_material = SubResource("PanoramaSkyMaterial_ikd3d")
 
-[node name="City Buildings" parent="." instance=ExtResource("1_0tb4t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.039, 118.809, 193.073)
+[sub_resource type="Environment" id="Environment_81d6t"]
+background_mode = 2
+sky = SubResource("Sky_cqikp")
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+ssao_enabled = true
+ssil_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m1peb"]
+size = Vector3(428.847, 3.69641, 257.845)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pobu0"]
+size = Vector3(81.0515, 8.52539, 1.72266)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e6qd6"]
+size = Vector3(42.9633, 8.52539, 1.72266)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_prk0v"]
+size = Vector3(75.4496, 8.52539, 1.72266)
+
+[node name="City" type="Node3D"]
+
+[node name="Root Scene" parent="." instance=ExtResource("1_kv7ng")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.683161, 1.22462, -0.523613)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_81d6t")
+
+[node name="Character" parent="." instance=ExtResource("3_txycf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.16475, 3.19878, -26.9332)
+base_speed = 100.0
+acceleration = 40.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.3784, 2.32456, -90.9613)
+shape = SubResource("BoxShape3D_m1peb")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.38837, 3.7627, -24.8574)
+shape = SubResource("BoxShape3D_pobu0")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.0001, 3.7627, -39.2631)
+shape = SubResource("BoxShape3D_pobu0")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 28.5308, 3.7627, -56.46)
+shape = SubResource("BoxShape3D_pobu0")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 92.6928, 3.7627, -51.872)
+shape = SubResource("BoxShape3D_e6qd6")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 114.693, 3.7627, -14.8692)
+shape = SubResource("BoxShape3D_prk0v")
