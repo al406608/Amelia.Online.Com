@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://cq4kvldks0ykg"]
+[gd_scene load_steps=95 format=3 uid="uid://cq4kvldks0ykg"]
 
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="1_f4tk1"]
 [ext_resource type="ArrayMesh" uid="uid://c6wqur172raqc" path="res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_001.res" id="2_jlbsa"]
@@ -20,6 +20,7 @@
 [ext_resource type="ArrayMesh" uid="uid://bnnygc0104eig" path="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Carpet_2.obj" id="19_idgp3"]
 [ext_resource type="ArrayMesh" uid="uid://dodnftch56dyx" path="res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_014.res" id="20_u1t5c"]
 [ext_resource type="ArrayMesh" uid="uid://cjjp5jcdyogiv" path="res://Assets/3D/All/Objects/Root Scene_Lamps_02.res" id="21_g0hmn"]
+[ext_resource type="PackedScene" uid="uid://fnyj4lwp60ap" path="res://Scripts/Interactuable_component.tscn" id="22_kebb4"]
 [ext_resource type="ArrayMesh" uid="uid://c34xc263qbdph" path="res://Assets/3D/All/Objects/Root Scene_Plants_02.res" id="22_rjh3v"]
 [ext_resource type="ArrayMesh" uid="uid://wdipg50stfkm" path="res://Assets/3D/All/Objects/Root Scene_Armchair_02.res" id="23_1ds42"]
 [ext_resource type="ArrayMesh" uid="uid://b0anm2q8u7fbe" path="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Light_Ceiling5.obj" id="24_3ibop"]
@@ -44,6 +45,7 @@
 [ext_resource type="ArrayMesh" uid="uid://ducbm3vk10q8s" path="res://Assets/3D/All/Objects/Root Scene_Stove_door.res" id="45_vt7fm"]
 [ext_resource type="ArrayMesh" uid="uid://23hg7mtrvn0g" path="res://Assets/3D/All/Objects/Root Scene_Shelf_01.res" id="46_5e2uu"]
 [ext_resource type="ArrayMesh" uid="uid://dtos2eenrfwry" path="res://Assets/3D/All/Objects/Root Scene_Paintings_08.res" id="46_f3c8d"]
+[ext_resource type="PackedScene" uid="uid://cb2o02mtckesc" path="res://Scripts/Screen_transfer.tscn" id="46_spxhv"]
 [ext_resource type="ArrayMesh" uid="uid://cxqgqh0mig3ff" path="res://Assets/3D/Rooms/Ultimate House Interior Pack - June 2020/OBJ/Door_6.obj" id="47_ogy4s"]
 [ext_resource type="ArrayMesh" uid="uid://dktodclnm0gbs" path="res://Assets/3D/Rooms/Objects_Interior(Village)_Demo/Objects/Root Scene_Box_Pizza_001.res" id="48_wnvas"]
 [ext_resource type="ArrayMesh" uid="uid://d2nejh0w50b14" path="res://Assets/3D/Rooms/Objects_Interior(Village)_Demo/Objects/Root Scene_Gadgets.res" id="49_4h2qr"]
@@ -189,7 +191,7 @@ ssil_enabled = true
 
 [node name="AmeliaHouse" type="Node3D"]
 
-[node name="Character" parent="." instance=ExtResource("1_f4tk1")]
+[node name="Character" parent="." groups=["Player"] instance=ExtResource("1_f4tk1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7395, 0.0999999, 2.69909)
 
 [node name="AmeliaRoom" type="Node3D" parent="."]
@@ -414,6 +416,10 @@ skeleton = NodePath("../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AmeliaRoom/RootSceneBed04/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_5uy6a")
 
+[node name="InteractuableComponent" parent="AmeliaRoom/RootSceneBed04" instance=ExtResource("22_kebb4")]
+transform = Transform3D(0.582939, 0, 8.47033e-22, 0, 0.582939, 0, 0, 0, 0.582939, 0, 0, 0)
+dialogue = "My bed, I still haven't gotten used to it"
+
 [node name="RootSceneCube019" type="MeshInstance3D" parent="AmeliaRoom"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 4, 0, 0)
 mesh = ExtResource("7_sbcma")
@@ -573,6 +579,10 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.000825882, 0.0300783, 0.477743)
 shape = SubResource("CylinderShape3D_iuis3")
 
+[node name="InteractuableComponent" parent="AmeliaRoom/RootScenePlants02" instance=ExtResource("22_kebb4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.10197)
+dialogue = "It's one of the plants of my room, It keeps me company"
+
 [node name="RootSceneArmchair02" type="MeshInstance3D" parent="AmeliaRoom"]
 transform = Transform3D(1.06066, 1.06066, 4.63629e-08, 0, -6.55671e-08, 1.5, 1.06066, -1.06066, -4.63629e-08, 1, 0.8, 5)
 mesh = ExtResource("23_1ds42")
@@ -606,6 +616,10 @@ skeleton = NodePath("../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AmeliaRoom/RootSceneWardrobe/StaticBody3D"]
 transform = Transform3D(0.999981, -7.0699e-13, -3.16192e-13, 7.0699e-13, 0.999981, -4.70103e-20, -7.0699e-13, -3.70577e-20, 0.999981, -0.00717187, 0.127564, 0.0504456)
 shape = SubResource("BoxShape3D_j2a45")
+
+[node name="InteractuableComponent" parent="AmeliaRoom/RootSceneWardrobe" instance=ExtResource("22_kebb4")]
+transform = Transform3D(0.432426, 1.77636e-15, -1.77636e-15, -1.77636e-15, 0.432426, 0, 1.77636e-15, 0, 0.432426, 0, 0, 0)
+dialogue = "I still have to store some clothes"
 
 [node name="Hall" type="Node3D" parent="."]
 
@@ -1215,6 +1229,10 @@ skeleton = NodePath("../..")
 transform = Transform3D(-3.82658e-08, 0, -1, 0, 0.618083, 0, 0.875419, 0, -4.37114e-08, -10, 0, 3.76128)
 mesh = ExtResource("47_ogy4s")
 skeleton = NodePath("../..")
+
+[node name="ScreenTransfer" parent="Kitchen/Door6" instance=ExtResource("46_spxhv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.799617, 0.749854, -0.497352)
+scene_to_change = "res://Scenes/World/City.tscn"
 
 [node name="RootSceneStoveDoor" type="MeshInstance3D" parent="Kitchen"]
 transform = Transform3D(0.456, 0, 0, 0, -1.99324e-08, 0.456, 0, -0.456, -1.99324e-08, -5.89955, 0.388624, 1.0259)

@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj2vognd6hpgc"]
+
+[ext_resource type="Texture2D" uid="uid://b2uop7frkbawb" path="res://Assets/UI/wenrexaassetsui_scifi/PNG/MainPanel03.png" id="1_i8mer"]
+[ext_resource type="Script" path="res://Scenes/UI/Dialogue_scene.gd" id="1_lxleo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fqy1n"]
+font_size = 25
+
+[node name="DialogueScene" type="Control"]
+custom_minimum_size = Vector2(1231, 296)
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -615.5
+offset_top = -408.0
+offset_right = 615.5
+offset_bottom = -112.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_lxleo")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
+self_modulate = Color(0.643137, 0.254902, 0.835294, 0.580392)
+custom_minimum_size = Vector2(1283, 296)
+layout_mode = 2
+texture = ExtResource("1_i8mer")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CenterContainer"]
+custom_minimum_size = Vector2(1200, 0)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_fqy1n")
+horizontal_alignment = 1
+autowrap_mode = 3
