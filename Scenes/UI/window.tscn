@@ -1,0 +1,181 @@
+[gd_scene load_steps=16 format=3 uid="uid://yy5xw8lpe640"]
+
+[ext_resource type="Texture2D" uid="uid://bu71n4ltkg2ak" path="res://Assets/UI/RetroWindowsGUI/Window_Header.png" id="1_aejrn"]
+[ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="2_ilq10"]
+[ext_resource type="Texture2D" uid="uid://d4jn6dw3n36c6" path="res://Assets/UI/RetroWindowsGUI/Windows_Button.png" id="3_6aiu0"]
+[ext_resource type="Texture2D" uid="uid://vndsrob3srw7" path="res://Assets/UI/RetroWindowsGUI/Windows_Icons.png" id="4_ti3g4"]
+[ext_resource type="Texture2D" uid="uid://cdmoldsro1dd" path="res://Assets/UI/RetroWindowsGUI/Windows_Button_Focus.png" id="5_ij6fw"]
+[ext_resource type="Texture2D" uid="uid://drdnhcjx5jspw" path="res://Assets/UI/RetroWindowsGUI/Windows_Button_Pressed.png" id="6_vmmud"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vd2bv"]
+font = ExtResource("2_ilq10")
+font_size = 18
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_em1lr"]
+atlas = ExtResource("4_ti3g4")
+region = Rect2(100, 10, 8, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfdjq"]
+atlas = ExtResource("4_ti3g4")
+region = Rect2(84, 4, 9, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c3vrp"]
+atlas = ExtResource("4_ti3g4")
+region = Rect2(52, 4, 8, 7)
+
+[sub_resource type="FontVariation" id="FontVariation_g3t6e"]
+base_font = ExtResource("2_ilq10")
+spacing_bottom = -10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f3baf"]
+texture = ExtResource("5_ij6fw")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+modulate_color = Color(0.866667, 0.827451, 0.996078, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c6idh"]
+texture = ExtResource("3_6aiu0")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+modulate_color = Color(0.866667, 0.827451, 0.996078, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pxtmq"]
+texture = ExtResource("6_vmmud")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+modulate_color = Color(0.45098, 0.356863, 0.670588, 1)
+
+[sub_resource type="Theme" id="Theme_ypnlk"]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 40
+Button/fonts/font = SubResource("FontVariation_g3t6e")
+Button/styles/hover = SubResource("StyleBoxTexture_f3baf")
+Button/styles/normal = SubResource("StyleBoxTexture_c6idh")
+Button/styles/pressed = SubResource("StyleBoxTexture_pxtmq")
+
+[node name="NinePatchRect" type="NinePatchRect"]
+self_modulate = Color(0.721569, 0.67451, 0.780392, 1)
+custom_minimum_size = Vector2(400, 500)
+texture = ExtResource("1_aejrn")
+region_rect = Rect2(0, 0, 48, 48)
+patch_margin_left = 4
+patch_margin_top = 26
+patch_margin_right = 4
+patch_margin_bottom = 5
+axis_stretch_vertical = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -316.0
+offset_top = -248.0
+offset_right = -129.0
+offset_bottom = -221.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Menu"
+label_settings = SubResource("LabelSettings_vd2bv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 595.0
+offset_top = 6.0
+offset_right = 610.0
+offset_bottom = 21.0
+size_flags_horizontal = 7
+size_flags_vertical = 5
+texture = ExtResource("3_6aiu0")
+stretch_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 14.0
+texture = SubResource("AtlasTexture_em1lr")
+stretch_mode = 3
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 611.0
+offset_top = 6.0
+offset_right = 626.0
+offset_bottom = 21.0
+size_flags_horizontal = 7
+size_flags_vertical = 5
+texture = ExtResource("3_6aiu0")
+stretch_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect2"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 14.0
+texture = SubResource("AtlasTexture_qfdjq")
+stretch_mode = 3
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 626.0
+offset_top = 6.0
+offset_right = 641.0
+offset_bottom = 21.0
+size_flags_horizontal = 7
+size_flags_vertical = 5
+texture = ExtResource("3_6aiu0")
+stretch_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect3"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 14.0
+offset_bottom = 13.0
+texture = SubResource("AtlasTexture_c3vrp")
+stretch_mode = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(350, 200)
+layout_mode = 2
+offset_left = 149.0
+offset_top = -55.0
+offset_right = 499.0
+offset_bottom = 431.0
+
+[node name="Separator" type="VBoxContainer" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme = SubResource("Theme_ypnlk")
+text = "Start"
+
+[node name="Button2" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme = SubResource("Theme_ypnlk")
+theme_override_font_sizes/font_size = 40
+text = "Settings"
+
+[node name="Button3" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme = SubResource("Theme_ypnlk")
+theme_override_font_sizes/font_size = 40
+text = "Credits"
+
+[node name="Button4" type="Button" parent="VBoxContainer2"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme = SubResource("Theme_ypnlk")
+theme_override_font_sizes/font_size = 40
+text = "Exit"

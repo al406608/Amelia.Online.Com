@@ -39,19 +39,20 @@ size = Vector3(75.4496, 8.52539, 1.72266)
 [node name="City" type="Node3D"]
 
 [node name="Root Scene" parent="." instance=ExtResource("1_kv7ng")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.683161, 1.22462, -0.523613)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.683161, 1.22462, -0.523613)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_81d6t")
 
 [node name="Character" parent="." instance=ExtResource("3_txycf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.16475, 3.19878, -26.9332)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.16475, 3.19878, -17.3917)
 base_speed = 400.0
 sprint_speed = 400.0
 crouch_speed = 400.0
 acceleration = 40.0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.3784, 2.32456, -90.9613)

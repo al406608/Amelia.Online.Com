@@ -1,0 +1,1143 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://ckeculemcf8t0"
+path="res://.godot/imported/LowPolyAssetPack_Free.blend-0c8a3511eea71695abec4c3e428640c9.scn"
+
+[deps]
+
+source_file="res://Assets/3D/Rooms/LowPolyAssetPack_Free/LowPolyAssetPack_Free.blend"
+dest_files=["res://.godot/imported/LowPolyAssetPack_Free.blend-0c8a3511eea71695abec4c3e428640c9.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"meshes": {
+"LowPolyAssetPack_Free_Cube": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube.res"
+},
+"LowPolyAssetPack_Free_Cube_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_001.res"
+},
+"LowPolyAssetPack_Free_Cube_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_002.res"
+},
+"LowPolyAssetPack_Free_Cube_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_003.res"
+},
+"LowPolyAssetPack_Free_Cube_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_006.res"
+},
+"LowPolyAssetPack_Free_Cube_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_007.res"
+},
+"LowPolyAssetPack_Free_Cube_008": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_008.res"
+},
+"LowPolyAssetPack_Free_Cube_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_009.res"
+},
+"LowPolyAssetPack_Free_Cube_015": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_015.res"
+},
+"LowPolyAssetPack_Free_Cube_021": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_021.res"
+},
+"LowPolyAssetPack_Free_Cube_022": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_022.res"
+},
+"LowPolyAssetPack_Free_Cube_025": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_025.res"
+},
+"LowPolyAssetPack_Free_Cube_028": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_028.res"
+},
+"LowPolyAssetPack_Free_Cube_029": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_029.res"
+},
+"LowPolyAssetPack_Free_Cube_030": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_030.res"
+},
+"LowPolyAssetPack_Free_Cube_033": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_033.res"
+},
+"LowPolyAssetPack_Free_Cube_034": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_034.res"
+},
+"LowPolyAssetPack_Free_Cube_035": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_035.res"
+},
+"LowPolyAssetPack_Free_Cube_037": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_037.res"
+},
+"LowPolyAssetPack_Free_Cube_038": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_038.res"
+},
+"LowPolyAssetPack_Free_Cube_039": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_039.res"
+},
+"LowPolyAssetPack_Free_Cube_041": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_041.res"
+},
+"LowPolyAssetPack_Free_Cube_042": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_042.res"
+},
+"LowPolyAssetPack_Free_Cube_043": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_043.res"
+},
+"LowPolyAssetPack_Free_Cube_048": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_048.res"
+},
+"LowPolyAssetPack_Free_Cube_052": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_052.res"
+},
+"LowPolyAssetPack_Free_Cube_053": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_053.res"
+},
+"LowPolyAssetPack_Free_Cube_055": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_055.res"
+},
+"LowPolyAssetPack_Free_Cube_057": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_057.res"
+},
+"LowPolyAssetPack_Free_Cube_059": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_059.res"
+},
+"LowPolyAssetPack_Free_Cube_060": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_060.res"
+},
+"LowPolyAssetPack_Free_Cube_062": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_062.res"
+},
+"LowPolyAssetPack_Free_Cube_063": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_063.res"
+},
+"LowPolyAssetPack_Free_Cube_070": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_070.res"
+},
+"LowPolyAssetPack_Free_Cube_072": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_072.res"
+},
+"LowPolyAssetPack_Free_Cube_073": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_073.res"
+},
+"LowPolyAssetPack_Free_Cube_086": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_086.res"
+},
+"LowPolyAssetPack_Free_Cube_090": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_090.res"
+},
+"LowPolyAssetPack_Free_Cube_097": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_097.res"
+},
+"LowPolyAssetPack_Free_Cube_104": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_104.res"
+},
+"LowPolyAssetPack_Free_Cylinder_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_002.res"
+},
+"LowPolyAssetPack_Free_Cylinder_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_006.res"
+},
+"LowPolyAssetPack_Free_Cylinder_008": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_008.res"
+},
+"LowPolyAssetPack_Free_Cylinder_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_010.res"
+},
+"LowPolyAssetPack_Free_Cylinder_014": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_014.res"
+},
+"LowPolyAssetPack_Free_Cylinder_015": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_015.res"
+},
+"LowPolyAssetPack_Free_Cylinder_019": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_019.res"
+},
+"LowPolyAssetPack_Free_Cylinder_021": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_021.res"
+},
+"LowPolyAssetPack_Free_Cylinder_023": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_023.res"
+},
+"LowPolyAssetPack_Free_Cylinder_024": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_024.res"
+},
+"LowPolyAssetPack_Free_Cylinder_026": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_026.res"
+},
+"LowPolyAssetPack_Free_Cylinder_029": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_029.res"
+},
+"LowPolyAssetPack_Free_Cylinder_034": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_034.res"
+},
+"LowPolyAssetPack_Free_Cylinder_036": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_036.res"
+},
+"LowPolyAssetPack_Free_Cylinder_038": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_038.res"
+},
+"LowPolyAssetPack_Free_Cylinder_040": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_040.res"
+},
+"LowPolyAssetPack_Free_Cylinder_041": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_041.res"
+},
+"LowPolyAssetPack_Free_Cylinder_043": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_043.res"
+},
+"LowPolyAssetPack_Free_Cylinder_044": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_044.res"
+},
+"LowPolyAssetPack_Free_Cylinder_045": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_045.res"
+},
+"LowPolyAssetPack_Free_Cylinder_046": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_046.res"
+},
+"LowPolyAssetPack_Free_Cylinder_047": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_047.res"
+},
+"LowPolyAssetPack_Free_Cylinder_051": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_051.res"
+},
+"LowPolyAssetPack_Free_Cylinder_053": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_053.res"
+},
+"LowPolyAssetPack_Free_Cylinder_054": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_054.res"
+},
+"LowPolyAssetPack_Free_Cylinder_094": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_094.res"
+},
+"LowPolyAssetPack_Free_Cylinder_098": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_098.res"
+},
+"LowPolyAssetPack_Free_Drink_Cup_01_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Drink_Cup_01_001.res"
+},
+"LowPolyAssetPack_Free_Drink_Cup_02_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Drink_Cup_02_001.res"
+},
+"LowPolyAssetPack_Free_Drink_Cup_03_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Drink_Cup_03_001.res"
+},
+"LowPolyAssetPack_Free_Drink_Cup_04_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Drink_Cup_04_001.res"
+},
+"LowPolyAssetPack_Free_Pipe_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Pipe_003.res"
+},
+"LowPolyAssetPack_Free_Pipe_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Pipe_004.res"
+},
+"LowPolyAssetPack_Free_Pipe_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Pipe_005.res"
+},
+"LowPolyAssetPack_Free_Pipe_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Pipe_007.res"
+},
+"LowPolyAssetPack_Free_Plane_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_002.res"
+},
+"LowPolyAssetPack_Free_Plane_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_004.res"
+},
+"LowPolyAssetPack_Free_Plane_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_007.res"
+},
+"LowPolyAssetPack_Free_Plane_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_009.res"
+},
+"LowPolyAssetPack_Free_Plane_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_010.res"
+},
+"LowPolyAssetPack_Free_Plane_012": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_012.res"
+},
+"LowPolyAssetPack_Free_Plane_013": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_013.res"
+},
+"LowPolyAssetPack_Free_Plane_024": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_024.res"
+},
+"LowPolyAssetPack_Free_Plane_027": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_027.res"
+},
+"LowPolyAssetPack_Free_Plane_030": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_030.res"
+},
+"LowPolyAssetPack_Free_Plane_031": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_031.res"
+},
+"LowPolyAssetPack_Free_Plane_032": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_032.res"
+},
+"LowPolyAssetPack_Free_Plane_033": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_033.res"
+},
+"LowPolyAssetPack_Free_Plane_034": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_034.res"
+},
+"LowPolyAssetPack_Free_Plane_035": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_035.res"
+},
+"LowPolyAssetPack_Free_Plane_050": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_050.res"
+},
+"LowPolyAssetPack_Free_Plane_052": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_052.res"
+},
+"LowPolyAssetPack_Free_Plane_055": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_055.res"
+},
+"LowPolyAssetPack_Free_Plane_056": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_056.res"
+},
+"LowPolyAssetPack_Free_Plane_060": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_060.res"
+},
+"LowPolyAssetPack_Free_Plane_071": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_071.res"
+},
+"LowPolyAssetPack_Free_Plane_077": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_077.res"
+},
+"LowPolyAssetPack_Free_Plane_087": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_087.res"
+},
+"LowPolyAssetPack_Free_Plane_089": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_089.res"
+},
+"LowPolyAssetPack_Free_Plane_091": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_091.res"
+},
+"LowPolyAssetPack_Free_Plane_093": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_093.res"
+},
+"LowPolyAssetPack_Free_Plane_097": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_097.res"
+},
+"LowPolyAssetPack_Free_Plane_098": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_098.res"
+},
+"LowPolyAssetPack_Free_Plane_101": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_101.res"
+},
+"LowPolyAssetPack_Free_Plane_105": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_105.res"
+},
+"LowPolyAssetPack_Free_Plane_106": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_106.res"
+},
+"LowPolyAssetPack_Free_Sphere_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Sphere_001.res"
+},
+"LowPolyAssetPack_Free_Sphere_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Sphere_010.res"
+},
+"LowPolyAssetPack_Free_Sphere_019": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Sphere_019.res"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1
+blender/nodes/visible=0
+blender/nodes/punctual_lights=true
+blender/nodes/cameras=true
+blender/nodes/custom_properties=true
+blender/nodes/modifiers=1
+blender/meshes/colors=false
+blender/meshes/uvs=true
+blender/meshes/normals=true
+blender/meshes/tangents=true
+blender/meshes/skins=2
+blender/meshes/export_bones_deforming_mesh_only=false
+blender/materials/unpack_enabled=true
+blender/materials/export_materials=1
+blender/animation/limit_playback=true
+blender/animation/always_sample=true
+blender/animation/group_tracks=true

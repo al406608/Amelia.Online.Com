@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://bd6lcbmchs54v"]
+
+[ext_resource type="Texture2D" uid="uid://bu71n4ltkg2ak" path="res://Assets/UI/RetroWindowsGUI/Window_Header.png" id="1_e3ewn"]
+[ext_resource type="Texture2D" uid="uid://d4jn6dw3n36c6" path="res://Assets/UI/RetroWindowsGUI/Windows_Button.png" id="3_rmmql"]
+[ext_resource type="Texture2D" uid="uid://vndsrob3srw7" path="res://Assets/UI/RetroWindowsGUI/Windows_Icons.png" id="4_iktl7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c3vrp"]
+atlas = ExtResource("4_iktl7")
+region = Rect2(52, 4, 8, 7)
+
+[node name="NinePatchRect" type="NinePatchRect"]
+self_modulate = Color(0.721569, 0.67451, 0.780392, 1)
+custom_minimum_size = Vector2(400, 200)
+offset_right = 646.0
+offset_bottom = 200.0
+texture = ExtResource("1_e3ewn")
+region_rect = Rect2(0, 0, 48, 48)
+patch_margin_left = 4
+patch_margin_top = 26
+patch_margin_right = 4
+patch_margin_bottom = 5
+axis_stretch_vertical = 1
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -23.0
+offset_top = 6.0
+offset_right = -8.0
+offset_bottom = 21.0
+grow_horizontal = 0
+size_flags_horizontal = 7
+size_flags_vertical = 5
+texture = ExtResource("3_rmmql")
+stretch_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect3"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 15.0
+offset_bottom = 16.0
+texture = SubResource("AtlasTexture_c3vrp")
+stretch_mode = 3
