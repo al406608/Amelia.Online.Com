@@ -6,14 +6,14 @@ extends Node
 var dialogue_prefab_instance 
 var in_reach = false
 func _on_area_3d_body_entered(body):
-	if body.is_in_group("Player"):
+	if body.is_in_group("player"):
 		dialogue_prefab_instance = dialogue_prefab.instantiate()
 		add_child(dialogue_prefab_instance)
 		dialogue_prefab_instance.show_tip(title)
 		in_reach = true
 
 func _on_area_3d_body_exited(body):
-	if body.is_in_group("Player"):
+	if body.is_in_group("player"):
 		if dialogue_prefab_instance != null :
 			dialogue_prefab_instance.queue_free()
 		in_reach = false
