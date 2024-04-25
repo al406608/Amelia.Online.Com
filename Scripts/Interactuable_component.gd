@@ -1,10 +1,12 @@
-extends Node
+extends Node3D
+class_name  interactuableComponent
 
 @export var dialogue : String = "Necesito texto"
 @export var title : String
 @onready var dialogue_prefab = preload("res://Scenes/UI/Dialogue_scene.tscn")
 var dialogue_prefab_instance 
 var in_reach = false
+
 func _on_area_3d_body_entered(body):
 	if body.is_in_group("player"):
 		dialogue_prefab_instance = dialogue_prefab.instantiate()

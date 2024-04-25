@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=3 uid="uid://cq4kvldks0ykg"]
+[gd_scene load_steps=108 format=3 uid="uid://cq4kvldks0ykg"]
 
 [ext_resource type="ArrayMesh" uid="uid://c6wqur172raqc" path="res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_001.res" id="2_jlbsa"]
 [ext_resource type="ArrayMesh" uid="uid://caoux680waxbi" path="res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_004.res" id="3_dvdtv"]
@@ -56,7 +56,6 @@
 [ext_resource type="PackedScene" uid="uid://c7pls48a251gk" path="res://Scenes/Character/3d_character.tscn" id="55_kjc6m"]
 [ext_resource type="ArrayMesh" uid="uid://bdqlvu7r0xeo1" path="res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_002.res" id="55_oa8ut"]
 [ext_resource type="ArrayMesh" uid="uid://yrkr21kvyx1j" path="res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_030.res" id="56_7am15"]
-[ext_resource type="Script" path="res://Scripts/laptop_interact.gd" id="56_466o8"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_726h5"]
 size = Vector3(8, 6, 0.1)
@@ -99,7 +98,7 @@ size = Vector3(1.44675, 0.831909, 0.9)
 size = Vector3(1.60449, 3.96384, 0.384033)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v7ms5"]
-size = Vector3(1.84766, 3.87451, 2.5708)
+size = Vector3(1.58569, 3.87451, 2.08496)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_iuis3"]
 height = 2.01374
@@ -587,7 +586,7 @@ shape = SubResource("BoxShape3D_1wvoj")
 transform = Transform3D(1, 0, 0, 0, 1, 0, -7.10543e-15, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AmeliaRoom/Door2/Area3D"]
-transform = Transform3D(1, 0, 9.9476e-14, 0, 1, 0, -9.23706e-14, 0, 1, -0.907835, 2.12562, -0.295654)
+transform = Transform3D(1, 0, 9.9479e-14, 0, 1, 0, -9.9479e-14, 0, 1, -0.907835, 2.12562, -0.0527341)
 shape = SubResource("BoxShape3D_v7ms5")
 
 [node name="RootSceneLamps02" type="MeshInstance3D" parent="AmeliaRoom"]
@@ -1393,11 +1392,6 @@ shape = SubResource("ConvexPolygonShape3D_7i1yu")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="LowPolyAssetPackFreePlane030/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_120s1")
-
-[node name="InteractuableComponent" parent="LowPolyAssetPackFreePlane030" instance=ExtResource("22_kebb4")]
-transform = Transform3D(0.347323, 0, 0, 0, 0.347323, 0, 0, 0, 0.347323, 0, 0, 0)
-script = ExtResource("56_466o8")
-title = "Laptop"
 
 [node name="3dCharacter" parent="." instance=ExtResource("55_kjc6m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.46632, 1.21153, 3)
