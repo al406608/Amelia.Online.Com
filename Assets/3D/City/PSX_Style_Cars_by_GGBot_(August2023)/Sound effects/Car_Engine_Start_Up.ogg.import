@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bhykaqmc7nfs4"
+path="res://.godot/imported/Car_Engine_Start_Up.ogg-71031de779717a8adeb178451f0861b6.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/3D/City/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car_Engine_Start_Up.ogg"
+dest_files=["res://.godot/imported/Car_Engine_Start_Up.ogg-71031de779717a8adeb178451f0861b6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

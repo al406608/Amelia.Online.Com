@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=3 uid="uid://cq4kvldks0ykg"]
+[gd_scene load_steps=110 format=3 uid="uid://cq4kvldks0ykg"]
 
 [ext_resource type="ArrayMesh" uid="uid://c6wqur172raqc" path="res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_001.res" id="2_jlbsa"]
 [ext_resource type="ArrayMesh" uid="uid://caoux680waxbi" path="res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_004.res" id="3_dvdtv"]
@@ -57,6 +57,7 @@
 [ext_resource type="ArrayMesh" uid="uid://bdqlvu7r0xeo1" path="res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_002.res" id="55_oa8ut"]
 [ext_resource type="ArrayMesh" uid="uid://yrkr21kvyx1j" path="res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_030.res" id="56_7am15"]
 [ext_resource type="Script" path="res://Scripts/laptop_interact.gd" id="56_466o8"]
+[ext_resource type="PackedScene" uid="uid://mltt4yb8ha1u" path="res://Scenes/Character/secretary_animation.tscn" id="58_65dtv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_726h5"]
 size = Vector3(8, 6, 0.1)
@@ -1401,6 +1402,9 @@ title = "Laptop"
 
 [node name="3dCharacter" parent="." instance=ExtResource("55_kjc6m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.46632, 1.21153, 3)
+
+[node name="Root Scene" parent="." instance=ExtResource("58_65dtv")]
+transform = Transform3D(1.09536, 0, 0.293501, 0, 1.134, 0, -0.293501, 0, 1.09536, -7.12357, 0.109082, 1.27162)
 
 [connection signal="body_entered" from="AmeliaRoom/Door2/Area3D" to="AmeliaRoom/Door2" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="AmeliaRoom/Door2/Area3D" to="AmeliaRoom/Door2" method="_on_area_3d_body_exited"]
