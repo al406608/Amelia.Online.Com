@@ -24,11 +24,6 @@ func _unhandled_input(event):
 		rotate_y(-event.relative.x * sensitivity)
 		camera.rotate_x(-event.relative.y * sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-80), deg_to_rad(80))
-	if Input.is_action_just_pressed("esc_press"):
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED :
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta):
 	# Add the gravity.
