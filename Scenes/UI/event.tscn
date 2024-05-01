@@ -1,0 +1,197 @@
+[gd_scene load_steps=15 format=3 uid="uid://wnnyrtjdjpgo"]
+
+[ext_resource type="Texture2D" uid="uid://ct62sy1y4afhm" path="res://Assets/2D/backgrounds/fondoevento1.png" id="1_rc1c8"]
+[ext_resource type="Script" path="res://Scenes/UI/event_dialogue.gd" id="1_yh485"]
+[ext_resource type="PackedScene" uid="uid://bd6lcbmchs54v" path="res://Scenes/UI/window_dialogue.tscn" id="2_mkslj"]
+[ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="3_oej4q"]
+[ext_resource type="Texture2D" uid="uid://y3dpr012b7o5" path="res://Assets/UI/SimpleKeys/SimpleKeys/Jumbo/Light/Spritesheets/E.png" id="5_24q6x"]
+[ext_resource type="Texture2D" uid="uid://bpkteea5e0q4r" path="res://Assets/UI/SimpleKeys/SimpleKeys/Jumbo/Light/Spritesheets/X.png" id="6_kwuc8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_aokrn"]
+font = ExtResource("3_oej4q")
+font_size = 25
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f3usi"]
+atlas = ExtResource("5_24q6x")
+region = Rect2(0, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujdul"]
+atlas = ExtResource("5_24q6x")
+region = Rect2(19, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5287m"]
+atlas = ExtResource("5_24q6x")
+region = Rect2(38, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kiur0"]
+atlas = ExtResource("6_kwuc8")
+region = Rect2(0, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghbkr"]
+atlas = ExtResource("6_kwuc8")
+region = Rect2(19, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icdtl"]
+atlas = ExtResource("6_kwuc8")
+region = Rect2(38, 0, 19, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b1sue"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f3usi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujdul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5287m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kiur0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghbkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_icdtl")
+}],
+"loop": true,
+"name": &"x_button",
+"speed": 5.0
+}]
+
+[node name="DialogueScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yh485")
+dialogue = PackedStringArray("Texto de prueba 1", "Texto de prueba 2", "Texto de prueba 3")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -944.0
+offset_top = -507.5
+offset_right = 944.0
+offset_bottom = 507.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_rc1c8")
+
+[node name="NinePatchRect" parent="." instance=ExtResource("2_mkslj")]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 654.0
+offset_right = 1733.0
+offset_bottom = 940.0
+
+[node name="Dialogue" type="Label" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_oej4q")
+theme_override_font_sizes/font_size = 40
+text = "Esto es un texto de ejemplo"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -487.0
+offset_top = -50.0
+offset_right = -10.0
+offset_bottom = -12.0
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 2
+
+[node name="Label2" type="Label" parent="NinePatchRect/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Press"
+label_settings = SubResource("LabelSettings_aokrn")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/HBoxContainer"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+expand_mode = 4
+stretch_mode = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NinePatchRect/HBoxContainer/TextureRect"]
+position = Vector2(17.5, 17)
+scale = Vector2(2.02632, 2.02632)
+sprite_frames = SubResource("SpriteFrames_b1sue")
+autoplay = "default"
+
+[node name="Label3" type="Label" parent="NinePatchRect/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "to advance text"
+label_settings = SubResource("LabelSettings_aokrn")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -46.0
+offset_right = 477.0
+offset_bottom = -8.0
+grow_vertical = 0
+
+[node name="Label2" type="Label" parent="NinePatchRect/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Press"
+label_settings = SubResource("LabelSettings_aokrn")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/HBoxContainer2"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+expand_mode = 4
+stretch_mode = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NinePatchRect/HBoxContainer2/TextureRect"]
+position = Vector2(14, 18)
+scale = Vector2(2.02632, 2.02632)
+sprite_frames = SubResource("SpriteFrames_b1sue")
+animation = &"x_button"
+autoplay = "x_button"
+
+[node name="Label3" type="Label" parent="NinePatchRect/HBoxContainer2"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "to skip text"
+label_settings = SubResource("LabelSettings_aokrn")
+horizontal_alignment = 1
+autowrap_mode = 3

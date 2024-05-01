@@ -10,13 +10,11 @@ panorama = ExtResource("2_qk500")
 [sub_resource type="Sky" id="Sky_cqikp"]
 sky_material = SubResource("PanoramaSkyMaterial_ikd3d")
 
-[sub_resource type="Environment" id="Environment_81d6t"]
+[sub_resource type="Environment" id="Environment_0jdau"]
 background_mode = 2
 sky = SubResource("Sky_cqikp")
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
-ssao_enabled = true
-ssil_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_m1peb"]
 size = Vector3(428.847, 3.69641, 257.845)
@@ -42,7 +40,13 @@ size = Vector3(75.4496, 8.52539, 1.72266)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.683161, 1.22462, -0.523613)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_81d6t")
+environment = SubResource("Environment_0jdau")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.937974, 0, -0.346707, 0.262976, -0.651675, 0.711452, -0.22594, -0.758499, -0.611254, 0, 26, -24)
+light_bake_mode = 1
+shadow_enabled = true
+directional_shadow_mode = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
@@ -72,4 +76,4 @@ transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 114.693,
 shape = SubResource("BoxShape3D_prk0v")
 
 [node name="3dCharacter" parent="." instance=ExtResource("3_5up36")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.46741, 5.27752, -15.1772)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8545, 5.27752, -15.1772)
