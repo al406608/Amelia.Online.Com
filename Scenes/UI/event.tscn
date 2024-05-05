@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://wnnyrtjdjpgo"]
+[gd_scene load_steps=16 format=3 uid="uid://wnnyrtjdjpgo"]
 
 [ext_resource type="Texture2D" uid="uid://ct62sy1y4afhm" path="res://Assets/2D/backgrounds/fondoevento1.png" id="1_rc1c8"]
 [ext_resource type="Script" path="res://Scenes/UI/event_dialogue.gd" id="1_yh485"]
 [ext_resource type="PackedScene" uid="uid://bd6lcbmchs54v" path="res://Scenes/UI/window_dialogue.tscn" id="2_mkslj"]
+[ext_resource type="PackedScene" uid="uid://cq4kvldks0ykg" path="res://Scenes/World/Amelia_House.tscn" id="2_w1kqe"]
 [ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="3_oej4q"]
 [ext_resource type="Texture2D" uid="uid://y3dpr012b7o5" path="res://Assets/UI/SimpleKeys/SimpleKeys/Jumbo/Light/Spritesheets/E.png" id="5_24q6x"]
 [ext_resource type="Texture2D" uid="uid://bpkteea5e0q4r" path="res://Assets/UI/SimpleKeys/SimpleKeys/Jumbo/Light/Spritesheets/X.png" id="6_kwuc8"]
@@ -75,6 +76,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yh485")
 dialogue = PackedStringArray("Texto de prueba 1", "Texto de prueba 2", "Texto de prueba 3")
+next_scene = ExtResource("2_w1kqe")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1

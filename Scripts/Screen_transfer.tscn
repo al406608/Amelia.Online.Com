@@ -1,8 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://cb2o02mtckesc"]
+[gd_scene load_steps=5 format=3 uid="uid://cb2o02mtckesc"]
 
 [ext_resource type="Script" path="res://Scripts/ScreenTransfer.gd" id="1_t58si"]
+[ext_resource type="Shader" path="res://Scripts/Screen_transfer.gdshader" id="2_3nqk5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o374a"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ab38v"]
+render_priority = 0
+shader = ExtResource("2_3nqk5")
+shader_parameter/_shield_color = Color(0.176471, 0.45098, 0.784314, 1)
+shader_parameter/_shield_color_brightness = 3.85
+shader_parameter/_shield_intensity = 1.4
+shader_parameter/_rotation = Vector3(0, 0.1, 0)
+shader_parameter/_shield_size = 0.0
+shader_parameter/_shield_pulse_frequency = 2.0
+shader_parameter/_shield_pulse_density = 1.0
+shader_parameter/_shield_pulse_amplitude = 1.0
+shader_parameter/_shield_pulse_blend = 1.0
+shader_parameter/_shield_pulse_radius = 1.0
+shader_parameter/_impact_origin = Vector3(0, 1, 0)
+shader_parameter/_impact_frequency = 5.0
+shader_parameter/_impact_density = 5.0
+shader_parameter/_impact_amplitude = 6.0
+shader_parameter/_impact_blend = 0.0
+shader_parameter/_impact_radius = 1.1
+shader_parameter/_impact_anim = 1.0
 
 [node name="ScreenTransfer" type="Node3D"]
 script = ExtResource("1_t58si")
@@ -11,5 +33,14 @@ script = ExtResource("1_t58si")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("BoxShape3D_o374a")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45461, 0)
+visible = false
+visibility_range_fade_mode = 2
+radius = 0.673954
+height = 4.01753
+sides = 12
+material = SubResource("ShaderMaterial_ab38v")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

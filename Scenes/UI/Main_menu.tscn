@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dx7dj34b13mtj"]
+[gd_scene load_steps=9 format=3 uid="uid://dx7dj34b13mtj"]
 
 [ext_resource type="Texture2D" uid="uid://b6fuy4k4kvumw" path="res://Assets/UI/Backgrounds/bridge_8.png" id="1_5gner"]
+[ext_resource type="Script" path="res://Scripts/Main_menu.gd" id="1_kblpp"]
 [ext_resource type="Texture2D" uid="uid://d2f1rdj14won1" path="res://Assets/UI/wenrexaassetsui_scifi/PNG/Grid.png" id="2_8ulsc"]
 [ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="3_4slyc"]
 [ext_resource type="Texture2D" uid="uid://c6c2t2w8x1gqr" path="res://Assets/UI/RetroWindowsGUI/Window_Base.png" id="4_1mug5"]
@@ -23,6 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_kblpp")
 
 [node name="Node2D" type="CenterContainer" parent="."]
 custom_minimum_size = Vector2(1820, 980)
@@ -104,3 +106,10 @@ vertical_alignment = 1
 
 [node name="NinePatchRect" parent="Node2D/VBoxContainer" instance=ExtResource("5_l3twa")]
 layout_mode = 2
+
+[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/VBoxContainer2/StartButton" to="." method="_on_start_button_button_down"]
+[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/VBoxContainer2/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/VBoxContainer2/CreditsButton" to="." method="_on_credits_button_button_down"]
+[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/VBoxContainer2/ExitButton" to="." method="_on_exit_button_button_down"]
+
+[editable path="Node2D/VBoxContainer/NinePatchRect"]

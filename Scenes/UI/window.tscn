@@ -153,27 +153,27 @@ offset_bottom = 431.0
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 
-[node name="Button" type="Button" parent="VBoxContainer2"]
+[node name="StartButton" type="Button" parent="VBoxContainer2"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 text = "Start"
 
-[node name="Button2" type="Button" parent="VBoxContainer2"]
+[node name="SettingsButton" type="Button" parent="VBoxContainer2"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 theme_override_font_sizes/font_size = 40
 text = "Settings"
 
-[node name="Button3" type="Button" parent="VBoxContainer2"]
+[node name="CreditsButton" type="Button" parent="VBoxContainer2"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 theme_override_font_sizes/font_size = 40
 text = "Credits"
 
-[node name="Button4" type="Button" parent="VBoxContainer2"]
+[node name="ExitButton" type="Button" parent="VBoxContainer2"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
