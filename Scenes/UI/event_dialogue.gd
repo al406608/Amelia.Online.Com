@@ -1,10 +1,11 @@
 extends Control
 
-@export var dialogue : PackedStringArray
-@export var next_scene : PackedScene
+var dialogue : PackedStringArray
+var scene_to_change
 var index = 0
-var running : bool = false
+var running : bool = true
 var tween
+var game_manager : GameController
 @onready var dialogue_node = $NinePatchRect/Dialogue
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,7 +16,6 @@ func _unhandled_key_input(_event):
 		if running:
 			end_dialogue()
 		elif index < dialogue.size() and !running:
-			running = true
 			show_dialogue()
 		else:
 			change_scene()
@@ -23,21 +23,18 @@ func _unhandled_key_input(_event):
 		change_scene()
 
 func change_scene():
-	tween = create_tween()
-	tween.tween_property(self,"modulate",Color.BLACK,1)
-	tween.tween_callback(change_node)
-
-func change_node():
-	get_tree().change_scene_to_packed(next_scene)
+	var next_scene_instance = scene_to_change.instantiate()
+	game_manager.screen_transfer_animation(self,next_scene_instance)
 
 func show_dialogue():
+	running = true
 	dialogue_node.visible_ratio = 0
 	dialogue_node.text = dialogue[index]
 	index += 1
 	tween = create_tween()
 	var dialogue_length = dialogue_node.text.length() * 0.04
 	tween.tween_property(dialogue_node,"visible_ratio",1,dialogue_length)
-	tween.tween_property(self,"running",false,0)
+	tween.tween_callback(end_dialogue)
 
 func end_dialogue():
 	dialogue_node.visible_ratio = 1

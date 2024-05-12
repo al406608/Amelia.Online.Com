@@ -1,27 +1,22 @@
 extends Node
-
-@onready var dialogue_scene = preload("res://Scenes/UI/event.tscn")
-@export var start_dialogue : PackedStringArray
+class_name GameController
+@onready var dialogue_scene = load("res://Scenes/UI/event.tscn")
+@onready var transfer_ui = preload("res://Scenes/UI/Transfer_UI.tscn")
+@export var dialogue : PackedStringArray
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	start_game()
-	pass # Replace with function body.
-
+	$Main_menu.game_controller = self
 
 func change_node(self_node,node_to_change):
 	if(self_node != null):
 		self_node.call_deferred("queue_free")
-	var node_instance = node_to_change.instance()
-	add_child(node_instance)
-
-func start_game():
-	var start_scene = dialogue_scene.instantiate()
-	start_scene.dialogue = start_dialogue
-	add_child(start_scene)
-	
+	if("game_manager" in node_to_change):
+		node_to_change.game_manager = self
+	add_child(node_to_change)
 
 func screen_transfer_animation(self_node,node_to_change):
-	var tween = create_tween()
-	tween.tween_property(self,"modulate",Color.BLACK,1)
-	tween.tween_callback(change_node)
+	var ui_transfer_instance = transfer_ui.instantiate()
+	add_child(ui_transfer_instance)
+	await ui_transfer_instance.transmision_finished
+	change_node(self_node,node_to_change)
 

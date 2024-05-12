@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b75knxktmi7tl"]
+
+[ext_resource type="PackedScene" uid="uid://blkxh8jyy57x1" path="res://Assets/3D/City/school_entrance/entrance.glb" id="1_6tqp6"]
+
+[node name="College" type="Node3D"]
+
+[node name="entrance2" parent="." instance=ExtResource("1_6tqp6")]

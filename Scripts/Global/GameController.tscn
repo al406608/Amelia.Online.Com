@@ -1,9 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://cynknvi1vpa0x"]
+[gd_scene load_steps=3 format=3 uid="uid://cynknvi1vpa0x"]
 
 [ext_resource type="Script" path="res://Scripts/Global/GameController.gd" id="1_7yyvj"]
+[ext_resource type="PackedScene" uid="uid://dx7dj34b13mtj" path="res://Scenes/UI/Main_menu.tscn" id="2_pyjq1"]
 
 [node name="GameController" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_7yyvj")
-start_dialogue = PackedStringArray("Amelia, ready to start a new phase, which she thought would be full of opportunities and open doors,", "She was leaving one life behind to start a new one, friends and acquaintances, all because her mother had been transferred at work.", " What filled her with hope was to share her last year of university with her friend Emi,", "But inside, Amelia was worried, her friend Emi hadn\'t answered her messages for a week.", "- \"Emi…\"-")
+
+[node name="Main_menu" parent="." instance=ExtResource("2_pyjq1")]
+layout_mode = 1
