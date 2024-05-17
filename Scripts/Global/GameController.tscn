@@ -1,9 +1,61 @@
-[gd_scene load_steps=3 format=3 uid="uid://cynknvi1vpa0x"]
+[gd_scene load_steps=12 format=3 uid="uid://cynknvi1vpa0x"]
 
 [ext_resource type="Script" path="res://Scripts/Global/GameController.gd" id="1_7yyvj"]
 [ext_resource type="PackedScene" uid="uid://dx7dj34b13mtj" path="res://Scenes/UI/Main_menu.tscn" id="2_pyjq1"]
+[ext_resource type="Texture2D" uid="uid://bjq337wtyyb5t" path="res://Assets/UI/Light Wave Effect Part 4 Free/Free Part 4.png" id="3_iq07c"]
+[ext_resource type="Script" path="res://Scripts/crosshead.gd" id="4_h5fqi"]
 
-[node name="GameController" type="Control"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_8312r"]
+atlas = ExtResource("3_iq07c")
+region = Rect2(0, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5wcp"]
+atlas = ExtResource("3_iq07c")
+region = Rect2(48, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dktl2"]
+atlas = ExtResource("3_iq07c")
+region = Rect2(96, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0d25a"]
+atlas = ExtResource("3_iq07c")
+region = Rect2(144, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_penop"]
+atlas = ExtResource("3_iq07c")
+region = Rect2(192, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q16be"]
+atlas = ExtResource("3_iq07c")
+region = Rect2(240, 240, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jvjw0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8312r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5wcp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dktl2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0d25a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_penop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q16be")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="GameController" type="Control" groups=["controller"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,6 +64,21 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_7yyvj")
+metadata/_edit_horizontal_guides_ = [540.0]
+metadata/_edit_vertical_guides_ = [960.0]
 
 [node name="Main_menu" parent="." instance=ExtResource("2_pyjq1")]
 layout_mode = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CanvasGroup" type="CanvasGroup" parent="CanvasLayer"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/CanvasGroup"]
+visible = false
+modulate = Color(1, 1, 1, 0.588235)
+position = Vector2(960, 540)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_jvjw0")
+frame_progress = 0.770987
+script = ExtResource("4_h5fqi")
