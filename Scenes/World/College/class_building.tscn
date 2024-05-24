@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://dh6x5idpca0i7"]
+
+[ext_resource type="PackedScene" uid="uid://drerlg6ydgoby" path="res://Assets/3D/City/school-class-room-light-ver/source/clase.fbx" id="1_py2wd"]
+[ext_resource type="Texture2D" uid="uid://dgx6h5k7kr1n0" path="res://Assets/3D/City/Bus_stop/Skybox/Skybox_01.png" id="2_abtun"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_t7n2s"]
+panorama = ExtResource("2_abtun")
+
+[sub_resource type="Sky" id="Sky_cqikp"]
+sky_material = SubResource("PanoramaSkyMaterial_t7n2s")
+
+[sub_resource type="Environment" id="Environment_g4axn"]
+background_mode = 2
+sky = SubResource("Sky_cqikp")
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="ClassBuilding" type="Node3D"]
+
+[node name="Root Scene" parent="." instance=ExtResource("1_py2wd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.7842, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_g4axn")

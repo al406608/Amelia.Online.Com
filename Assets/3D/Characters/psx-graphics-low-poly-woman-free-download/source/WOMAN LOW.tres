@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bf81430lcumjg"]
+
+[ext_resource type="Texture2D" uid="uid://bjhp4pnp6j1ck" path="res://Assets/3D/Characters/psx-graphics-low-poly-woman-free-download/source/WOMAN_2048.jpg" id="1_lllc3"]
+
+[resource]
+resource_name = "WOMAN LOW"
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("1_lllc3")

@@ -75,9 +75,8 @@ layout_mode = 1
 [node name="CanvasGroup" type="CanvasGroup" parent="CanvasLayer"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/CanvasGroup"]
-visible = false
-modulate = Color(1, 1, 1, 0.588235)
-position = Vector2(960, 540)
+modulate = Color(1, 1, 1, 0.2)
+position = Vector2(910, 490)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_jvjw0")
 frame_progress = 0.770987

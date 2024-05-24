@@ -3,7 +3,6 @@ class_name GameController
 @onready var dialogue_scene = load("res://Scenes/UI/event.tscn")
 @onready var transfer_ui = preload("res://Scenes/UI/Transfer_UI.tscn")
 @export var dialogue : PackedStringArray
-
 @onready var crosshair = $CanvasLayer/CanvasGroup/AnimatedSprite2D
 # Called when the node enters the scene tree for the first time.
 func _ready():

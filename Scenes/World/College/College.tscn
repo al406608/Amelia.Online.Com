@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://b75knxktmi7tl"]
+
+[ext_resource type="Texture2D" uid="uid://dgx6h5k7kr1n0" path="res://Assets/3D/City/Bus_stop/Skybox/Skybox_01.png" id="2_t6885"]
+[ext_resource type="PackedScene" uid="uid://dfw2vmrr8pm6j" path="res://Scenes/World/College/college_entrance_2.tscn" id="2_uuphl"]
+[ext_resource type="PackedScene" uid="uid://c7pls48a251gk" path="res://Scenes/Character/3d_character.tscn" id="3_0ecoi"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_vep2o"]
+panorama = ExtResource("2_t6885")
+
+[sub_resource type="Sky" id="Sky_cqikp"]
+sky_material = SubResource("PanoramaSkyMaterial_vep2o")
+
+[sub_resource type="Environment" id="Environment_j383m"]
+background_mode = 2
+sky = SubResource("Sky_cqikp")
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="College" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_j383m")
+
+[node name="entrance3" parent="." instance=ExtResource("2_uuphl")]
+transform = Transform3D(1.15379, 0, 0, 0, 1.15379, 0, 0, 0, 1.15379, 0, 0, 0)
+
+[node name="Decoracion" type="Node3D" parent="."]
+
+[node name="3dCharacter" parent="." instance=ExtResource("3_0ecoi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.110849, 1.17007, 2.10588)
+floor_max_angle = 1.5708

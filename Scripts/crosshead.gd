@@ -14,6 +14,10 @@ func inspect_element(value):
 	inspecting = value
 	if inspecting :
 		modulate = inspection_color
+		scale = Vector2(1,1)
+		play("default")
 	else:
 		modulate = initial_color
+		scale = Vector2(0.8,0.8)
+		stop()
 	

@@ -1,12 +1,30 @@
-[gd_scene load_steps=9 format=3 uid="uid://dx7dj34b13mtj"]
+[gd_scene load_steps=13 format=3 uid="uid://dx7dj34b13mtj"]
 
 [ext_resource type="Texture2D" uid="uid://b6fuy4k4kvumw" path="res://Assets/UI/Backgrounds/bridge_8.png" id="1_5gner"]
 [ext_resource type="Script" path="res://Scripts/Main_menu.gd" id="1_kblpp"]
-[ext_resource type="Texture2D" uid="uid://d2f1rdj14won1" path="res://Assets/UI/wenrexaassetsui_scifi/PNG/Grid.png" id="2_8ulsc"]
 [ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="3_4slyc"]
+[ext_resource type="Shader" path="res://Materials/matrix.gdshader" id="3_hnqlj"]
 [ext_resource type="Texture2D" uid="uid://c6c2t2w8x1gqr" path="res://Assets/UI/RetroWindowsGUI/Window_Base.png" id="4_1mug5"]
+[ext_resource type="Texture2D" uid="uid://bhsr842455doe" path="res://Materials/characters2.png" id="4_rg454"]
 [ext_resource type="PackedScene" uid="uid://yy5xw8lpe640" path="res://Scenes/UI/window.tscn" id="5_l3twa"]
 [ext_resource type="Texture2D" uid="uid://b57hoxtfa63ye" path="res://Assets/UI/RetroWindowsGUI/Windows_Inner_Frame.png" id="6_xocij"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_lme8b"]
+noise_type = 4
+seed = 212
+frequency = 1.0
+fractal_octaves = 4
+fractal_gain = 0.1
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_jacdf"]
+width = 32
+height = 32
+noise = SubResource("FastNoiseLite_lme8b")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pruiw"]
+shader = ExtResource("3_hnqlj")
+shader_parameter/chars = ExtResource("4_rg454")
+shader_parameter/noise_tex = SubResource("NoiseTexture2D_jacdf")
 
 [sub_resource type="LabelSettings" id="LabelSettings_ganxe"]
 font = ExtResource("3_4slyc")
@@ -44,12 +62,13 @@ texture = ExtResource("1_5gner")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="Grid" type="TextureRect" parent="Node2D"]
-modulate = Color(0.0509804, 0.00392157, 0.819608, 1)
+[node name="Background2" type="TextureRect" parent="Node2D"]
+material = SubResource("ShaderMaterial_pruiw")
 custom_minimum_size = Vector2(1820, 980)
 layout_mode = 2
-texture = ExtResource("2_8ulsc")
-stretch_mode = 1
+texture = ExtResource("1_5gner")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="Node2D"]
 custom_minimum_size = Vector2(350, 200)

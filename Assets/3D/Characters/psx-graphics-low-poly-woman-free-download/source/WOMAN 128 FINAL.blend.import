@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bswd8gf2u4uy2"
+uid="uid://dvu01kab1ivhm"
 path="res://.godot/imported/WOMAN 128 FINAL.blend-7bbd12affa2e1f44a7db0652a75937f7.scn"
 
 [deps]
@@ -29,7 +29,14 @@ animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 import_script/path=""
-_subresources={}
+_subresources={
+"materials": {
+"WOMAN LOW": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/3D/Characters/psx-graphics-low-poly-woman-free-download/source/WOMAN LOW.tres"
+}
+}
+}
 gltf/naming_version=1
 gltf/embedded_image_handling=1
 blender/nodes/visible=0
