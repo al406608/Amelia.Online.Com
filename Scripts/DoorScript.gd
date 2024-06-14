@@ -2,6 +2,7 @@ extends interactuableComponent
 
 var open : bool = false
 var running : bool = false
+var scrip_object : GDScript
 @onready var original_rotation = rotation.y
 # Called when the node enters the scene tree for the first time.
 var tween

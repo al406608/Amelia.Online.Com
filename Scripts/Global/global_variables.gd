@@ -1,6 +1,6 @@
 extends Node
 
-var door_open = false
+var door_open = true
 
 func _unhandled_input(event):
 	if Input.is_action_just_pressed("esc_press"):

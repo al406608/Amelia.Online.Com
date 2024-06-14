@@ -584,7 +584,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_umayw")
 surface_material_override/1 = SubResource("StandardMaterial3D_6lbxd")
 
 [node name="Door" type="StaticBody3D" parent="AmeliaRoom" groups=["interaction"]]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 3.8)
+transform = Transform3D(0.961856, 0, -0.273556, 0, 1, 0, 0.273556, 0, 0.961856, 0, 0, 3.8)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AmeliaRoom/Door"]
 transform = Transform3D(1, 0, 9.9476e-14, 0, 1, 0, -9.9476e-14, 0, 1, -0.811517, 1.37935, -0.0093998)
@@ -601,7 +601,7 @@ title = "door"
 transform = Transform3D(1, 0, 1.77636e-15, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AmeliaRoom/Door/Area3D"]
-transform = Transform3D(1, 0, 5.57782e-13, 0, 1, 0, -5.57782e-13, 0, 1, -0.907835, 1.51667, 0.00280781)
+transform = Transform3D(1, 0, 5.57776e-13, 0, 1, 0, -5.57776e-13, 0, 1, -0.907835, 1.51667, 0.00280781)
 shape = SubResource("BoxShape3D_v7ms5")
 
 [node name="RootSceneLamps02" type="MeshInstance3D" parent="AmeliaRoom"]
@@ -1319,8 +1319,8 @@ transform = Transform3D(-3.82658e-08, 0, -1, 0, 0.618083, 0, 0.875419, 0, -4.371
 mesh = ExtResource("47_ogy4s")
 skeleton = NodePath("../..")
 
-[node name="ScreenTransfer" parent="Kitchen/Door6" instance=ExtResource("46_spxhv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.799617, 0.749854, -0.497352)
+[node name="ScreenTransfer" parent="Kitchen" instance=ExtResource("46_spxhv")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.23903, -0.165467, 3.0511)
 scene_to_change = "res://Scenes/World/City.tscn"
 
 [node name="RootSceneStoveDoor" type="MeshInstance3D" parent="Kitchen"]
@@ -1392,7 +1392,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00177002, 0.0187683, 0)
 shape = SubResource("BoxShape3D_r7qd0")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mouse"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = ExtResource("53_np5l8")
 skeleton = NodePath("../..")
 

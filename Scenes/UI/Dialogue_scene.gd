@@ -2,7 +2,7 @@ extends Control
 
 var text_shown = false
 
-func show_text(dialogue : String, title : String = ""):
+func interaction_action(dialogue : String, title : String = ""):
 	$TipLabel.hide()
 	$DialogueWindow.show()
 	$DialogueWindow/CenterContainer/Label.text = dialogue

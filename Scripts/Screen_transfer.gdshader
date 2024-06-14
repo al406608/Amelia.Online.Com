@@ -1,119 +1,45 @@
 shader_type spatial;
-render_mode shadows_disabled, specular_disabled, ambient_light_disabled, unshaded;
+render_mode unshaded;
 
+uniform sampler2D texture_image;
 
-group_uniforms Shield_Color;
-uniform vec3 _shield_color : source_color = vec3(0.0, 0.0, 1.0);
-uniform float _shield_color_brightness : hint_range(0.25, 20.0, 0.05) = 10.0;
-uniform float _shield_intensity : hint_range(0.25, 5.0, 0.05) = 2.0;
+uniform mediump vec4 line_color : source_color = vec4(0.0, 1.0, 0.0, 1.0);
+uniform mediump float line_width : hint_range(0, 1) = 0.005;
+uniform mediump float line_blur : hint_range(0, 1) = 0.2;
+uniform mediump float line_speed : hint_range(-1, 1) = 0.02;
+uniform  bool straight_lines = true;
 
-group_uniforms Shield_Transform;
-uniform vec3 _rotation = vec3(0.1, 0.0, 0.0);
-uniform float _shield_size : hint_range(0.0, 0.5, 0.01) = 0.0;
+uniform mediump float interrupt_width : hint_range(0, 1) = 0.5;
+uniform mediump float interrupt_blur : hint_range(0, 1) = 0.25;
+uniform mediump float interrupt_speed : hint_range(-1, 1) = 0.2;
 
-group_uniforms Shield_Pulse;
-uniform float _shield_pulse_frequency = 1.0;
-uniform float _shield_pulse_density = 1.0;
-uniform float _shield_pulse_amplitude = 1.0;
-uniform float _shield_pulse_blend = 1.0;
-uniform float _shield_pulse_radius = 1.0;
+uniform mediump vec4 glow_color : source_color = vec4(0.5, 0.75, 1.0, 1.0);
+uniform lowp float glow_itensity : hint_range(0, 20) = 4.5;
+uniform lowp float glow_amount : hint_range(0, 20) = 4.5;
+uniform lowp float flickering : hint_range(0, 1) = 0.55;
 
-group_uniforms Impact_Shape;
-uniform vec3 _impact_origin = vec3(1.0, 0.0, 0.0);
-uniform float _impact_frequency = 5.0;
-uniform float _impact_density = 5.0;
-uniform float _impact_amplitude = 6.0;
-uniform float _impact_blend = 0;
-uniform float _impact_radius = 1.1;
-uniform float _impact_anim = 0.0;
-
-// === IMPACT ===
-
-float _GetRippleOrigin(vec3 vert, vec3 orig) {
-	// distance of each vertex from the origin
-	return length(orig - vert);
+vec3 fresnel_glow(float amount, float intensity, vec3 color, vec3 normal, vec3 view) {
+	return pow((1.0 - dot(normalize(normal), normalize(view))), amount) * color * intensity;
 }
 
-float _FadeRipple(float orig, float blend, float radius) {
-	// create a radius 
-	float b = clamp(blend, 0.0, radius);
-	return smoothstep(b, -radius, orig);
-}
-
-float _ComputeRipple(vec3 vert, vec3 orig, float blend, float radius, float freq, float dens, float ampl, float anim) {
-	// calculate the intensity of the impact
-	float o = _GetRippleOrigin(vert, orig);
-	float i = sin(anim * freq - o * dens) / ampl;
-	return i * _FadeRipple(o, blend, radius);
-}
-
-// === SHIELD ===
-
-float saturate(float x) {
-  return max(0, min(1, x));
-}
-
-float ComputeFresnel(vec3 norm, vec3 view_dir, float intensity) {
-	// dot product between mesh normals and view direction
-	float fresnel = saturate(1.0 - dot(norm, view_dir));
-	// modulate fresnel intensity
-	fresnel = pow(fresnel, intensity);
-	return fresnel;
-}
-
-vec3 Rotate(vec3 vert, vec3 speed) {
-	// build the 3 rotation matrices
-	speed = speed * TIME * 5.0;
+void fragment () {
+	vec2 canvas;
+	if (straight_lines) {
+			canvas = SCREEN_UV;
+	} else {
+		canvas = vec2(VIEW.x, VIEW.y);
+	}
+	vec2 lines = vec2(clamp(sin((TIME * line_speed + canvas.y) / line_width), line_blur, 1.0 - line_blur), canvas.x);
+	vec2 interupts = vec2(clamp(sin((TIME * interrupt_speed + canvas.y) / interrupt_width * 3.0), interrupt_blur, 1.0 - interrupt_blur), canvas.x);
 	
-	mat4 xrot = mat4(
-		vec4(1.0, 0.0, 0.0, 0.0),
-		vec4(0.0, cos(speed.x), -sin(speed.x), 0.0),
-		vec4(0.0, sin(speed.x), cos(speed.x), 0.0),
-		vec4(0.0, 0.0, 0.0, 1.0));
+	float flicker = clamp(fract(cos(TIME) * 43758.5453123), flickering, 1.0);
+	vec4 imgtex = flicker * line_color * texture(texture_image, lines * interupts);
+	vec3 imgtex_color = vec3(imgtex.r, imgtex.g, imgtex.b);
+	vec3 fresnel_color = vec3(glow_color.r, glow_color.g, glow_color.b);
+	vec3 fresnel = fresnel_glow(glow_amount, glow_itensity, fresnel_color, NORMAL, VIEW);
+	ALBEDO = imgtex_color + fresnel;
 	
-	mat4 yrot = mat4(
-		vec4(cos(speed.y), 0.0, -sin(speed.y), 0.0),
-		vec4(0.0, 1.0, 0.0, 0.0),
-		vec4(sin(speed.y), 0.0, cos(speed.y), 0.0),
-		vec4(0.0, 0.0, 0.0, 1.0));
-	
-	mat4 zrot = mat4(
-		vec4(cos(speed.z), -sin(speed.z), 0.0, 0.0),
-		vec4(sin(speed.z), cos(speed.z), 0.0, 0.0),
-		vec4(0.0, 0.0, 1.0, 0.0),
-		vec4(0.0, 0.0, 0.0, 1.0));
-		
-	return (xrot * yrot * zrot * vec4(vert, 1.0)).xyz;
-}
-
-void vertex() {
-	// rotate VERTICES in local space
-	VERTEX = Rotate(VERTEX, _rotation);
-	// ...and relative NORMALS for the fresnel effect to work
-	NORMAL = Rotate(NORMAL, _rotation);
-	
-	// Local to World conversion to add impact ripple
-	vec3 w_pos = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
-	
-	// normalize impact origin vector
-	vec3 imp_or = normalize(_impact_origin);
-	
-	float impact_ripple = _ComputeRipple(w_pos, 
-		_impact_origin, 
-		_impact_blend,
-		_impact_radius, 
-		_impact_frequency, 
-		_impact_density, 
-		_impact_amplitude,
-		_impact_anim);
-	
-	VERTEX += NORMAL * (impact_ripple + _shield_size);
-}
-
-void fragment() {
-        // add fresnel
-	float f = ComputeFresnel(NORMAL, VIEW, _shield_intensity);
-	// set color and alpha
-	ALBEDO = f * _shield_color_brightness * _shield_color;
-	ALPHA *= f;
+	//ALBEDO = vec3(imgtex.r, imgtex.g, imgtex.b);
+	EMISSION = glow_amount * vec3(glow_color.r, glow_color.g, glow_color.b);
+	ALPHA = lines.x * interupts.x;
 }

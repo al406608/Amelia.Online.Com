@@ -10,7 +10,7 @@ panorama = ExtResource("3_c877m")
 [sub_resource type="Sky" id="Sky_cqikp"]
 sky_material = SubResource("PanoramaSkyMaterial_dgv8r")
 
-[sub_resource type="Environment" id="Environment_xbc4g"]
+[sub_resource type="Environment" id="Environment_61ylc"]
 background_mode = 2
 sky = SubResource("Sky_cqikp")
 ambient_light_source = 3
@@ -28,4 +28,4 @@ transform = Transform3D(1.20182, 0, 0, 0, 1.20182, 0, 0, 0, 1.20182, 0, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.55023, 0, -13.0754)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_xbc4g")
+environment = SubResource("Environment_61ylc")

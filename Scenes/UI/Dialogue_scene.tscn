@@ -201,7 +201,7 @@ sprite_frames = SubResource("SpriteFrames_1jrkg")
 autoplay = "default"
 frame_progress = 0.513259
 
-[node name="Label3" type="Label" parent="TipLabel/CenterContainer/HBoxContainer"]
+[node name="Description" type="Label" parent="TipLabel/CenterContainer/HBoxContainer"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 text = " to interact with"
