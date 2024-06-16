@@ -12,19 +12,18 @@ func _unhandled_key_input(_event):
 		on_object_interaction()
 
 func on_object_lost_focus():
+	hovered = false
 	if(dialogue_instance != null):
 		dialogue_instance.queue_free()
 		
 	
 func on_object_hovered():
+	hovered = true
 	if(dialogue_instance == null):
 		dialogue_instance = dialogue_prefab.instantiate()
 		add_child(dialogue_instance)
-		dialogue_instance.show_tip(title)
+		dialogue_instance.setup(dialogue,title)
 
 func on_object_interaction():
 	if dialogue_instance != null:
-			if !dialogue_instance.text_shown:
-				dialogue_instance.show_text(dialogue,title)
-			else:
-				dialogue_instance.queue_free()
+			dialogue_instance.show_text()

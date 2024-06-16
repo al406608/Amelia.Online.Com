@@ -2,12 +2,14 @@ extends Control
 
 var text_shown = false
 
-func interaction_action(dialogue : String, title : String = ""):
-	$TipLabel.hide()
-	$DialogueWindow.show()
-	$DialogueWindow/CenterContainer/Label.text = dialogue
+func setup(dialogue : String,title : String = ""):
+	$TipLabel/CenterContainer/HBoxContainer/Object.text = title
 	$DialogueWindow/Title.text = title
-	text_shown = true
+	$DialogueWindow/CenterContainer/Label.text = dialogue
+	show()
 
-func show_tip(item : String ):
-	$TipLabel/CenterContainer/HBoxContainer/Object.text = item
+func show_text():
+	text_shown = !text_shown
+	$TipLabel.visible = !text_shown
+	$DialogueWindow.visible = text_shown
+		

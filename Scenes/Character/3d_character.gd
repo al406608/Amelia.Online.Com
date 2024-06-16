@@ -85,38 +85,34 @@ func camera_raycast():
 	query.collide_with_bodies = true
 	var result = space_state.intersect_ray(query)
 	if !result.is_empty() :
-		#print(result["collider"].name)
 		colliding = true
 		if crosshair != null:
 			if result.collider.is_in_group("interaction"):
 				crosshair.inspect_element(true)
 				if(result.collider != inspected_object):
+					if(inspected_object != null):
+						inspected_object.on_object_lost_focus()
 					inspected_object = result.collider
-					if inspected_object.is_in_group("grab"):
-						inspected_object.in_reach = true
-					else:
-						interactuable_component = inspected_object.get_node("InteractuableComponent")
-						if interactuable_component != null:
-							interactuable_component.show_object_label()
-							#if(Input.is_action_just_pressed("e_key_press")):
-								#interactuable_component.show_text()
+					inspected_object.on_object_hovered()
 			else:
 				crosshair.inspect_element(false)
-				if interactuable_component != null:
-					interactuable_component.hide_object_label()
 				if inspected_object != null:
-					if inspected_object.is_in_group("grab"):
-							inspected_object.in_reach = false
-				interactuable_component = null
+					inspected_object.on_object_lost_focus()
+					#interactuable_component.hide_object_label()
+				#if inspected_object != null:
+					#if inspected_object.is_in_group("grab"):
+							#inspected_object.in_reach = false
+				#interactuable_component = null
 				inspected_object = null
 	else:
 		colliding = false
 		if crosshair != null:
 			crosshair.inspect_element(false)
-		if interactuable_component != null:
-			interactuable_component.hide_object_label()
 		if inspected_object != null:
-			if inspected_object.is_in_group("grab"):
-				inspected_object.in_reach = false
-		interactuable_component = null
-		inspected_object = null
+			inspected_object.on_object_lost_focus()
+			inspected_object = null
+		#if inspected_object != null:
+			#if inspected_object.is_in_group("grab"):
+				#inspected_object.in_reach = false
+		#interactuable_component = null
+		
