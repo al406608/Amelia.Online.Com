@@ -1,0 +1,149 @@
+[gd_scene load_steps=12 format=3 uid="uid://cq5eyxs6g7gdh"]
+
+[ext_resource type="PackedScene" uid="uid://bd6lcbmchs54v" path="res://Scenes/UI/window_dialogue.tscn" id="1_p7i32"]
+[ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="2_n8ja1"]
+[ext_resource type="Texture2D" uid="uid://b57hoxtfa63ye" path="res://Assets/UI/RetroWindowsGUI/Windows_Inner_Frame.png" id="3_lbyvk"]
+[ext_resource type="Texture2D" uid="uid://y3dpr012b7o5" path="res://Assets/UI/SimpleKeys/SimpleKeys/Jumbo/Light/Spritesheets/E.png" id="4_tx36y"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y5gti"]
+font = ExtResource("2_n8ja1")
+font_size = 15
+shadow_size = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_hiemg"]
+font = ExtResource("2_n8ja1")
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_obakk"]
+font = ExtResource("2_n8ja1")
+font_size = 25
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f3usi"]
+atlas = ExtResource("4_tx36y")
+region = Rect2(0, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujdul"]
+atlas = ExtResource("4_tx36y")
+region = Rect2(19, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5287m"]
+atlas = ExtResource("4_tx36y")
+region = Rect2(38, 0, 19, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1jrkg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f3usi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujdul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5287m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="DialogueWindow" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="NinePatchRect" parent="VBoxContainer/CenterContainer" instance=ExtResource("1_p7i32")]
+custom_minimum_size = Vector2(800, 200)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Title" type="Label" parent="VBoxContainer/CenterContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Placeholder title"
+label_settings = SubResource("LabelSettings_y5gti")
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="VBoxContainer/CenterContainer/VBoxContainer/CenterContainer"]
+custom_minimum_size = Vector2(780, 160)
+layout_mode = 2
+texture = ExtResource("3_lbyvk")
+draw_center = false
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="Label" type="Label" parent="VBoxContainer/CenterContainer/VBoxContainer/CenterContainer"]
+custom_minimum_size = Vector2(780, 0)
+layout_mode = 2
+text = "Placeholder text"
+label_settings = SubResource("LabelSettings_hiemg")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Press"
+label_settings = SubResource("LabelSettings_obakk")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+expand_mode = 4
+stretch_mode = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="VBoxContainer/HBoxContainer/TextureRect"]
+position = Vector2(12.5, 17)
+scale = Vector2(2.02632, 2.02632)
+sprite_frames = SubResource("SpriteFrames_1jrkg")
+autoplay = "default"
+frame_progress = 0.513259
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "to close the text"
+label_settings = SubResource("LabelSettings_obakk")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2

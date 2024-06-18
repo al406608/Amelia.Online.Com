@@ -1,20 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://bj2vognd6hpgc"]
+[gd_scene load_steps=10 format=3 uid="uid://bj2vognd6hpgc"]
 
 [ext_resource type="Script" path="res://Scenes/UI/Dialogue_scene.gd" id="1_lxleo"]
-[ext_resource type="PackedScene" uid="uid://bd6lcbmchs54v" path="res://Scenes/UI/window_dialogue.tscn" id="2_1xaxm"]
+[ext_resource type="PackedScene" uid="uid://cq5eyxs6g7gdh" path="res://Scenes/UI/dialogue_window.tscn" id="2_tpern"]
 [ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="3_g3iyv"]
-[ext_resource type="Texture2D" uid="uid://b57hoxtfa63ye" path="res://Assets/UI/RetroWindowsGUI/Windows_Inner_Frame.png" id="4_02ykc"]
 [ext_resource type="Texture2D" uid="uid://y3dpr012b7o5" path="res://Assets/UI/SimpleKeys/SimpleKeys/Jumbo/Light/Spritesheets/E.png" id="5_tc0cs"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_hiemg"]
-font = ExtResource("3_g3iyv")
-font_size = 25
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_y5gti"]
-font = ExtResource("3_g3iyv")
-font_size = 15
-shadow_size = 0
 
 [sub_resource type="LabelSettings" id="LabelSettings_obakk"]
 font = ExtResource("3_g3iyv")
@@ -57,109 +46,17 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -615.5
-offset_top = -408.0
-offset_right = 615.5
-offset_bottom = -112.0
+offset_left = -615.0
+offset_top = -299.0
+offset_right = 616.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("1_lxleo")
 
-[node name="DialogueWindow" type="Control" parent="."]
+[node name="DialogueWindow" parent="." instance=ExtResource("2_tpern")]
 visible = false
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="CenterContainer" type="CenterContainer" parent="DialogueWindow"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="NinePatchRect" parent="DialogueWindow/CenterContainer" instance=ExtResource("2_1xaxm")]
-custom_minimum_size = Vector2(800, 200)
-layout_mode = 2
-
-[node name="Label" type="Label" parent="DialogueWindow/CenterContainer"]
-custom_minimum_size = Vector2(780, 0)
-layout_mode = 2
-text = "Placeholder text"
-label_settings = SubResource("LabelSettings_hiemg")
-horizontal_alignment = 1
-autowrap_mode = 3
-
-[node name="NinePatchRect2" type="NinePatchRect" parent="DialogueWindow"]
-custom_minimum_size = Vector2(780, 160)
-layout_mode = 2
-offset_left = 225.5
-offset_top = 78.0
-offset_right = 1005.5
-offset_bottom = 238.0
-texture = ExtResource("4_02ykc")
-draw_center = false
-patch_margin_left = 4
-patch_margin_top = 4
-patch_margin_right = 4
-patch_margin_bottom = 4
-axis_stretch_horizontal = 1
-axis_stretch_vertical = 1
-
-[node name="Title" type="Label" parent="DialogueWindow"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.186
-anchor_top = 0.193
-anchor_right = 0.186
-anchor_bottom = 0.193
-offset_left = -3.466
-offset_top = -6.12802
-offset_right = 123.534
-offset_bottom = 17.872
-text = "Placeholder title"
-label_settings = SubResource("LabelSettings_y5gti")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="DialogueWindow"]
-layout_mode = 0
-offset_left = 401.5
-offset_top = 256.0
-offset_right = 878.5
-offset_bottom = 294.0
-alignment = 1
-
-[node name="Label2" type="Label" parent="DialogueWindow/HBoxContainer"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-text = "Press"
-label_settings = SubResource("LabelSettings_obakk")
-horizontal_alignment = 1
-autowrap_mode = 3
-
-[node name="TextureRect" type="TextureRect" parent="DialogueWindow/HBoxContainer"]
-custom_minimum_size = Vector2(40, 0)
-layout_mode = 2
-expand_mode = 4
-stretch_mode = 4
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="DialogueWindow/HBoxContainer/TextureRect"]
-position = Vector2(17.5, 17)
-scale = Vector2(2.02632, 2.02632)
-sprite_frames = SubResource("SpriteFrames_1jrkg")
-autoplay = "default"
-frame_progress = 0.513259
-
-[node name="Label3" type="Label" parent="DialogueWindow/HBoxContainer"]
-custom_minimum_size = Vector2(200, 0)
-layout_mode = 2
-text = "to close the text"
-label_settings = SubResource("LabelSettings_obakk")
-horizontal_alignment = 1
-autowrap_mode = 3
 
 [node name="TipLabel" type="Control" parent="."]
 layout_mode = 1
@@ -216,3 +113,5 @@ text = "default"
 label_settings = SubResource("LabelSettings_obakk")
 horizontal_alignment = 1
 autowrap_mode = 3
+
+[editable path="DialogueWindow"]

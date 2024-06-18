@@ -21,3 +21,5 @@ func screen_transfer_animation(self_node,node_to_change):
 	await ui_transfer_instance.transmision_finished
 	change_node(self_node,node_to_change)
 
+func show_text_popup():
+	pass

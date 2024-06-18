@@ -98,11 +98,6 @@ func camera_raycast():
 				crosshair.inspect_element(false)
 				if inspected_object != null:
 					inspected_object.on_object_lost_focus()
-					#interactuable_component.hide_object_label()
-				#if inspected_object != null:
-					#if inspected_object.is_in_group("grab"):
-							#inspected_object.in_reach = false
-				#interactuable_component = null
 				inspected_object = null
 	else:
 		colliding = false
@@ -111,8 +106,4 @@ func camera_raycast():
 		if inspected_object != null:
 			inspected_object.on_object_lost_focus()
 			inspected_object = null
-		#if inspected_object != null:
-			#if inspected_object.is_in_group("grab"):
-				#inspected_object.in_reach = false
-		#interactuable_component = null
 		
