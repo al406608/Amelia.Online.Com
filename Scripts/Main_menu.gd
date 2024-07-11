@@ -9,16 +9,17 @@ var start_dialogue : PackedStringArray = PackedStringArray(["Amelia, ready to st
 @onready var initial_scene = preload("res://Scenes/World/Amelia_House.tscn")
 # Called when the node enters the scene tree for the first time.
 
-func start_game(self_node):
+func start_game():
 	if(game_controller != null):
 		var start_scene = game_controller.dialogue_scene.instantiate()
-		var string_array = PackedStringArray(["hello", "world"])
 		start_scene.dialogue = start_dialogue
 		start_scene.scene_to_change = initial_scene
-		game_controller.screen_transfer_animation(self_node,start_scene)
+		game_controller.actual_node = self
+		game_controller.screen_transfer_animation(start_scene)
+		
 
 func _on_start_button_button_down():
-	start_game(self)
+	start_game()
 
 func _on_settings_button_button_down():
 	pass # Replace with function body.

@@ -137,9 +137,9 @@ autoplay = "default"
 frame_progress = 0.513259
 
 [node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(200, 0)
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
-text = "to close the text"
+text = "to continue"
 label_settings = SubResource("LabelSettings_obakk")
 horizontal_alignment = 1
 autowrap_mode = 3

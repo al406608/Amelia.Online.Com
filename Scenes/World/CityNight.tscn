@@ -1,0 +1,138 @@
+[gd_scene load_steps=20 format=3 uid="uid://bhy5s2h5btejf"]
+
+[ext_resource type="PackedScene" uid="uid://rnfp70oxcxdc" path="res://Assets/3D/City/Bus_stop/Model_city.tscn" id="1_80jfr"]
+[ext_resource type="Environment" uid="uid://ctcl1i8k44tou" path="res://Scenes/World/night.tres" id="2_pgt18"]
+[ext_resource type="PackedScene" uid="uid://c7pls48a251gk" path="res://Scenes/Character/3d_character.tscn" id="3_mi450"]
+[ext_resource type="ArrayMesh" uid="uid://50y4poi62vm" path="res://Assets/3D/City/PSX_Style_Cars_by_GGBot_(August2023)/Car 06/Car6.obj" id="4_iyk0l"]
+[ext_resource type="ArrayMesh" uid="uid://dqrjv7ki4sqcy" path="res://Assets/3D/City/PSX_Style_Cars_by_GGBot_(August2023)/Car 02/Car2.obj" id="5_xufpc"]
+[ext_resource type="ArrayMesh" uid="uid://c2qsajh6j4c3e" path="res://Assets/3D/City/PSX_Style_Cars_by_GGBot_(August2023)/Car 01/Car.obj" id="6_wfd6q"]
+[ext_resource type="ArrayMesh" uid="uid://bpdp8f5bfp3ih" path="res://Assets/3D/City/PSX_Style_Cars_by_GGBot_(August2023)/Car 04/Car4.obj" id="7_7aq6d"]
+[ext_resource type="Script" path="res://Scripts/interaction_object_base.gd" id="9_1lrj0"]
+[ext_resource type="PackedScene" uid="uid://kn14uohlfce8" path="res://Assets/3D/All/cone.fbx" id="10_pfdu3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m1peb"]
+size = Vector3(428.847, 3.69641, 257.845)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_676dl"]
+size = Vector3(129.658, 8.52539, 1.72266)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tg5i6"]
+size = Vector3(31.9847, 8.52539, 1.72266)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jxbr0"]
+size = Vector3(129.343, 8.52539, 1.72266)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e6qd6"]
+size = Vector3(42.9633, 8.52539, 1.72266)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vo11i"]
+size = Vector3(48.4309, 8.52539, 2.47314)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ae7yv"]
+size = Vector3(27.2856, 8.52539, 2.47314)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8iucq"]
+points = PackedVector3Array(-1.17073, 1.04151, -2.08158, 1.22158, 0.858082, 1.31896, 1.23284, 0.671769, 1.33108, -1.08848, 0.858082, 3.05491, -1.1897, -0.0504754, -2.49543, 1.1321, 1.26167, -2.69713, 1.06303, 0.0060439, 2.86658, 1.23307, -0.0504754, -2.49543, -0.697307, 1.6673, 0.296645, -1.0268, 0, 2.88671, 1.03113, 0.858082, 3.05491, 0.740902, 1.6673, 0.296644, -1.03933, 1.05103, -3.05937, -0.698056, 1.66815, -1.14234, 1.07581, 0.187399, -3.03861, -1.29068, 1.05996, 0.632562, -1.29068, 0.454318, 2.34863, -1.05577, 0.172397, -3.10719, 1.33405, 0.555526, -2.09202, 1.23307, 0.0505545, 2.55033, 0.741657, 1.66815, -1.14235, -1.29068, 0.252436, -2.39489, -0.0748452, 0.276109, 3.131, -0.987507, 1.56458, -0.174254, 1.1321, 1.3627, -1.38511, 1.05383, 1.04573, -2.97468, 0.223369, 0.858082, 3.15608, 1.1321, 0.958756, 2.4498, -1.1897, 1.26167, -1.48628, -1.11327, 0.00685444, 2.58011, 0.212164, 1.11022e-16, 2.98226, 0.508203, 0.468783, 3.14153)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_36s7q"]
+points = PackedVector3Array(-1.1392, 1.25707, 1.32663, 1.37963, 1.57148, 1.45657, 1.37963, 1.27873, 1.45657, 0.7623, 0.521056, -2.99696, -0.899157, 2.08737, -2.01964, -1.08747, -0.022624, 2.19862, -1.15843, 0.400236, -2.93521, 1.1177, -0.0212866, 2.19583, -1.0609, 1.27873, 3.01916, 0.907143, 2.05833, -1.9641, 1.11335, -0.0169431, -1.56129, -0.896836, 2.08483, 0.813915, 0.989002, 1.27873, 3.01916, 0.928921, 2.0847, 0.813807, -1.08281, -0.0183332, -1.56334, 1.18432, 0.498041, -2.93521, 0.5747, 0.428517, 2.97778, -1.01762, 0.894027, -2.91639, 1.03578, 1.08114, -2.79018, -0.984856, 0.443216, 2.81418, -1.15843, 1.27873, 2.92131, 1.18432, 1.27873, 2.82345, 0.929445, 1.90249, -2.19887, 1.12738, 0.0618694, 2.40182, -0.0716677, 2.05832, 0.971063, -0.910128, 1.9141, -2.22821, 1.18432, 0.400236, -2.83796, -1.05247, 1.52487, -1.07642, -1.09553, 0.0627263, 2.3997, -0.978934, 1.9848, 0.897303, 1.01559, 0.444158, 2.80969, -1.15108, 0.900061, -1.26423)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7quwi"]
+size = Vector3(0.787109, 1.47168, 0.027832)
+
+[node name="CityNight" type="Node3D"]
+
+[node name="Root Scene" parent="." instance=ExtResource("1_80jfr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.683161, 1.22462, -0.523613)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("2_pgt18")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.937974, -8.79487e-08, -0.346706, 0.124141, -0.933699, 0.33585, -0.323719, -0.358059, -0.875785, 0, 26, -24)
+light_color = Color(0.4, 0.239216, 0.141176, 1)
+light_bake_mode = 1
+shadow_enabled = true
+directional_shadow_mode = 0
+
+[node name="Walls" type="StaticBody3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.3784, 2.32456, -90.9613)
+shape = SubResource("BoxShape3D_m1peb")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.50226, 3.7627, -24.8574)
+shape = SubResource("BoxShape3D_676dl")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -59.1597, 3.7627, -40.1871)
+shape = SubResource("BoxShape3D_tg5i6")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38486, 3.7627, -56.46)
+shape = SubResource("BoxShape3D_jxbr0")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 92.6928, 3.7627, -51.872)
+shape = SubResource("BoxShape3D_e6qd6")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 114.318, 3.7627, -1.35983)
+shape = SubResource("BoxShape3D_vo11i")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Walls"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 105.831, 3.7627, -39.1291)
+shape = SubResource("BoxShape3D_ae7yv")
+
+[node name="3dCharacter" parent="." instance=ExtResource("3_mi450")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8545, 3.0517, -15.1772)
+
+[node name="AbandonedCar" type="StaticBody3D" parent="."]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 45.6177, 2.08638, 5.06917)
+
+[node name="Car6" type="MeshInstance3D" parent="AbandonedCar"]
+mesh = ExtResource("4_iyk0l")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AbandonedCar"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_8iucq")
+
+[node name="Car2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.997468, -0.0711145, 0, 0.0711145, 0.997468, 0, 0, 0, 1, 66.8878, 1.8274, -5.24273)
+mesh = ExtResource("5_xufpc")
+
+[node name="Mom\'s_car" type="StaticBody3D" parent="."]
+transform = Transform3D(-4.2222e-08, -1.13133e-08, 1, -0.123601, 0.992332, 6.00789e-09, -0.992332, -0.123601, -4.32965e-08, 18.5202, 1.90145, -15.3433)
+script = ExtResource("9_1lrj0")
+title = "Mom's car"
+dialogue = PackedStringArray("Mom took our essentials in the car.", "The moving truck still has to come with the rest.")
+
+[node name="Car" type="MeshInstance3D" parent="Mom\'s_car"]
+transform = Transform3D(1, 0, 0, 0, 1, -4.44089e-16, 3.55271e-15, 1.33227e-15, 1, 0, 0, 0)
+mesh = ExtResource("6_wfd6q")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mom\'s_car"]
+transform = Transform3D(1, 0, 0, 0, 1, -4.44089e-16, 3.55271e-15, 1.33227e-15, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_36s7q")
+
+[node name="Car4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.999986, 0.00525342, 0, -0.00525342, 0.999986, 0, 0, 0, 1, -4.65351, 2.08638, -33.7335)
+mesh = ExtResource("7_7aq6d")
+
+[node name="FakeScreenTransfer" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.9587, 1.53174, -24.7497)
+script = ExtResource("9_1lrj0")
+title = "Emi's house"
+dialogue = PackedStringArray("You ring the bell.", "*ding dong*", "Emi!... Emi are you home!?... Doesn\'t seems like.", "The lights are out, maybe she is dinning out with her family. I hope to see you tomorrow.", "Well, let\'s head back home....")
+description = "to ring the bell of"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FakeScreenTransfer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.106445, 1.19189, -0.400461)
+shape = SubResource("BoxShape3D_7quwi")
+
+[node name="Root Scene" parent="FakeScreenTransfer" instance=ExtResource("10_pfdu3")]
+transform = Transform3D(0.334582, 0, 0, 0, 0.617706, 0, 0, 0, 0.294823, 0, 0.674681, 0)

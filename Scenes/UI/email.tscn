@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgyieawbmi4ed"]
+
+[ext_resource type="PackedScene" uid="uid://bd6lcbmchs54v" path="res://Scenes/UI/window_dialogue.tscn" id="1_wwsto"]
+[ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="2_n2ndo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bkor5"]
+font = ExtResource("2_n2ndo")
+font_size = 15
+shadow_size = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_ig04l"]
+font = ExtResource("2_n2ndo")
+font_size = 27
+shadow_size = 0
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" parent="." instance=ExtResource("1_wwsto")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -255.0
+offset_right = 589.0
+offset_bottom = 255.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 4.0
+offset_right = 125.0
+offset_bottom = 27.0
+text = "Email"
+label_settings = SubResource("LabelSettings_bkor5")
+
+[node name="Title2" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 37.0
+offset_right = 629.0
+offset_bottom = 294.0
+text = "- \"Amelia.
+WelcOme to your new neurabrain device,
+we acknowledged a Primary use and your registration as a user.
+We would likE to inform you about its various uses, such as eNvironment recognition.
+if Desired, you can test it in real time anywhere.
+An oppOrtunity like no other,
+We hOpe you are enjoying your new acquisition.
+We remind you that prolonged use of neurobrain can affect your mental health.
+try to combine your sessions with healthy habits and physical exeRcise.
+Yours sincerely AlicIA C.O.\"-"
+label_settings = SubResource("LabelSettings_ig04l")

@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dj0sfm2ouv3cf"]
+[gd_scene load_steps=9 format=3 uid="uid://dj0sfm2ouv3cf"]
 
 [ext_resource type="PackedScene" uid="uid://dig8csr6jw0g3" path="res://Assets/3D/City/building-office-room-window/source/builidng_roomA-noCurtain.glb" id="1_chlhe"]
 [ext_resource type="PackedScene" uid="uid://mltt4yb8ha1u" path="res://Scenes/Character/secretary_animation.tscn" id="1_vf1pc"]
 [ext_resource type="Texture2D" uid="uid://dgx6h5k7kr1n0" path="res://Assets/3D/City/Bus_stop/Skybox/Skybox_01.png" id="3_c877m"]
+[ext_resource type="PackedScene" uid="uid://c7pls48a251gk" path="res://Scenes/Character/3d_character.tscn" id="4_jvd7q"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_dgv8r"]
 panorama = ExtResource("3_c877m")
@@ -15,6 +16,9 @@ background_mode = 2
 sky = SubResource("Sky_cqikp")
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ovar5"]
+size = Vector3(7.37305, 1, 9.90918)
 
 [node name="Office" type="Node3D"]
 
@@ -29,3 +33,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.55023, 0, -13.0754)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_61ylc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.84808, -0.484554, -1.16968)
+shape = SubResource("BoxShape3D_ovar5")
+
+[node name="3dCharacter" parent="." instance=ExtResource("4_jvd7q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.543123, 1.08393, -4.74461)

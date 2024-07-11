@@ -1,5 +1,6 @@
 [gd_scene load_steps=119 format=3 uid="uid://cq4kvldks0ykg"]
 
+[ext_resource type="Script" path="res://Scenes/World/Amelia_House.gd" id="1_xj83s"]
 [ext_resource type="ArrayMesh" uid="uid://c6wqur172raqc" path="res://Assets/3D/Rooms/modular_housepack/Root Scene_Plane_001.res" id="2_jlbsa"]
 [ext_resource type="ArrayMesh" uid="uid://caoux680waxbi" path="res://Assets/3D/Rooms/modular_housepack/Root Scene_Cube_004.res" id="3_dvdtv"]
 [ext_resource type="Texture2D" uid="uid://bkr0tptp1adyt" path="res://Materials/Base Materials 256x256/Wood/Mat_Wood_Blue_02-256x256.png" id="4_y2sar"]
@@ -53,16 +54,14 @@
 [ext_resource type="ArrayMesh" uid="uid://bv3ljjmsjxuo7" path="res://Assets/3D/All/Objects/Root Scene_Washbasin_03.res" id="49_40ht3"]
 [ext_resource type="ArrayMesh" uid="uid://04ueo6el6kgh" path="res://Assets/3D/Rooms/Objects_Interior(Village)_Demo/Objects/Root Scene_Wardrobe.res" id="49_ky7il"]
 [ext_resource type="ArrayMesh" uid="uid://3nj5u3yo76j5" path="res://Assets/3D/Rooms/Objects_Interior(Village)_Demo/Objects/Root Scene_Kitchen_01.res" id="50_2ge2y"]
-[ext_resource type="Script" path="res://Scripts/Grab_object.gd" id="53_kw6tj"]
 [ext_resource type="ArrayMesh" uid="uid://bm7j2phwdwll8" path="res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cube_041.res" id="53_np5l8"]
 [ext_resource type="PackedScene" uid="uid://c7pls48a251gk" path="res://Scenes/Character/3d_character.tscn" id="55_kjc6m"]
 [ext_resource type="ArrayMesh" uid="uid://bdqlvu7r0xeo1" path="res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Cylinder_002.res" id="55_oa8ut"]
+[ext_resource type="Script" path="res://Scenes/World/interaction_grab_object.gd" id="55_xbxdx"]
 [ext_resource type="ArrayMesh" uid="uid://yrkr21kvyx1j" path="res://Assets/3D/Rooms/LowPolyAssetPack_Free/Objects/LowPolyAssetPack_Free_Plane_030.res" id="56_7am15"]
-[ext_resource type="Script" path="res://Scripts/laptop_interact.gd" id="56_466o8"]
-[ext_resource type="Script" path="res://Scenes/World/inspect_object.gd" id="56_uprdw"]
-[ext_resource type="PackedScene" uid="uid://dvu01kab1ivhm" path="res://Assets/3D/Characters/psx-graphics-low-poly-woman-free-download/source/WOMAN 128 FINAL.blend" id="58_xj361"]
 [ext_resource type="ArrayMesh" uid="uid://cmkst4flk5big" path="res://Assets/3D/All/Objects/Root Scene_Book.res" id="60_18e2c"]
 [ext_resource type="ArrayMesh" uid="uid://dd7qqeafv5hrt" path="res://Assets/3D/All/Objects/Root Scene_Plants_05.res" id="61_utisy"]
+[ext_resource type="PackedScene" uid="uid://doi3kfnrr7r7f" path="res://Assets/3D/Characters/psx-graphics-low-poly-woman-free-download/ameliasmom.tscn" id="63_b4fs4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_726h5"]
 size = Vector3(8, 6, 0.1)
@@ -205,6 +204,9 @@ data = PackedVector3Array(-0.2095, 0.2189, -0.058, -0.2548, 0.2712, -0.058, -0.2
 [sub_resource type="BoxShape3D" id="BoxShape3D_qmie4"]
 size = Vector3(1.20026, 2.29633, 0.936584)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_iew7b"]
+size = Vector3(0.973633, 0.957764, 0.120361)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_rivd6"]
 size = Vector3(2.68164, 2.61328, 2.3689)
 
@@ -225,8 +227,9 @@ adjustment_enabled = true
 [sub_resource type="BoxShape3D" id="BoxShape3D_r7qd0"]
 size = Vector3(0.129517, 0.0403442, 0.0683594)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bk0ws"]
-points = PackedVector3Array(0.0818786, 0.09965, -0.0169332, -0.0136704, 0.201593, 0.0117354, 0.0534649, 0.0302241, 0.0349684, -0.0547274, 0.0367691, -0.0462107, -0.0549318, 0.0335431, 0.0347885, 0.0542675, 0.00465171, -0.0257029, -0.039148, 0.195206, -0.0233068, 0.0691238, 0.169721, -0.0233068, 0.056385, 0.055065, -0.0487929, 0.0755012, 0.160161, 0.0117354, -0.0558846, 0.00182522, 0.00184129, -0.0773962, 0.156988, 0.0117354, -0.0805929, 0.144215, -0.0233068, 0.056385, 0.055065, 0.0372214, 0.0634682, 0.0107466, 0.0141382, -0.0582642, 0.055065, 0.0372214, 0.0277108, 0.1984, -0.0233068, -0.0550834, 0.055065, -0.0487929, -0.0710189, 0.0231929, 0.0117354, -0.0614494, 0.014821, -0.0315311, 0.0500077, 0.18884, 0.0117354, 0.0818786, 0.106016, 0.0117354, -0.0525874, 0.00837357, 0.0200788, 0.053269, 0.024471, -0.0433761, -0.0805929, 0.0869171, -0.0169332, 0.0541635, 0.00177007, 0.00797326, -0.0550834, 0.185647, 0.0117354, 0.0818786, 0.141062, -0.0233068, 0.0632612, 0.0202087, -0.0348099, -0.0805929, 0.106016, 0.0117354, -0.0678381, 0.172914, -0.0233068, -0.0526549, 0.0112928, -0.0347269)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kcmag"]
+radius = 0.0834379
+height = 0.225077
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7i1yu"]
 points = PackedVector3Array(-0.200437, 0.233918, 0.0323893, -0.196595, 0.0429336, -0.2496, -0.157605, 0.0429336, -0.2496, -0.157605, 0.386066, -0.2496, -0.157605, 0.0429336, 0.2496, -0.157605, 0.386066, 0.2496, -0.196595, 0.0429336, 0.2496, -0.196595, 0.37824, -0.2496, -0.196595, 0.37824, 0.2496, -0.2005, 0.169017, -0.0389687, -0.2005, 0.15603, 0, -0.2005, 0.220994, -0.0454838, -0.2005, 0.188526, 0.0389687, -0.2005, 0.233981, -0.0389687)
@@ -241,6 +244,8 @@ data = PackedVector3Array(0.9671, 1.3055, 0.3131, 0.9671, -1.3055, 0.3131, -0.96
 radius = 1.5373
 
 [node name="AmeliaHouse" type="Node3D"]
+process_mode = 1
+script = ExtResource("1_xj83s")
 
 [node name="AmeliaRoom" type="Node3D" parent="."]
 
@@ -478,7 +483,7 @@ shape = SubResource("BoxShape3D_yte7o")
 transform = Transform3D(-1, 8.74228e-08, 5.2108e-15, 0, -5.96046e-08, 1, 8.74228e-08, 1, 5.96046e-08, 7, 0.7, 1.7)
 script = ExtResource("22_jilhx")
 title = "Bed"
-dialogue = "My bed, I still haven't gotten used to it"
+dialogue = PackedStringArray("My bed, I still haven\'t gotten used to it")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AmeliaRoom/Paredes/Bed"]
 shape = SubResource("ConcavePolygonShape3D_5uy6a")
@@ -542,7 +547,7 @@ shape = SubResource("CylinderShape3D_ogu6g")
 transform = Transform3D(0.6, 0, 0, 0, -2.62268e-08, 0.6, 0, -0.6, -2.62268e-08, 3.82716, 2.1, 5.80808)
 script = ExtResource("22_jilhx")
 title = "Painting"
-dialogue = "I don't really like this painting, it's not my style"
+dialogue = PackedStringArray("I don\'t really like this painting, it\'s not my style")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AmeliaRoom/Painting"]
 transform = Transform3D(1, 0, 0, 0, 1, -3.55271e-15, 0, 3.55271e-15, 1, 0, 0, 0)
@@ -665,7 +670,7 @@ omni_range = 2.0
 transform = Transform3D(0.25, 0, 0, 0, -1.09278e-08, 0.25, 0, -0.25, -1.09278e-08, 0.7, 0.3, 0.5)
 script = ExtResource("22_jilhx")
 title = "Plant"
-dialogue = "It's one of the plants of my room, It keeps me company"
+dialogue = PackedStringArray("It\'s one of the plants of my room, It keeps me company")
 
 [node name="Collider" type="CollisionShape3D" parent="AmeliaRoom/Plant"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.000825882, 0.0152674, 1.87457)
@@ -706,7 +711,7 @@ omni_range = 3.7
 transform = Transform3D(-6.03217e-08, 1.38, 0, 6.03217e-08, 0, 1.38, 1.38, 6.03217e-08, -6.03217e-08, 7.5247, 1.34, 4.74721)
 script = ExtResource("22_jilhx")
 title = "Wardrobe"
-dialogue = "I still have to store some clothes"
+dialogue = PackedStringArray("I still have to store some clothes")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AmeliaRoom/Wardrobe"]
 transform = Transform3D(0.999981, -7.0699e-13, -3.16192e-13, 7.0699e-13, 0.999981, -4.70103e-20, -7.0699e-13, -3.70577e-20, 0.999981, -0.00717187, 0.127564, 0.0504456)
@@ -1226,15 +1231,19 @@ material_override = ExtResource("35_wonvp")
 mesh = ExtResource("36_b1vb2")
 skeleton = NodePath("../..")
 
-[node name="RootSceneBroom" type="MeshInstance3D" parent="Kitchen"]
+[node name="Broom" type="StaticBody3D" parent="Kitchen"]
 transform = Transform3D(-4.2222e-08, 0.965926, 0.258819, 1.13133e-08, -0.258819, 0.965926, 1, 4.37114e-08, 1.91069e-15, -4.4, 0.8, 4)
-mesh = ExtResource("38_a1w6r")
-skeleton = NodePath("../..")
+script = ExtResource("22_jilhx")
+title = "broom"
+dialogue = PackedStringArray("With all the fuss from the moving, some sweeping is necessary")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Kitchen/RootSceneBroom"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/RootSceneBroom/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Broom"]
 shape = SubResource("ConcavePolygonShape3D_dv0lu")
+
+[node name="RootSceneBroom" type="MeshInstance3D" parent="Kitchen/Broom"]
+transform = Transform3D(1, 0, -7.53845e-16, 3.55271e-15, 1, 8.3519e-23, -1.69407e-20, 2.01882e-21, 1, 0, 0, 0)
+mesh = ExtResource("38_a1w6r")
+skeleton = NodePath("../../..")
 
 [node name="RootSceneBathroomCabinet" type="MeshInstance3D" parent="Kitchen"]
 transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -4.23936, 1.7, 1.6)
@@ -1333,8 +1342,7 @@ mesh = ExtResource("47_ogy4s")
 skeleton = NodePath("../..")
 
 [node name="ScreenTransfer" parent="Kitchen" instance=ExtResource("46_spxhv")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.23903, -0.165467, 3.0511)
-scene_to_change = "res://Scenes/World/City.tscn"
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -9.23903, -0.165467, 3.0511)
 
 [node name="RootSceneStoveDoor" type="MeshInstance3D" parent="Kitchen"]
 transform = Transform3D(0.456, 0, 0, 0, -1.99324e-08, 0.456, 0, -0.456, -1.99324e-08, -5.89955, 0.388624, 1.0259)
@@ -1368,10 +1376,19 @@ transform = Transform3D(-3.02634e-08, -0.692346, -3.02634e-08, 0, -3.02634e-08, 
 mesh = ExtResource("46_f3c8d")
 skeleton = NodePath("../..")
 
-[node name="RootSceneBoxPizza001" type="MeshInstance3D" parent="Kitchen"]
+[node name="Pizzabox" type="StaticBody3D" parent="Kitchen"]
 transform = Transform3D(0.65, 0, 0, 0, -2.84124e-08, 0.65, 0, -0.65, -2.84124e-08, -4.90677, 1.25945, 5.13031)
+script = ExtResource("22_jilhx")
+title = "pizza"
+dialogue = PackedStringArray("I guess this is our dinner...")
+
+[node name="RootSceneBoxPizza001" type="MeshInstance3D" parent="Kitchen/Pizzabox"]
 mesh = ExtResource("48_wnvas")
-skeleton = NodePath("../..")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Pizzabox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0434575, -0.00598097, -0.124878)
+shape = SubResource("BoxShape3D_iew7b")
 
 [node name="RootSceneGadgets" type="MeshInstance3D" parent="Kitchen"]
 transform = Transform3D(0.5075, 0, 0, 0, -2.21835e-08, 0.5075, 0, -0.5075, -2.21835e-08, -5.89542, 2.20908, 0.206525)
@@ -1398,7 +1415,8 @@ environment = SubResource("Environment_sva37")
 
 [node name="Mouse" type="StaticBody3D" parent="." groups=["grab", "interaction"]]
 transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 3.59967, 1.17845, 0.883824)
-script = ExtResource("53_kw6tj")
+script = ExtResource("55_xbxdx")
+title = "mouse"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Mouse"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00177002, 0.0187683, 0)
@@ -1410,18 +1428,19 @@ skeleton = NodePath("../..")
 
 [node name="Headphones" type="StaticBody3D" parent="." groups=["grab", "interaction"]]
 transform = Transform3D(0.865131, 0.493444, 0.0897806, -0.0020569, -0.175516, 0.984475, 0.501541, -0.851885, -0.150829, 4.54616, 1.22525, 0.877759)
-script = ExtResource("56_uprdw")
+script = ExtResource("55_xbxdx")
+title = "headphones"
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Headphones"]
-transform = Transform3D(1, 0, 0, 0, 1, 1.49012e-08, 0, 0, 1, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_bk0ws")
+transform = Transform3D(1, 2.98023e-08, 0, 2.98023e-08, 1, 0, 0, 1.49012e-08, 1, 0, 0.092481, 0)
+shape = SubResource("CapsuleShape3D_kcmag")
 
 [node name="LowPolyAssetPackFreeCylinder002" type="MeshInstance3D" parent="Headphones"]
 transform = Transform3D(1, 2.98023e-08, 7.45058e-09, 2.98023e-08, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0, 0, 0)
 mesh = ExtResource("55_oa8ut")
 skeleton = NodePath("../..")
 
-[node name="Laptop" type="StaticBody3D" parent="." groups=["interaction"]]
+[node name="Laptop" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.00572, 1.18171, 0.752694)
 
 [node name="@CollisionShape3D@497022" type="CollisionShape3D" parent="Laptop"]
@@ -1430,11 +1449,6 @@ shape = SubResource("ConvexPolygonShape3D_7i1yu")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Laptop"]
 shape = SubResource("ConvexPolygonShape3D_120s1")
 
-[node name="InteractuableComponent" parent="Laptop" instance=ExtResource("22_kebb4")]
-transform = Transform3D(0.347323, 0, 0, 0, 0.347323, 0, 0, 0, 0.347323, 0, 0, 0)
-script = ExtResource("56_466o8")
-title = "Laptop"
-
 [node name="LowPolyAssetPackFreePlane030" type="MeshInstance3D" parent="Laptop"]
 mesh = ExtResource("56_7am15")
 skeleton = NodePath("../..")
@@ -1442,18 +1456,15 @@ skeleton = NodePath("../..")
 [node name="3dCharacter" parent="." instance=ExtResource("55_kjc6m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.46632, 1.21153, 3)
 
-[node name="WOMAN 128 FINAL" parent="." instance=ExtResource("58_xj361")]
-transform = Transform3D(0.449646, 0, 0.240199, 0, 0.509781, 0, -0.240199, 0, 0.449646, -7.07892, 0.0752661, 1.2853)
-
 [node name="Book" type="StaticBody3D" parent="." groups=["grab", "interaction"]]
 transform = Transform3D(0.118653, 0, 0, 0, -5.18647e-09, -0.118653, 0, 0.118653, -5.18647e-09, 4.07336, 1.29212, 5.423)
-script = ExtResource("53_kw6tj")
+script = ExtResource("55_xbxdx")
+title = "book"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Book"]
 shape = SubResource("ConcavePolygonShape3D_rx1fu")
 
 [node name="RootSceneBook" type="MeshInstance3D" parent="Book"]
-transform = Transform3D(1, 0, 0, 0, 1, 3.55271e-15, 0, -3.55271e-15, 1, 0, 0, 0)
 mesh = ExtResource("60_18e2c")
 skeleton = NodePath("../..")
 
@@ -1468,6 +1479,9 @@ skeleton = NodePath("../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Small_plant"]
 transform = Transform3D(1, 0, 0, 0, -1.52485e-08, -1, 0, 1, -1.52485e-08, 0, 0, 0.467221)
 shape = SubResource("CylinderShape3D_cki4p")
+
+[node name="AmeliasMom" parent="." instance=ExtResource("63_b4fs4")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -6.40783, 0.109082, 1.61043)
 
 [connection signal="body_entered" from="AmeliaRoom/Door/Area3D" to="AmeliaRoom/Door/Door2" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="AmeliaRoom/Door/Area3D" to="AmeliaRoom/Door/Door2" method="_on_area_3d_body_exited"]

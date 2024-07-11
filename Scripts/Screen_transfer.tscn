@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://cb2o02mtckesc"]
+[gd_scene load_steps=8 format=3 uid="uid://cb2o02mtckesc"]
 
-[ext_resource type="Script" path="res://Scripts/ScreenTransfer.gd" id="1_t58si"]
+[ext_resource type="Script" path="res://Scripts/interaction_transfer_object.gd" id="1_vf1y5"]
 [ext_resource type="PackedScene" uid="uid://kn14uohlfce8" path="res://Assets/3D/All/cone.fbx" id="2_3ie0c"]
+[ext_resource type="PackedScene" uid="uid://bhy5s2h5btejf" path="res://Scenes/World/CityNight.tscn" id="2_e3847"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o374a"]
+size = Vector3(0.787109, 1.47168, 0.027832)
 
 [sub_resource type="Animation" id="Animation_52f6s"]
 length = 0.001
@@ -43,12 +45,14 @@ _data = {
 "screen_transfer": SubResource("Animation_vvyng")
 }
 
-[node name="ScreenTransfer" type="Node3D"]
-script = ExtResource("1_t58si")
+[node name="ScreenTransfer" type="StaticBody3D"]
+script = ExtResource("1_vf1y5")
+scene_route = ExtResource("2_e3847")
+title = "street"
+description = "to exit to"
 
-[node name="Area3D" type="Area3D" parent="."]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.106445, 1.19189, -0.400462)
 shape = SubResource("BoxShape3D_o374a")
 
 [node name="Root Scene" parent="." instance=ExtResource("2_3ie0c")]
@@ -59,5 +63,3 @@ libraries = {
 "": SubResource("AnimationLibrary_4ug60")
 }
 autoplay = "screen_transfer"
-
-[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -24,7 +24,7 @@ func _unhandled_key_input(_event):
 
 func change_scene():
 	var next_scene_instance = scene_to_change.instantiate()
-	game_manager.screen_transfer_animation(self,next_scene_instance)
+	game_manager.screen_transfer_animation(next_scene_instance,false)
 
 func show_dialogue():
 	running = true

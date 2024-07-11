@@ -1,9 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://dg3olfag20m5p"]
+[gd_scene load_steps=16 format=3 uid="uid://dg3olfag20m5p"]
 
 [ext_resource type="Texture2D" uid="uid://b0t712qjd5a8x" path="res://Assets/2D/Interiors/tiles_laboratory_LandOfPixels/tiles_laboratory_LandOfPixels/16px/tilesFloor.png" id="1_4wj13"]
 [ext_resource type="Texture2D" uid="uid://64m87n128hs2" path="res://Assets/2D/Interiors/tiles_laboratory_LandOfPixels/tiles_laboratory_LandOfPixels/16px/tilesWalls.png" id="2_84uqe"]
 [ext_resource type="Texture2D" uid="uid://ua0onv1pqygf" path="res://Assets/2D/Interiors/tiles_laboratory_LandOfPixels/tiles_laboratory_LandOfPixels/16px/tilesStuff.png" id="3_urbr0"]
 [ext_resource type="Texture2D" uid="uid://bee3q17m63nwm" path="res://Assets/2D/character/2D Top Down Pixel Art Characters/035.png" id="4_kwevs"]
+[ext_resource type="Texture2D" uid="uid://reo1aqn60rya" path="res://Assets/2D/character/LabNPCs.png" id="5_vmtww"]
+[ext_resource type="Texture2D" uid="uid://dtcyq4n8d8k7q" path="res://Assets/2D/character/2D Top Down Pixel Art Characters/015.png" id="6_wcgun"]
+[ext_resource type="Texture2D" uid="uid://c8dw5fka4m2g1" path="res://Assets/2D/character/2D Top Down Pixel Art Characters/009kid.png" id="7_7354b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r3pyp"]
 texture = ExtResource("1_4wj13")
@@ -348,6 +351,18 @@ region = Rect2(333, 117, 38, 41)
 atlas = ExtResource("4_kwevs")
 region = Rect2(20, 0, 20, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dcx4"]
+atlas = ExtResource("5_vmtww")
+region = Rect2(239, 15, 17, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33xal"]
+atlas = ExtResource("6_wcgun")
+region = Rect2(20, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5h1na"]
+atlas = ExtResource("7_7354b")
+region = Rect2(20, 0, 20, 32)
+
 [node name="InitialRoom" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -361,5 +376,17 @@ position = Vector2(97, -20)
 texture = SubResource("AtlasTexture_5ngxm")
 
 [node name="LiAI" type="Sprite2D" parent="."]
-position = Vector2(96, 16)
+position = Vector2(71, 42)
 texture = SubResource("AtlasTexture_6tlmk")
+
+[node name="LiAI2" type="Sprite2D" parent="."]
+position = Vector2(115, 44)
+texture = SubResource("AtlasTexture_7dcx4")
+
+[node name="LiAI4" type="Sprite2D" parent="."]
+position = Vector2(62, 91)
+texture = SubResource("AtlasTexture_33xal")
+
+[node name="LiAI5" type="Sprite2D" parent="."]
+position = Vector2(82, 91)
+texture = SubResource("AtlasTexture_5h1na")

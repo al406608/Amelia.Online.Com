@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dh6x5idpca0i7"]
+[gd_scene load_steps=7 format=3 uid="uid://dh6x5idpca0i7"]
 
 [ext_resource type="PackedScene" uid="uid://drerlg6ydgoby" path="res://Assets/3D/City/school-class-room-light-ver/source/clase.fbx" id="1_py2wd"]
 [ext_resource type="Texture2D" uid="uid://dgx6h5k7kr1n0" path="res://Assets/3D/City/Bus_stop/Skybox/Skybox_01.png" id="2_abtun"]
+[ext_resource type="PackedScene" uid="uid://r3ui71t78nix" path="res://Assets/3D/Characters/male-character-ps1-style/source/hero/hero.fbx" id="3_kperc"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_t7n2s"]
 panorama = ExtResource("2_abtun")
@@ -22,3 +23,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.7842, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_g4axn")
+
+[node name="Root Scene2" parent="." instance=ExtResource("3_kperc")]
+transform = Transform3D(-7.53828, 0, 2.67848, 0, 8, 0, -2.67848, 0, -7.53828, 10.561, 2.29213, 58.3258)

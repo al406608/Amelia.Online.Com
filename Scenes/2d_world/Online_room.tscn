@@ -352,6 +352,7 @@ position = Vector2(-9, 81.5)
 shape = SubResource("RectangleShape2D_2tdna")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="CanvasLayer" type="Control" parent="CanvasLayer2"]
 layout_mode = 3

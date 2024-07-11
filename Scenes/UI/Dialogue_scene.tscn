@@ -99,19 +99,17 @@ autoplay = "default"
 frame_progress = 0.513259
 
 [node name="Description" type="Label" parent="TipLabel/CenterContainer/HBoxContainer"]
-custom_minimum_size = Vector2(200, 0)
+custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
-text = " to interact with"
+text = "to interact with"
 label_settings = SubResource("LabelSettings_obakk")
 horizontal_alignment = 1
-autowrap_mode = 3
 
 [node name="Object" type="Label" parent="TipLabel/CenterContainer/HBoxContainer"]
-custom_minimum_size = Vector2(125, 0)
+custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
-text = "default"
+text = "item"
 label_settings = SubResource("LabelSettings_obakk")
 horizontal_alignment = 1
-autowrap_mode = 3
 
 [editable path="DialogueWindow"]

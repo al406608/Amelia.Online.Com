@@ -2,6 +2,7 @@ extends Control
 
 @onready var texture_rect = $TextureRect
 var game_controller = null
+var end_pause = true
 signal transmision_finished
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -24,5 +25,6 @@ func end_transtion():
 			0.0,  # End value
 			0.75    # Duration
 		)
-	tween.tween_property(get_tree(),"paused",false,0)
+	if end_pause:
+		tween.tween_property(get_tree(),"paused",false,0)
 	tween.tween_callback(call_deferred.bind("queue_free"))
