@@ -1,15 +1,19 @@
 extends Control
 
-var dialogue : PackedStringArray
+var dialogue : PackedStringArray = [""]
 var scene_to_change
 var index = 0
 var running : bool = true
 var tween
 var game_manager : GameController
+var resume_after_event : bool = true
+var background : String = "res://Assets/2D/backgrounds/fondoevento1.png"
 @onready var dialogue_node = $NinePatchRect/Dialogue
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	show_dialogue()
+	var image = Image.load_from_file(background)
+	$Background.texture = ImageTexture.create_from_image(image)
 
 func _unhandled_key_input(_event):
 	if Input.is_action_just_pressed("e_key_press") :
@@ -24,7 +28,7 @@ func _unhandled_key_input(_event):
 
 func change_scene():
 	var next_scene_instance = scene_to_change.instantiate()
-	game_manager.screen_transfer_animation(next_scene_instance,false)
+	game_manager.screen_transfer_animation(next_scene_instance,resume_after_event)
 
 func show_dialogue():
 	running = true

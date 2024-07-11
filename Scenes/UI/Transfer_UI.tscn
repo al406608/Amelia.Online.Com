@@ -15,7 +15,7 @@ shader_parameter/alpha = 1.0
 
 [node name="TransferUi" type="Control"]
 process_mode = 3
-z_index = 1
+z_index = 2
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,6 +25,7 @@ grow_vertical = 2
 script = ExtResource("1_phqi4")
 
 [node name="TextureRect" type="ColorRect" parent="."]
+top_level = true
 material = SubResource("ShaderMaterial_roghj")
 layout_mode = 1
 anchors_preset = 15

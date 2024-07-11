@@ -19,9 +19,10 @@ func change_node(self_node,node_to_change):
 	actual_node = node_to_change
 	add_child(node_to_change)
 
-func screen_transfer_animation(node_to_change,end_pause = true):
+func screen_transfer_animation(node_to_change,end_pause = true,show_crosshair = true):
 	var ui_transfer_instance = transfer_ui.instantiate()
 	ui_transfer_instance.end_pause = end_pause
+	ui_transfer_instance.show_crosshair = show_crosshair
 	add_child(ui_transfer_instance)
 	await ui_transfer_instance.transmision_finished
 	change_node(actual_node,node_to_change)

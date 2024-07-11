@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmq43aq1ro006"]
+
+[ext_resource type="PackedScene" uid="uid://q6vd51dotfnv" path="res://Scenes/UI/pause_menu_window.tscn" id="1_7g2tq"]
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(800, 800)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.313726)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" parent="CenterContainer" instance=ExtResource("1_7g2tq")]
+layout_mode = 2

@@ -27,5 +27,5 @@ transform = Transform3D(1.15379, 0, 0, 0, 1.15379, 0, 0, 0, 1.15379, 0, 0, 0)
 [node name="Decoracion" type="Node3D" parent="."]
 
 [node name="3dCharacter" parent="." instance=ExtResource("3_0ecoi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.110849, 1.17007, 2.10588)
+transform = Transform3D(-0.699676, 0, 0.714461, 0, 1, 0, -0.714461, 0, -0.699676, -0.208288, 1.09274, 5.65803)
 floor_max_angle = 1.5708
