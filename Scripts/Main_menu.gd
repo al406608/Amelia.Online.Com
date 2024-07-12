@@ -8,6 +8,11 @@ var start_dialogue : PackedStringArray = PackedStringArray(["Amelia, ready to st
 "-Emi…-"])
 @onready var initial_scene = preload("res://Scenes/World/Amelia_House.tscn")
 # Called when the node enters the scene tree for the first time.
+func _ready():
+	if GlobalVariables.game_controller != null:
+		game_controller = GlobalVariables.game_controller
+	pass
+
 func start_game():
 	if(game_controller != null):
 		var start_scene = game_controller.dialogue_scene.instantiate()
@@ -16,7 +21,7 @@ func start_game():
 		start_scene.scene_to_change = initial_scene
 		start_scene.resume_after_event = false
 		game_controller.actual_node = self
-		game_controller.screen_transfer_animation(start_scene,true,false)
+		game_controller.screen_transfer_animation(start_scene,true,false,false)
 		
 
 func _on_start_button_button_down():
@@ -31,4 +36,5 @@ func _on_credits_button_button_down():
 
 
 func _on_exit_button_button_down():
+	get_tree().quit()
 	pass # Replace with function body.

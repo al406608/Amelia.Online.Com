@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dx7dj34b13mtj"]
+[gd_scene load_steps=12 format=3 uid="uid://dx7dj34b13mtj"]
 
 [ext_resource type="Texture2D" uid="uid://b6fuy4k4kvumw" path="res://Assets/UI/Backgrounds/bridge_8.png" id="1_5gner"]
 [ext_resource type="Script" path="res://Scripts/Main_menu.gd" id="1_kblpp"]
@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://c6c2t2w8x1gqr" path="res://Assets/UI/RetroWindowsGUI/Window_Base.png" id="4_1mug5"]
 [ext_resource type="Texture2D" uid="uid://bhsr842455doe" path="res://Materials/characters2.png" id="4_rg454"]
 [ext_resource type="PackedScene" uid="uid://yy5xw8lpe640" path="res://Scenes/UI/window.tscn" id="5_l3twa"]
-[ext_resource type="Texture2D" uid="uid://b57hoxtfa63ye" path="res://Assets/UI/RetroWindowsGUI/Windows_Inner_Frame.png" id="6_xocij"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_lme8b"]
 noise_type = 4
@@ -42,6 +41,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 script = ExtResource("1_kblpp")
 
 [node name="Node2D" type="CenterContainer" parent="."]
@@ -69,26 +69,6 @@ layout_mode = 2
 texture = ExtResource("1_5gner")
 expand_mode = 1
 stretch_mode = 6
-
-[node name="VBoxContainer3" type="VBoxContainer" parent="Node2D"]
-custom_minimum_size = Vector2(350, 200)
-layout_mode = 2
-
-[node name="Separator" type="VBoxContainer" parent="Node2D/VBoxContainer3"]
-custom_minimum_size = Vector2(0, 150)
-layout_mode = 2
-
-[node name="NinePatchRect2" type="NinePatchRect" parent="Node2D/VBoxContainer3"]
-custom_minimum_size = Vector2(450, 400)
-layout_mode = 2
-texture = ExtResource("6_xocij")
-draw_center = false
-patch_margin_left = 4
-patch_margin_top = 4
-patch_margin_right = 4
-patch_margin_bottom = 4
-axis_stretch_horizontal = 1
-axis_stretch_vertical = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Node2D"]
 custom_minimum_size = Vector2(650, 400)
@@ -123,12 +103,16 @@ label_settings = SubResource("LabelSettings_ganxe")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="CenterContainer" type="CenterContainer" parent="Node2D/VBoxContainer/NinePatchRect2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="NinePatchRect" parent="Node2D/VBoxContainer" instance=ExtResource("5_l3twa")]
+custom_minimum_size = Vector2(400, 350)
 layout_mode = 2
 
-[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/VBoxContainer2/StartButton" to="." method="_on_start_button_button_down"]
-[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/VBoxContainer2/SettingsButton" to="." method="_on_settings_button_button_down"]
-[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/VBoxContainer2/CreditsButton" to="." method="_on_credits_button_button_down"]
-[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/VBoxContainer2/ExitButton" to="." method="_on_exit_button_button_down"]
+[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/StartButton" to="." method="_on_start_button_button_down"]
+[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ExitButton" to="." method="_on_exit_button_button_down"]
 
 [editable path="Node2D/VBoxContainer/NinePatchRect"]

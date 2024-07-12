@@ -3,10 +3,11 @@ class_name GameController
 @onready var dialogue_scene = load("res://Scenes/UI/event.tscn")
 @onready var transfer_ui = preload("res://Scenes/UI/Transfer_UI.tscn")
 @onready var control_scene = preload("res://Scenes/UI/Controls_to_use.tscn")
+@onready var pause_menu = preload("res://Scenes/UI/Pause_menu.tscn")
 @export var dialogue : PackedStringArray
 @onready var crosshair = $CanvasLayer/CanvasGroup/AnimatedSprite2D
 var actual_node
-
+var game_pausable = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Main_menu.game_controller = self
@@ -19,14 +20,26 @@ func change_node(self_node,node_to_change):
 	actual_node = node_to_change
 	add_child(node_to_change)
 
-func screen_transfer_animation(node_to_change,end_pause = true,show_crosshair = true):
+func screen_transfer_animation(node_to_change,end_pause = true,show_crosshair = true,pause_game = true):
 	var ui_transfer_instance = transfer_ui.instantiate()
+	game_pausable = false
 	ui_transfer_instance.end_pause = end_pause
 	ui_transfer_instance.show_crosshair = show_crosshair
 	add_child(ui_transfer_instance)
 	await ui_transfer_instance.transmision_finished
+	game_pausable = pause_game
 	change_node(actual_node,node_to_change)
 
 func controller_show_up():
 	var control_scene_instance = control_scene.instantiate()
 	add_child(control_scene_instance)
+
+func pause_game():
+	if game_pausable:
+		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED :
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		game_pausable = false
+		var pause_menu_instance = pause_menu.instantiate()
+		add_child(pause_menu_instance)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://yy5xw8lpe640"]
+[gd_scene load_steps=17 format=3 uid="uid://yy5xw8lpe640"]
 
 [ext_resource type="Texture2D" uid="uid://bu71n4ltkg2ak" path="res://Assets/UI/RetroWindowsGUI/Window_Header.png" id="1_aejrn"]
 [ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="2_ilq10"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://vndsrob3srw7" path="res://Assets/UI/RetroWindowsGUI/Windows_Icons.png" id="4_ti3g4"]
 [ext_resource type="Texture2D" uid="uid://cdmoldsro1dd" path="res://Assets/UI/RetroWindowsGUI/Windows_Button_Focus.png" id="5_ij6fw"]
 [ext_resource type="Texture2D" uid="uid://drdnhcjx5jspw" path="res://Assets/UI/RetroWindowsGUI/Windows_Button_Pressed.png" id="6_vmmud"]
+[ext_resource type="Texture2D" uid="uid://b57hoxtfa63ye" path="res://Assets/UI/RetroWindowsGUI/Windows_Inner_Frame.png" id="7_4fevy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vd2bv"]
 font = ExtResource("2_ilq10")
@@ -59,9 +60,24 @@ Button/styles/hover = SubResource("StyleBoxTexture_f3baf")
 Button/styles/normal = SubResource("StyleBoxTexture_c6idh")
 Button/styles/pressed = SubResource("StyleBoxTexture_pxtmq")
 
-[node name="NinePatchRect" type="NinePatchRect"]
+[node name="CenterContainer" type="Control"]
+custom_minimum_size = Vector2(500, 400)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 651.0
+offset_bottom = 400.0
+mouse_filter = 1
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
 self_modulate = Color(0.721569, 0.67451, 0.780392, 1)
-custom_minimum_size = Vector2(400, 500)
+custom_minimum_size = Vector2(500, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
 texture = ExtResource("1_aejrn")
 region_rect = Rect2(0, 0, 48, 48)
 patch_margin_left = 4
@@ -70,23 +86,15 @@ patch_margin_right = 4
 patch_margin_bottom = 5
 axis_stretch_vertical = 1
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="NinePatchRect"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -316.0
-offset_top = -248.0
-offset_right = -129.0
-offset_bottom = -221.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = 17.0
+offset_right = 204.0
+offset_bottom = 27.0
 text = "Menu"
 label_settings = SubResource("LabelSettings_vd2bv")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect"]
 layout_mode = 2
 offset_left = 595.0
 offset_top = 6.0
@@ -97,14 +105,14 @@ size_flags_vertical = 5
 texture = ExtResource("3_6aiu0")
 stretch_mode = 3
 
-[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/TextureRect"]
 layout_mode = 0
 offset_right = 14.0
 offset_bottom = 14.0
 texture = SubResource("AtlasTexture_em1lr")
 stretch_mode = 3
 
-[node name="TextureRect2" type="TextureRect" parent="."]
+[node name="TextureRect2" type="TextureRect" parent="NinePatchRect"]
 layout_mode = 2
 offset_left = 611.0
 offset_top = 6.0
@@ -115,14 +123,14 @@ size_flags_vertical = 5
 texture = ExtResource("3_6aiu0")
 stretch_mode = 3
 
-[node name="TextureRect" type="TextureRect" parent="TextureRect2"]
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/TextureRect2"]
 layout_mode = 0
 offset_right = 14.0
 offset_bottom = 14.0
 texture = SubResource("AtlasTexture_qfdjq")
 stretch_mode = 3
 
-[node name="TextureRect3" type="TextureRect" parent="."]
+[node name="TextureRect3" type="TextureRect" parent="NinePatchRect"]
 layout_mode = 2
 offset_left = 626.0
 offset_top = 6.0
@@ -133,7 +141,7 @@ size_flags_vertical = 5
 texture = ExtResource("3_6aiu0")
 stretch_mode = 3
 
-[node name="TextureRect" type="TextureRect" parent="TextureRect3"]
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect/TextureRect3"]
 layout_mode = 0
 offset_top = -1.0
 offset_right = 14.0
@@ -141,39 +149,75 @@ offset_bottom = 13.0
 texture = SubResource("AtlasTexture_c3vrp")
 stretch_mode = 3
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+[node name="VBoxContainer3" type="Control" parent="NinePatchRect"]
 custom_minimum_size = Vector2(350, 200)
-layout_mode = 2
-offset_left = 149.0
-offset_top = -55.0
-offset_right = 499.0
-offset_bottom = 431.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
 
-[node name="Separator" type="VBoxContainer" parent="VBoxContainer2"]
-custom_minimum_size = Vector2(0, 150)
-layout_mode = 2
+[node name="NinePatchRect2" type="NinePatchRect" parent="NinePatchRect/VBoxContainer3"]
+custom_minimum_size = Vector2(450, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -287.5
+offset_top = -161.0
+offset_right = 288.5
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+texture = ExtResource("7_4fevy")
+draw_center = false
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 
-[node name="StartButton" type="Button" parent="VBoxContainer2"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="NinePatchRect"]
+custom_minimum_size = Vector2(350, 200)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -73.0
+offset_right = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="StartButton" type="Button" parent="NinePatchRect/VBoxContainer2"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 text = "Start"
 
-[node name="SettingsButton" type="Button" parent="VBoxContainer2"]
+[node name="SettingsButton" type="Button" parent="NinePatchRect/VBoxContainer2"]
+visible = false
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 theme_override_font_sizes/font_size = 40
 text = "Main menu"
 
-[node name="CreditsButton" type="Button" parent="VBoxContainer2"]
+[node name="CreditsButton" type="Button" parent="NinePatchRect/VBoxContainer2"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 theme_override_font_sizes/font_size = 40
 text = "Credits"
 
-[node name="ExitButton" type="Button" parent="VBoxContainer2"]
+[node name="ExitButton" type="Button" parent="NinePatchRect/VBoxContainer2"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
