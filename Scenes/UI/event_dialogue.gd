@@ -12,8 +12,7 @@ var background : String = "res://Assets/2D/backgrounds/fondoevento1.png"
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	show_dialogue()
-	var image = Image.load_from_file(background)
-	$Background.texture = ImageTexture.create_from_image(image)
+	$Background.texture = load(background)
 
 func _unhandled_key_input(_event):
 	if Input.is_action_just_pressed("e_key_press") :
