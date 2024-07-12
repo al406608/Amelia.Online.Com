@@ -303,6 +303,7 @@ material = SubResource("ShaderMaterial_pfbvf")
 script = ExtResource("1_hc8du")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+visible = false
 position = Vector2(26, 74)
 script = ExtResource("3_v8inn")
 metadata/_edit_group_ = true

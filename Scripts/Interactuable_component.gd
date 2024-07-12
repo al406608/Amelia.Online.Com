@@ -4,7 +4,6 @@ class_name  interactuableComponent
 @export var dialogue : String = ""
 @export var title : String
 @onready var dialogue_prefab = preload("res://Scenes/UI/Dialogue_scene.tscn")
-@export var interactable_action : GDScript 
 var dialogue_prefab_instance 
 var in_reach = false
 
