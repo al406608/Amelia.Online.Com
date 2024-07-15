@@ -19,12 +19,18 @@ config/icon="res://icon.svg"
 [autoload]
 
 GlobalVariables="*res://Scripts/Global/global_variables.tscn"
+SoundManager="*res://addons/sound_manager/sound_manager.gd"
 
 [display]
 
 window/size/viewport_width=1820
 window/size/viewport_height=980
 window/stretch/mode="viewport"
+mouse_cursor/custom_image="res://Assets/UI/tile_0026.png"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/sound_manager/plugin.cfg")
 
 [input]
 

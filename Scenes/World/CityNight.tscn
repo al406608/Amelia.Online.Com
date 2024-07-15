@@ -10,7 +10,6 @@
 [ext_resource type="Script" path="res://Scripts/interaction_object_base.gd" id="9_1lrj0"]
 [ext_resource type="PackedScene" uid="uid://dlqr21mm26e43" path="res://Scripts/Screen_dialogue_transfer.tscn" id="10_m71oq"]
 [ext_resource type="PackedScene" uid="uid://kn14uohlfce8" path="res://Assets/3D/All/cone.fbx" id="10_pfdu3"]
-[ext_resource type="PackedScene" uid="uid://b75knxktmi7tl" path="res://Scenes/World/College/College.tscn" id="11_eds85"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_m1peb"]
 size = Vector3(428.847, 3.69641, 257.845)
@@ -41,6 +40,9 @@ points = PackedVector3Array(-1.1392, 1.25707, 1.32663, 1.37963, 1.57148, 1.45657
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7quwi"]
 size = Vector3(1.61917, 2.23084, 0.027832)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cto7d"]
+size = Vector3(5.02075, 2.78131, 3.01123)
 
 [node name="CityNight" type="Node3D"]
 
@@ -93,6 +95,9 @@ transform = Transform3D(0.842311, 0, -0.538991, 0, 1, 0, 0.538991, 0, 0.842311, 
 
 [node name="AbandonedCar" type="StaticBody3D" parent="."]
 transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 45.6177, 2.08638, 5.06917)
+script = ExtResource("9_1lrj0")
+title = "abandoned car"
+dialogue = PackedStringArray("This plot should be cleaned", "It gives me the creeps")
 
 [node name="Car6" type="MeshInstance3D" parent="AbandonedCar"]
 mesh = ExtResource("4_iyk0l")
@@ -141,5 +146,19 @@ transform = Transform3D(0.334582, 0, 0, 0, 0.617706, 0, 0, 0, 0.294823, 0, 0.674
 
 [node name="ScreenDialogueTransfer" parent="." instance=ExtResource("10_m71oq")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25.2474, 2.08638, -14.083)
-scene_route = ExtResource("11_eds85")
-dialogue = PackedStringArray("Emilia returns to her new home, eats dinner and prepares for sleep and the new day that awaits her tomorrow. ", "After a brief conversation with her mother and checking her email.", "-Classroom 21BB... perfect\"-.", "She took the bus to her college.", "There she was looking forward to meeting Emi, her best friend for years, until they had to separate because of her parents\' move, but she couldn\'t believe it after 5 years they would be together again.")
+scene_route = "res://Scenes/World/College/College.tscn"
+title = "home"
+dialogue = PackedStringArray("Emilia returns to her new home, eats dinner and prepares for sleep. A new day awaits.", "After a brief conversation with her mother, Amelia checks her email.", "-Classroom 21BB... perfect\"-.", "She takes the bus to her college.", "She arrives. There she was, looking forward to meeting Emi, her best friend for years. They had to separate because of her parents\' move, but now, she couldn\'t believe it, after 5 years they would be together again.")
+description = "to go back"
+
+[node name="Bus_stop" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1407, 1.72004, -28.101)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("9_1lrj0")
+title = "bus stop"
+dialogue = PackedStringArray("To be honest this stop is very convenient, it takes me directy to college.")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bus_stop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.358259, 1.87429, 1.00562)
+shape = SubResource("BoxShape3D_cto7d")

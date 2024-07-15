@@ -7,11 +7,13 @@ var running : bool = true
 var tween
 var game_manager : GameController
 var resume_after_event : bool = true
+var show_crosshair : bool = true
 var background : String = "res://Assets/2D/backgrounds/fondoevento1.png"
 @onready var dialogue_node = $NinePatchRect/Dialogue
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	show_dialogue()
+	dialogue_node.visibility_changed
 	$Background.texture = load(background)
 
 func _unhandled_key_input(_event):
@@ -27,8 +29,8 @@ func _unhandled_key_input(_event):
 
 func change_scene():
 	var next_scene_instance = scene_to_change.instantiate()
-	game_manager.screen_transfer_animation(next_scene_instance,resume_after_event)
-
+	game_manager.screen_transfer_animation(next_scene_instance,resume_after_event,show_crosshair)
+	
 func show_dialogue():
 	running = true
 	dialogue_node.visible_ratio = 0

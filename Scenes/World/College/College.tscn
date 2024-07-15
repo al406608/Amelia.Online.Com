@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://b75knxktmi7tl"]
+[gd_scene load_steps=14 format=3 uid="uid://b75knxktmi7tl"]
 
 [ext_resource type="Texture2D" uid="uid://dgx6h5k7kr1n0" path="res://Assets/3D/City/Bus_stop/Skybox/Skybox_01.png" id="2_t6885"]
 [ext_resource type="PackedScene" uid="uid://dfw2vmrr8pm6j" path="res://Scenes/World/College/college_entrance_2.tscn" id="2_uuphl"]
 [ext_resource type="PackedScene" uid="uid://c7pls48a251gk" path="res://Scenes/Character/3d_character.tscn" id="3_0ecoi"]
+[ext_resource type="PackedScene" uid="uid://dlqr21mm26e43" path="res://Scripts/Screen_dialogue_transfer.tscn" id="4_q855s"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_vep2o"]
 panorama = ExtResource("2_t6885")
@@ -15,6 +16,24 @@ background_mode = 2
 sky = SubResource("Sky_cqikp")
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3gfrt"]
+size = Vector3(0.706604, 3.41949, 30.1814)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q2051"]
+size = Vector3(0.706604, 3.56734, 30.1814)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6eqvj"]
+size = Vector3(0.706604, 3.56734, 8.09132)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_axp4n"]
+size = Vector3(6.62398, 3.56734, 1.13629)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2nfn7"]
+size = Vector3(0.356678, 3.56734, 13.963)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kqm4r"]
+size = Vector3(4.03065, 3.56734, 0.132572)
 
 [node name="College" type="Node3D"]
 
@@ -29,3 +48,52 @@ transform = Transform3D(1.15379, 0, 0, 0, 1.15379, 0, 0, 0, 1.15379, 0, 0, 0)
 [node name="3dCharacter" parent="." instance=ExtResource("3_0ecoi")]
 transform = Transform3D(-0.699676, 0, 0.714461, 0, 1, 0, -0.714461, 0, -0.699676, -0.208288, 1.09274, 5.65803)
 floor_max_angle = 1.5708
+
+[node name="Colliders" type="Node3D" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Colliders"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.19107, 1.6683, 6.93153)
+shape = SubResource("BoxShape3D_3gfrt")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.22127, 1.59863, 6.93153)
+shape = SubResource("BoxShape3D_q2051")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.65167, 1.59863, 17.9766)
+shape = SubResource("BoxShape3D_6eqvj")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6133, 1.59863, 14.3619)
+shape = SubResource("BoxShape3D_axp4n")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6133, 1.59863, -0.550385)
+shape = SubResource("BoxShape3D_axp4n")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.14004, 1.59863, 6.89371)
+shape = SubResource("BoxShape3D_2nfn7")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.65167, 1.59863, -4.10019)
+shape = SubResource("BoxShape3D_6eqvj")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20102, 1.59863, -8.07956)
+shape = SubResource("BoxShape3D_kqm4r")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Colliders/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20102, 1.59863, 22.0291)
+shape = SubResource("BoxShape3D_kqm4r")
+
+[node name="ScreenDialogueTransfer" parent="." instance=ExtResource("4_q855s")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.0302808, -0.218458, -7.2012)
+image_path = "res://Assets/2D/backgrounds/black.png"
+show_crosshair = false
+scene_route = "res://Scenes/UI/Main_menu.tscn"
+title = "classroom"
+dialogue = PackedStringArray("Here concludes the Amelia.Online.Com demo", "The project is still in development", "Check the extras in the menu for puzzles to come!")
+description = "to go to"

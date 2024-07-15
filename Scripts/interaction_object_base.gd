@@ -9,6 +9,7 @@ var dialogue_instance = null
 @export var dialogue : PackedStringArray
 @export var description : String = "to interact with"
 
+@onready var interaction_sound = preload("res://Assets/Sounds/switch_006.ogg")
 func _ready():
 	add_to_group("interaction")
 
@@ -31,4 +32,5 @@ func on_object_hovered():
 
 func on_object_interaction():
 	if dialogue_instance != null:
-			dialogue_instance.show_text()
+		SoundManager.play_ui_sound(interaction_sound)
+		dialogue_instance.show_text()

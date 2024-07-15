@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://jqnqufsonmqj"]
+[gd_scene load_steps=21 format=3 uid="uid://jqnqufsonmqj"]
 
 [ext_resource type="PackedScene" uid="uid://rnfp70oxcxdc" path="res://Assets/3D/City/Bus_stop/Model_city.tscn" id="1_ifqe4"]
 [ext_resource type="Environment" uid="uid://o3h4vh0qisd5" path="res://Scenes/World/daylight.tres" id="2_0urwm"]
@@ -10,7 +10,6 @@
 [ext_resource type="ArrayMesh" uid="uid://bpdp8f5bfp3ih" path="res://Assets/3D/City/PSX_Style_Cars_by_GGBot_(August2023)/Car 04/Car4.obj" id="8_xm2wa"]
 [ext_resource type="PackedScene" uid="uid://kn14uohlfce8" path="res://Assets/3D/All/cone.fbx" id="9_geq0i"]
 [ext_resource type="PackedScene" uid="uid://dlqr21mm26e43" path="res://Scripts/Screen_dialogue_transfer.tscn" id="10_vydeu"]
-[ext_resource type="PackedScene" uid="uid://b75knxktmi7tl" path="res://Scenes/World/College/College.tscn" id="11_2jhp6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_m1peb"]
 size = Vector3(428.847, 3.69641, 257.845)
@@ -140,5 +139,4 @@ transform = Transform3D(0.334582, 0, 0, 0, 0.617706, 0, 0, 0, 0.294823, 0, 0.674
 
 [node name="ScreenDialogueTransfer" parent="." instance=ExtResource("10_vydeu")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25.2474, 2.08638, -14.083)
-scene_route = ExtResource("11_2jhp6")
 dialogue = PackedStringArray("Emilia returns to her new home, eats dinner and prepares for sleep and the new day that awaits her tomorrow. ", "After a brief conversation with her mother and checking her email.", "-Classroom 21BB... perfect\"-.", "She took the bus to her college.", "There she was looking forward to meeting Emi, her best friend for years, until they had to separate because of her parents\' move, but she couldn\'t believe it after 5 years they would be together again.")

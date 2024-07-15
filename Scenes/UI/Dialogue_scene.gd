@@ -3,6 +3,14 @@ extends Control
 var text_shown = false
 var index : int = 0
 var dialogue_data : PackedStringArray
+@onready var open_sound = preload("res://Assets/Sounds/maximize_008.ogg")
+@onready var close_sound = preload("res://Assets/Sounds/minimize_009.ogg")
+func _ready():
+	SoundManager.play_ui_sound(open_sound)
+
+func _exit_tree():
+	SoundManager.play_ui_sound(close_sound)
+
 func setup(dialogue : PackedStringArray,title : String = "",description : String = "to interact with"):
 	dialogue_data = dialogue
 	$TipLabel/CenterContainer/HBoxContainer/Object.text = title

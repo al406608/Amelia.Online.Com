@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://yy5xw8lpe640"]
+[gd_scene load_steps=18 format=3 uid="uid://yy5xw8lpe640"]
 
 [ext_resource type="Texture2D" uid="uid://bu71n4ltkg2ak" path="res://Assets/UI/RetroWindowsGUI/Window_Header.png" id="1_aejrn"]
 [ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="2_ilq10"]
@@ -60,6 +60,10 @@ Button/styles/hover = SubResource("StyleBoxTexture_f3baf")
 Button/styles/normal = SubResource("StyleBoxTexture_c6idh")
 Button/styles/pressed = SubResource("StyleBoxTexture_pxtmq")
 
+[sub_resource type="LabelSettings" id="LabelSettings_4x1sy"]
+font = ExtResource("2_ilq10")
+font_size = 25
+
 [node name="CenterContainer" type="Control"]
 custom_minimum_size = Vector2(500, 400)
 layout_mode = 3
@@ -75,6 +79,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 67.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
@@ -168,9 +173,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -287.5
-offset_top = -161.0
+offset_top = -189.5
 offset_right = 288.5
-offset_bottom = 161.0
+offset_bottom = 189.5
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
@@ -202,13 +207,12 @@ layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 text = "Start"
 
-[node name="SettingsButton" type="Button" parent="NinePatchRect/VBoxContainer2"]
-visible = false
+[node name="ExtrasButton" type="Button" parent="NinePatchRect/VBoxContainer2"]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 theme_override_font_sizes/font_size = 40
-text = "Main menu"
+text = "Extras"
 
 [node name="CreditsButton" type="Button" parent="NinePatchRect/VBoxContainer2"]
 custom_minimum_size = Vector2(0, 80)
@@ -223,3 +227,44 @@ layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 theme_override_font_sizes/font_size = 40
 text = "Exit"
+
+[node name="ComingSoon" type="Button" parent="NinePatchRect/VBoxContainer2"]
+visible = false
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme = SubResource("Theme_ypnlk")
+theme_override_font_sizes/font_size = 40
+text = "Coming soon"
+
+[node name="Credits" type="Control" parent="NinePatchRect/VBoxContainer2"]
+visible = false
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="NinePatchRect/VBoxContainer2/Credits"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -284.5
+offset_top = -102.0
+offset_right = 284.5
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Created by Aníbal Manzano Martin as Final Degree Project for Videogame Design Development Degree in Jaume I College"
+label_settings = SubResource("LabelSettings_4x1sy")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Back" type="Button" parent="NinePatchRect/VBoxContainer2"]
+visible = false
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme = SubResource("Theme_ypnlk")
+theme_override_font_sizes/font_size = 40
+text = "Back"

@@ -11,6 +11,7 @@ var sensitivity = 0.001
 var bob_freq = 2.0
 var bob_amp = 0.065
 var t_bob = 0.0
+var walk_time = 1.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var inspected_object = null
@@ -23,11 +24,19 @@ var crosshair = null
 var inspecting_object : bool = false
 #Funcion para ocultar el raton
 func _ready():
+	randomize()
+	SoundManager.set_sound_volume(0.5)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	var grupo = get_tree().get_nodes_in_group("controller")
 	if !grupo.is_empty():
 		crosshair = grupo[0].crosshair
 		crosshair.show()
+var reproduced = false
+@onready var walking_sounds = [preload("res://Assets/Sounds/footstep04.ogg"),preload("res://Assets/Sounds/footstep05.ogg"),preload("res://Assets/Sounds/footstep06.ogg")]
+
+func _set(property, value):
+	if property == "t_bob":
+		pass
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -38,6 +47,7 @@ func _unhandled_input(event):
 
 func _physics_process(delta):
 	camera_raycast()
+	walking_sound()
 	# Add the gravity.
 	if !inspecting_object:
 		if not is_on_floor():
@@ -47,8 +57,10 @@ func _physics_process(delta):
 			velocity.y = JUMP_VELOCITY
 		if Input.is_action_pressed("sprint"):
 			speed = SPRINT_SPEED
+			walk_time = 0.5
 		else:
 			speed = WALK_SPEED
+			walk_time = 1.0
 		# Get the input direction and handle the movement/deceleration.
 		# As good practice, you should replace UI actions with custom gameplay actions.
 		var input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
@@ -106,4 +118,11 @@ func camera_raycast():
 		if inspected_object != null:
 			inspected_object.on_object_lost_focus()
 			inspected_object = null
-		
+
+func walking_sound():
+	if ( Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_down") or Input.is_action_pressed("ui_right") ) :
+		if reproduced == false:
+			SoundManager.play_sound(walking_sounds.pick_random())
+			reproduced = true
+			await get_tree().create_timer(walk_time).timeout
+			reproduced = false

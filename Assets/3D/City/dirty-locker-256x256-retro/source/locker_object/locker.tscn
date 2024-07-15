@@ -1,9 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0tvwhf4hxiut"]
+[gd_scene load_steps=4 format=3 uid="uid://b0tvwhf4hxiut"]
 
 [ext_resource type="ArrayMesh" uid="uid://dm2wh0gfg7wik" path="res://Assets/3D/City/dirty-locker-256x256-retro/source/locker_object/Root Scene_Locker.res" id="1_k43ph"]
 [ext_resource type="ArrayMesh" uid="uid://b4gtoen3smuk" path="res://Assets/3D/City/dirty-locker-256x256-retro/source/locker_object/Root Scene_Locker_001.res" id="2_n3jqy"]
 
-[node name="Locker" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_bct4v"]
+size = Vector3(0.429688, 1.25867, 0.446899)
+
+[node name="Locker" type="StaticBody3D"]
 
 [node name="RootSceneLocker" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
@@ -12,3 +15,7 @@ mesh = ExtResource("1_k43ph")
 [node name="Door" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 1, 4.37114e-08, 4.37114e-08, -4.37114e-08, 1, 1, 0, -4.37114e-08, 0.185974, 0.635799, 0.22486)
 mesh = ExtResource("2_n3jqy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00488281, 0.637927, 0.0139771)
+shape = SubResource("BoxShape3D_bct4v")
