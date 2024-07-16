@@ -29,6 +29,6 @@ func end_transtion():
 		)
 	if end_pause:
 		tween.tween_property(get_tree(),"paused",false,0)
-	if show_crosshair:
-		tween.tween_callback(GlobalVariables.game_controller.crosshair.show)
+	if GlobalVariables.game_controller != null:
+		GlobalVariables.game_controller.crosshair.visible = show_crosshair
 	tween.tween_callback(call_deferred.bind("queue_free"))

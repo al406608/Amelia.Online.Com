@@ -1,6 +1,5 @@
 extends "res://Scripts/interaction_transfer_object.gd"
 @export var image_path = "res://Assets/2D/backgrounds/fondoevento1.png"
-@export var show_crosshair = true
 
 func on_object_interaction():
 	if dialogue_instance != null:

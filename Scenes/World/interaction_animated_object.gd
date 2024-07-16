@@ -1,7 +1,7 @@
 extends "res://Scripts/interaction_object_base.gd"
 var open : bool = false
 var running : bool = false
-@onready var original_rotation = rotation.y
+@onready var original_rotation = self.rotation.y
 var tween : Tween
 
 func on_object_interaction():

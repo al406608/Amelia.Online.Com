@@ -228,13 +228,13 @@ theme = SubResource("Theme_ypnlk")
 theme_override_font_sizes/font_size = 40
 text = "Exit"
 
-[node name="ComingSoon" type="Button" parent="NinePatchRect/VBoxContainer2"]
+[node name="InitialPuzzle" type="Button" parent="NinePatchRect/VBoxContainer2"]
 visible = false
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 theme = SubResource("Theme_ypnlk")
 theme_override_font_sizes/font_size = 40
-text = "Coming soon"
+text = "Initial Puzzle"
 
 [node name="Credits" type="Control" parent="NinePatchRect/VBoxContainer2"]
 visible = false

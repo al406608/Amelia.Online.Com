@@ -10,10 +10,12 @@ var start_dialogue : PackedStringArray = PackedStringArray(["Amelia, ready to st
 @onready var menu_music = preload("res://Assets/Sounds/Stream Loops 2024-02-14_L01.ogg")
 @onready var menu_button = preload("res://Assets/Sounds/powerUp2.ogg")
 @onready var weird_button = preload("res://Assets/Sounds/error_003.ogg")
+@onready var puzzle_scene = preload("res://Scenes/World/Amelia_House_email_puzzle.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	SoundManager.play_music(menu_music)
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	GlobalVariables.first_world_interaction = false
 	if GlobalVariables.game_controller != null:
 		game_controller = GlobalVariables.game_controller
 
@@ -46,18 +48,13 @@ func _on_exit_button_button_down():
 	SoundManager.play_ui_sound(menu_button)
 	get_tree().quit()
 
-
-func _on_coming_soon_button_down():
-	SoundManager.play_ui_sound(weird_button)
-
-
 func _on_back_button_down():
 	SoundManager.play_ui_sound(weird_button)
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/StartButton.show()
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ExtrasButton.show()
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/CreditsButton.show()
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ExitButton.show()
-	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ComingSoon.hide()
+	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/InitialPuzzle.hide()
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/Credits.hide()
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/Back.hide()
 
@@ -68,5 +65,12 @@ func _on_extras_button_button_down():
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ExtrasButton.hide()
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/CreditsButton.hide()
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ExitButton.hide()
-	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ComingSoon.show()
+	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/InitialPuzzle.show()
 	$Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/Back.show()
+
+
+func _on_initial_puzzle_button_down():
+	SoundManager.play_ui_sound(menu_button)
+	game_controller.actual_node = self
+	game_controller.screen_transfer_animation(puzzle_scene.instantiate(),true,true,false)
+	pass # Replace with function body.

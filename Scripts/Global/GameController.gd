@@ -6,6 +6,7 @@ class_name GameController
 @onready var pause_menu = preload("res://Scenes/UI/Pause_menu.tscn")
 @export var dialogue : PackedStringArray
 @onready var crosshair = $CanvasLayer/CanvasGroup/AnimatedSprite2D
+@onready var canvaslayer = $CanvasLayer
 var actual_node
 var game_pausable = false
 # Called when the node enters the scene tree for the first time.
@@ -23,9 +24,9 @@ func change_node(self_node,node_to_change):
 func screen_transfer_animation(node_to_change,end_pause = true,show_crosshair = true,pause_game = true):
 	var ui_transfer_instance = transfer_ui.instantiate()
 	game_pausable = false
+	canvaslayer.add_child(ui_transfer_instance)
 	ui_transfer_instance.end_pause = end_pause
 	ui_transfer_instance.show_crosshair = show_crosshair
-	add_child(ui_transfer_instance)
 	await ui_transfer_instance.transmision_finished
 	game_pausable = pause_game
 	change_node(actual_node,node_to_change)
@@ -42,4 +43,4 @@ func pause_game():
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		game_pausable = false
 		var pause_menu_instance = pause_menu.instantiate()
-		add_child(pause_menu_instance)
+		canvaslayer.add_child(pause_menu_instance)

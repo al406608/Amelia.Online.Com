@@ -1,4 +1,4 @@
-extends "res://Scripts/interaction_object_base.gd"
+extends "res://Scripts/scripts_2d/interaction_object_2d.gd"
 
 @export_file("*.tscn") var scene_route : String
 @onready var scene_to_change = load(scene_route)

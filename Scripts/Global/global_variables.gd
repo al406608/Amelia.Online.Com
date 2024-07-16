@@ -1,7 +1,11 @@
 extends Node
 
-var door_open = true
+var door_open = false
 var game_controller : GameController
+
+var first_world_interaction : bool = false
+
+
 func _ready():
 	if get_tree().get_nodes_in_group("controller") != [] :
 		game_controller = get_tree().get_nodes_in_group("controller")[0]

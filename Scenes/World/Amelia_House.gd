@@ -5,4 +5,7 @@ extends Node3D
 func _ready():
 	SoundManager.play_music(ambient_sound)
 	if GlobalVariables.game_controller != null :
-		GlobalVariables.game_controller.controller_show_up()
+		if !GlobalVariables.first_world_interaction:
+			GlobalVariables.game_controller.controller_show_up()
+		else:
+			get_tree().paused = false

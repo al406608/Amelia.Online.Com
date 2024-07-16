@@ -117,7 +117,7 @@ layout_mode = 2
 [connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ExtrasButton" to="." method="_on_extras_button_button_down"]
 [connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/CreditsButton" to="." method="_on_credits_button_button_down"]
 [connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ExitButton" to="." method="_on_exit_button_button_down"]
-[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/ComingSoon" to="." method="_on_coming_soon_button_down"]
+[connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/InitialPuzzle" to="." method="_on_initial_puzzle_button_down"]
 [connection signal="button_down" from="Node2D/VBoxContainer/NinePatchRect/NinePatchRect/VBoxContainer2/Back" to="." method="_on_back_button_down"]
 
 [editable path="Node2D/VBoxContainer/NinePatchRect"]
