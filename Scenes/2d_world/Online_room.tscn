@@ -1,8 +1,6 @@
-[gd_scene load_steps=41 format=3 uid="uid://0mx0kc825ml7"]
+[gd_scene load_steps=45 format=3 uid="uid://0mx0kc825ml7"]
 
 [ext_resource type="Script" path="res://Scenes/2d_world/Online_room.gd" id="1_hc8du"]
-[ext_resource type="Texture2D" uid="uid://dhmufm2qffr7d" path="res://Assets/2D/Interiors/Modern tiles_Free/Interiors_free/48x48/Interiors_free_48x48.png" id="1_rn3bl"]
-[ext_resource type="Texture2D" uid="uid://di45vsicwk8ug" path="res://Assets/2D/Interiors/Modern tiles_Free/Interiors_free/48x48/Room_Builder_free_48x48.png" id="2_g8xnd"]
 [ext_resource type="Shader" path="res://Materials/VHS_Filter.gdshader" id="2_ha535"]
 [ext_resource type="PackedScene" uid="uid://cn1dnyen7xdck" path="res://Scenes/Character/character_body_2d.tscn" id="3_bs7mn"]
 [ext_resource type="TileSet" uid="uid://bf4lp77wa66pn" path="res://Scenes/2d_world/Online_room.tres" id="7_k3541"]
@@ -32,21 +30,6 @@ shader_parameter/warp_amount = 1.0
 shader_parameter/clip_warp = false
 shader_parameter/vignette_intensity = 0.4
 shader_parameter/vignette_opacity = 0.5
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vo4w1"]
-atlas = ExtResource("1_rn3bl")
-region = Rect2(528, 1161, 48, 84)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vacm0"]
-atlas = ExtResource("2_g8xnd")
-region = Rect2(528, 48, 48, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ibakm"]
-atlas = ExtResource("2_g8xnd")
-region = Rect2(528, 102, 48, 42)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2tdna"]
-size = Vector2(20, 221)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vl1os"]
 shader = ExtResource("2_ha535")
@@ -174,51 +157,53 @@ region = Rect2(339, 188, 10, 19)
 atlas = ExtResource("10_ln02p")
 region = Rect2(193, 387, 15, 28)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cxxge"]
+size = Vector2(28, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mi7x0"]
+size = Vector2(14, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3vsw"]
+size = Vector2(14, 37.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5pm77"]
+size = Vector2(31, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_trvkg"]
+size = Vector2(64.5, 8)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_37d6s"]
+radius = 7.0
+height = 42.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d7t6g"]
+radius = 9.0
+height = 44.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5f4lb"]
+size = Vector2(28, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kasba"]
+size = Vector2(12, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_00m5m"]
+size = Vector2(16, 27)
+
 [node name="OnlineRoom" type="Node2D"]
 material = SubResource("ShaderMaterial_pfbvf")
 script = ExtResource("1_hc8du")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_bs7mn")]
-position = Vector2(67, 48)
-
-[node name="OpenDoor" type="Node2D" parent="."]
-visible = false
-
-[node name="OpenDoor" type="Sprite2D" parent="OpenDoor"]
-position = Vector2(48, 32.5)
-scale = Vector2(2.16, 1.53571)
-texture = SubResource("AtlasTexture_vo4w1")
-
-[node name="ClosedDoor" type="Node2D" parent="."]
-visible = false
-modulate = Color(0.792157, 0.533333, 0.329412, 1)
-
-[node name="ClosedDoor" type="Sprite2D" parent="ClosedDoor"]
-y_sort_enabled = true
-position = Vector2(-24, 1)
-texture = SubResource("AtlasTexture_vacm0")
-
-[node name="ClosedDoor2" type="Sprite2D" parent="ClosedDoor"]
-y_sort_enabled = true
-position = Vector2(-24, 120)
-scale = Vector2(1, 3.44)
-texture = SubResource("AtlasTexture_ibakm")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="ClosedDoor"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ClosedDoor/StaticBody2D"]
-position = Vector2(-9, 81.5)
-shape = SubResource("RectangleShape2D_2tdna")
-
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="CanvasLayer" type="Control" parent="CanvasLayer2"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="CanvasLayer" type="TextureRect" parent="CanvasLayer2/CanvasLayer"]
 material = SubResource("ShaderMaterial_vl1os")
@@ -290,6 +275,7 @@ position = Vector2(-4, 14)
 texture = SubResource("AtlasTexture_imvqa")
 
 [node name="Puerta" type="Node2D" parent="Habitacion"]
+visible = false
 
 [node name="Puerta" type="Sprite2D" parent="Habitacion/Puerta"]
 position = Vector2(56, -30)
@@ -354,11 +340,79 @@ position = Vector2(0, 8)
 texture = SubResource("AtlasTexture_20xtd")
 flip_h = true
 
-[node name="Puerta3" type="Sprite2D" parent="Cocina"]
+[node name="Planta3" type="Sprite2D" parent="Cocina"]
+position = Vector2(120, -118)
+texture = SubResource("AtlasTexture_kvh36")
+
+[node name="Puerta" type="Node2D" parent="Cocina"]
+
+[node name="Puerta3" type="Sprite2D" parent="Cocina/Puerta"]
 position = Vector2(88, -205)
 texture = SubResource("AtlasTexture_6w4xy")
 flip_h = true
 
-[node name="Planta3" type="Sprite2D" parent="Cocina"]
+[node name="Collisions" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions"]
+position = Vector2(5, -22)
+polygon = PackedVector2Array(16, -3, -17, -3, -16.5, -20.5, 16.5, -20.5)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collisions"]
+position = Vector2(-7, 83)
+polygon = PackedVector2Array(8.5, 13.5, -8.5, 13.5, -8.5, -13.5, 8.5, -13.5)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Collisions"]
+position = Vector2(134, 81)
+polygon = PackedVector2Array(9.5, 14.5, -9.5, 14.5, -9.5, -14.5, 9.5, -14.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(77, 85)
+shape = SubResource("RectangleShape2D_cxxge")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(-9, 40.5)
+shape = SubResource("RectangleShape2D_mi7x0")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(137, -161.25)
+shape = SubResource("RectangleShape2D_f3vsw")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(120.5, -201.5)
+shape = SubResource("RectangleShape2D_5pm77")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(17.75, -200)
+shape = SubResource("RectangleShape2D_trvkg")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(16, -139)
+shape = SubResource("CapsuleShape2D_37d6s")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(16, -139)
+rotation = -1.57247
+shape = SubResource("CapsuleShape2D_d7t6g")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(116, -25.5)
+shape = SubResource("RectangleShape2D_5f4lb")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(138, 45)
+shape = SubResource("RectangleShape2D_kasba")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(131, 59)
+shape = SubResource("RectangleShape2D_kasba")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Collisions"]
 position = Vector2(120, -118)
-texture = SubResource("AtlasTexture_kvh36")
+shape = SubResource("RectangleShape2D_kasba")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Collisions"]
+position = Vector2(135, -127.5)
+shape = SubResource("RectangleShape2D_00m5m")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_bs7mn")]
+position = Vector2(73, 63)

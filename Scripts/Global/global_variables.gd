@@ -1,8 +1,10 @@
 extends Node
 
-var door_open = false
+var door_open : bool = false
 var game_controller : GameController
-
+var on_2d_world : bool  = false
+var on_email_puzzle : bool = false
+var on_email_puzzle_completed : bool = false
 var first_world_interaction : bool = false
 
 

@@ -40,7 +40,8 @@ func pause_game():
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED :
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			if !GlobalVariables.on_2d_world:
+				Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		game_pausable = false
 		var pause_menu_instance = pause_menu.instantiate()
 		canvaslayer.add_child(pause_menu_instance)

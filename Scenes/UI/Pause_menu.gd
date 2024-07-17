@@ -9,9 +9,11 @@ func _ready():
 
 func _on_resume_button_button_down():
 	get_tree().paused = false
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	if !GlobalVariables.on_email_puzzle:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	GlobalVariables.game_controller.game_pausable = true
-	GlobalVariables.game_controller.crosshair.show()
+	if !GlobalVariables.on_2d_world:
+		GlobalVariables.game_controller.crosshair.show()
 	call_deferred("queue_free")
 
 

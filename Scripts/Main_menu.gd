@@ -18,6 +18,11 @@ func _ready():
 	GlobalVariables.first_world_interaction = false
 	if GlobalVariables.game_controller != null:
 		game_controller = GlobalVariables.game_controller
+	GlobalVariables.door_open = false
+	GlobalVariables.on_2d_world = false
+	GlobalVariables.on_email_puzzle = false
+	GlobalVariables.on_email_puzzle_completed = false
+	GlobalVariables.first_world_interaction = false
 
 func start_game():
 	if(game_controller != null):
@@ -72,5 +77,5 @@ func _on_extras_button_button_down():
 func _on_initial_puzzle_button_down():
 	SoundManager.play_ui_sound(menu_button)
 	game_controller.actual_node = self
-	game_controller.screen_transfer_animation(puzzle_scene.instantiate(),true,true,false)
+	game_controller.screen_transfer_animation(puzzle_scene.instantiate(),true,true,true)
 	pass # Replace with function body.

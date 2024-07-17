@@ -8,6 +8,10 @@ const JUMP_VELOCITY = -400.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var walking_sound = preload("res://Assets/Sounds/select_001.ogg")
 
+func _ready():
+	add_to_group("player2d")
+	pass
+
 func _unhandled_key_input(event):
 	if ( Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_left") or Input.is_action_pressed("ui_down") or Input.is_action_pressed("ui_right") ) :
 		if ! $AnimatedSprite2D.is_playing() :

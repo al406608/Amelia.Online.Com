@@ -1,7 +1,40 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgyieawbmi4ed"]
+[gd_scene load_steps=12 format=3 uid="uid://bgyieawbmi4ed"]
 
+[ext_resource type="Script" path="res://Scenes/UI/email_puzzle.gd" id="1_uivxd"]
 [ext_resource type="PackedScene" uid="uid://bd6lcbmchs54v" path="res://Scenes/UI/window_dialogue.tscn" id="1_wwsto"]
 [ext_resource type="FontFile" uid="uid://bju7nmolberrx" path="res://Assets/Fonts/PixelAE-Regular.ttf" id="2_n2ndo"]
+[ext_resource type="Shader" path="res://Materials/VHS_Filter.gdshader" id="3_8heuw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rsbxv"]
+shader = ExtResource("3_8heuw")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.031
+shader_parameter/scanlines_width = 0.063
+shader_parameter/grille_opacity = 0.022
+shader_parameter/resolution = Vector2(1920, 1080)
+shader_parameter/pixelate = false
+shader_parameter/roll = true
+shader_parameter/roll_speed = 2.0
+shader_parameter/roll_size = 100.0
+shader_parameter/roll_variation = 0.1
+shader_parameter/distort_intensity = 0.0
+shader_parameter/noise_opacity = 0.0
+shader_parameter/noise_speed = 3.0
+shader_parameter/static_noise_intensity = 0.015
+shader_parameter/aberration = 0.00100005
+shader_parameter/brightness = 1.2
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 0.15
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.35
+
+[sub_resource type="Gradient" id="Gradient_y55rb"]
+offsets = PackedFloat32Array(0, 0.505714, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.505882, 0.505882, 0.505882, 0, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m75cg"]
+gradient = SubResource("Gradient_y55rb")
 
 [sub_resource type="LabelSettings" id="LabelSettings_bkor5"]
 font = ExtResource("2_n2ndo")
@@ -13,6 +46,35 @@ font = ExtResource("2_n2ndo")
 font_size = 27
 shadow_size = 0
 
+[sub_resource type="LabelSettings" id="LabelSettings_v08cg"]
+font = ExtResource("2_n2ndo")
+font_size = 30
+shadow_size = 0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cehgx"]
+shader = ExtResource("3_8heuw")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 1.0
+shader_parameter/scanlines_width = 0.252
+shader_parameter/grille_opacity = 1.0
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = true
+shader_parameter/roll = true
+shader_parameter/roll_speed = 8.0
+shader_parameter/roll_size = 47.5
+shader_parameter/roll_variation = 0.1
+shader_parameter/distort_intensity = 0.113
+shader_parameter/noise_opacity = 0.095
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/aberration = 0.03
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = false
+shader_parameter/warp_amount = 0.0
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 1.0
+
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -20,6 +82,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_uivxd")
+dialogue = PackedStringArray("-\"Open door..., recognition of the environment..., Here is something I can do to continue\"-", "-\"Let\'s hope this works\"-")
+
+[node name="CanvasLayer2" type="Control" parent="."]
+top_level = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CanvasLayer" type="TextureRect" parent="CanvasLayer2"]
+material = SubResource("ShaderMaterial_rsbxv")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_m75cg")
 
 [node name="NinePatchRect" parent="." instance=ExtResource("1_wwsto")]
 layout_mode = 1
@@ -61,3 +146,144 @@ We remind you that prolonged use of neurobrain can affect your mental health.
 try to combine your sessions with healthy habits and physical exeRcise.
 Yours sincerely AlicIA C.O.\"-"
 label_settings = SubResource("LabelSettings_ig04l")
+
+[node name="Letters" type="Control" parent="NinePatchRect"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+mouse_default_cursor_shape = 16
+
+[node name="Oletter" type="Label" parent="NinePatchRect/Letters"]
+modulate = Color(0.701961, 0, 0.701961, 0)
+layout_mode = 0
+offset_left = 72.0
+offset_top = 81.0
+offset_right = 88.0
+offset_bottom = 122.0
+mouse_filter = 0
+text = "0
+"
+label_settings = SubResource("LabelSettings_ig04l")
+
+[node name="Pletter" type="Label" parent="NinePatchRect/Letters"]
+modulate = Color(0.701961, 0, 0.701961, 0)
+layout_mode = 0
+offset_left = 276.0
+offset_top = 125.0
+offset_right = 292.0
+offset_bottom = 166.0
+mouse_filter = 0
+text = "P
+"
+label_settings = SubResource("LabelSettings_ig04l")
+
+[node name="ELetter" type="Label" parent="NinePatchRect/Letters"]
+modulate = Color(0.701961, 0, 0.701961, 0)
+layout_mode = 0
+offset_left = 168.0
+offset_top = 169.0
+offset_right = 182.0
+offset_bottom = 210.0
+mouse_filter = 0
+text = "E
+"
+label_settings = SubResource("LabelSettings_ig04l")
+
+[node name="N" type="Label" parent="NinePatchRect/Letters"]
+modulate = Color(0.701961, 0, 0.701961, 0)
+layout_mode = 0
+offset_left = 810.0
+offset_top = 169.0
+offset_right = 826.0
+offset_bottom = 210.0
+mouse_filter = 0
+text = "N
+"
+label_settings = SubResource("LabelSettings_ig04l")
+
+[node name="D" type="Label" parent="NinePatchRect/Letters"]
+modulate = Color(0.701961, 0, 0.701961, 0)
+layout_mode = 0
+offset_left = 42.0
+offset_top = 213.0
+offset_right = 58.0
+offset_bottom = 254.0
+mouse_filter = 0
+text = "D
+"
+label_settings = SubResource("LabelSettings_ig04l")
+
+[node name="O" type="Label" parent="NinePatchRect/Letters"]
+modulate = Color(0.701961, 0, 0.701961, 0)
+layout_mode = 0
+offset_left = 103.0
+offset_top = 257.0
+offset_right = 119.0
+offset_bottom = 298.0
+mouse_filter = 0
+text = "0
+"
+label_settings = SubResource("LabelSettings_ig04l")
+
+[node name="O2" type="Label" parent="NinePatchRect/Letters"]
+modulate = Color(0.701961, 0, 0.701961, 0)
+layout_mode = 0
+offset_left = 77.0
+offset_top = 301.0
+offset_right = 93.0
+offset_bottom = 342.0
+mouse_filter = 0
+text = "0
+"
+label_settings = SubResource("LabelSettings_ig04l")
+
+[node name="R" type="Label" parent="NinePatchRect/Letters"]
+modulate = Color(0.701961, 0, 0.701961, 0)
+layout_mode = 0
+offset_left = 875.0
+offset_top = 389.0
+offset_right = 891.0
+offset_bottom = 430.0
+mouse_filter = 0
+text = "R
+"
+label_settings = SubResource("LabelSettings_ig04l")
+
+[node name="Title3" type="Label" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -259.5
+offset_top = 10.0
+offset_right = 259.5
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Interact with the email to find a clue"
+label_settings = SubResource("LabelSettings_v08cg")
+horizontal_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_cehgx")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="mouse_entered" from="NinePatchRect/Letters/Oletter" to="." method="_on_oletter_mouse_entered"]
+[connection signal="mouse_entered" from="NinePatchRect/Letters/Pletter" to="." method="_on_pletter_mouse_entered"]
+[connection signal="mouse_entered" from="NinePatchRect/Letters/ELetter" to="." method="_on_e_letter_mouse_entered"]
+[connection signal="mouse_entered" from="NinePatchRect/Letters/N" to="." method="_on_n_mouse_entered"]
+[connection signal="mouse_entered" from="NinePatchRect/Letters/D" to="." method="_on_d_mouse_entered"]
+[connection signal="mouse_entered" from="NinePatchRect/Letters/O" to="." method="_on_o_mouse_entered"]
+[connection signal="mouse_entered" from="NinePatchRect/Letters/O2" to="." method="_on_o_2_mouse_entered"]
+[connection signal="mouse_entered" from="NinePatchRect/Letters/R" to="." method="_on_r_mouse_entered"]

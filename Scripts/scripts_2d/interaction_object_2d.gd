@@ -19,17 +19,19 @@ func _unhandled_key_input(_event):
 		on_object_interaction()
 
 func on_object_lost_focus(_object):
-	hovered = false
-	if(dialogue_instance != null):
-		dialogue_instance.queue_free()
+	if _object.is_in_group("player2d"):
+		hovered = false
+		if(dialogue_instance != null):
+			dialogue_instance.queue_free()
 		
 	
 func on_object_hovered(_object):
-	hovered = true
-	if(dialogue_instance == null):
-		dialogue_instance = dialogue_prefab.instantiate()
-		GlobalVariables.game_controller.canvaslayer.add_child(dialogue_instance)
-		dialogue_instance.setup(dialogue,title,description)
+	if _object.is_in_group("player2d"):
+		hovered = true
+		if(dialogue_instance == null):
+			dialogue_instance = dialogue_prefab.instantiate()
+			GlobalVariables.game_controller.canvaslayer.add_child(dialogue_instance)
+			dialogue_instance.setup(dialogue,title,description)
 
 func on_object_interaction():
 	if dialogue_instance != null:

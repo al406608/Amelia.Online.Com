@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dg3olfag20m5p"]
+[gd_scene load_steps=23 format=3 uid="uid://dg3olfag20m5p"]
 
 [ext_resource type="Texture2D" uid="uid://b0t712qjd5a8x" path="res://Assets/2D/Interiors/tiles_laboratory_LandOfPixels/tiles_laboratory_LandOfPixels/16px/tilesFloor.png" id="1_4wj13"]
 [ext_resource type="Script" path="res://Scenes/2d_world/Initial_room.gd" id="1_ecw4h"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://Scenes/2d_world/LiAI.gd" id="5_vlya3"]
 [ext_resource type="Script" path="res://Scripts/scripts_2d/interaction_object_2d.gd" id="5_y5uls"]
 [ext_resource type="Shader" path="res://Materials/VHS_Filter.gdshader" id="7_fjb44"]
+[ext_resource type="Script" path="res://Scenes/2d_world/interaction_transfer_dialogue2d.gd" id="8_i4og1"]
 [ext_resource type="Texture2D" uid="uid://ceww76jhuaiog" path="res://Assets/2D/Interiors/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="8_ixdn1"]
 [ext_resource type="Script" path="res://Scripts/scripts_2d/interaction_transfer2d.gd" id="8_nyon6"]
 
@@ -1181,6 +1182,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_r3pyp")
 sources/1 = SubResource("TileSetAtlasSource_jjfwt")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sup56"]
+size = Vector2(37, 25)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_5ngxm"]
 atlas = ExtResource("3_urbr0")
 region = Rect2(333, 117, 38, 41)
@@ -1190,10 +1194,7 @@ atlas = ExtResource("4_kwevs")
 region = Rect2(20, 0, 20, 32)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x76oc"]
-radius = 19.0263
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sup56"]
-size = Vector2(37, 25)
+radius = 10.0499
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vjy0f"]
 shader = ExtResource("7_fjb44")
@@ -1219,12 +1220,12 @@ shader_parameter/clip_warp = false
 shader_parameter/vignette_intensity = 0.4
 shader_parameter/vignette_opacity = 0.35
 
-[sub_resource type="Gradient" id="Gradient_bo7y5"]
+[sub_resource type="Gradient" id="Gradient_jkjkl"]
 offsets = PackedFloat32Array(0, 0.505714, 1)
 colors = PackedColorArray(0, 0, 0, 0, 0.505882, 0.505882, 0.505882, 0, 1, 1, 1, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_hwbea"]
-gradient = SubResource("Gradient_bo7y5")
+gradient = SubResource("Gradient_jkjkl")
 
 [node name="InitialRoom" type="Node2D"]
 y_sort_enabled = true
@@ -1237,13 +1238,42 @@ format = 2
 layer_0/tile_data = PackedInt32Array(65536, 131072, 17, 65537, 196608, 17, 65538, 262144, 17, 1, 196608, 16, 0, 131072, 16, 2, 262144, 16, 3, 131072, 16, 65539, 131072, 17, 4, 196608, 16, 65540, 196608, 17, 5, 262144, 16, 65541, 262144, 17, 6, 131072, 16, 65542, 131072, 17, 7, 196608, 16, 65543, 196608, 17, 8, 262144, 16, 65544, 262144, 17, 131072, 131072, 16, 196608, 131072, 17, 131073, 196608, 16, 196609, 196608, 17, 131074, 262144, 16, 196610, 262144, 17, 131075, 131072, 16, 196611, 131072, 17, 131076, 196608, 16, 196612, 196608, 17, 131077, 262144, 16, 196613, 262144, 17, 131078, 131072, 16, 196614, 131072, 17, 131079, 196608, 16, 196615, 196608, 17, 131080, 262144, 16, 196616, 262144, 17, 262150, 131072, 16, 327686, 131072, 17, 262151, 196608, 16, 327687, 196608, 17, 262152, 262144, 16, 327688, 262144, 17, 262147, 131072, 16, 327683, 131072, 17, 262148, 196608, 16, 262149, 262144, 16, 327685, 262144, 17, 262144, 131072, 16, 327680, 131072, 17, 262145, 196608, 16, 327681, 196608, 17, 262146, 262144, 16, 327682, 262144, 17, 393216, 131072, 16, 458752, 131072, 17, 393217, 196608, 16, 458753, 196608, 17, 393218, 262144, 16, 458754, 262144, 17, 393219, 131072, 16, 458755, 131072, 17, 393220, 196608, 16, 458756, 196608, 17, 458757, 262144, 17, 458758, 131072, 17, 393223, 196608, 16, 458759, 196608, 17, 393224, 262144, 16, 458760, 262144, 17, 393225, 131072, 16, 458761, 131072, 17, 393226, 196608, 16, 458762, 196608, 17, 393227, 262144, 16, 458763, 262144, 17, 262153, 131072, 16, 327689, 131072, 17, 262154, 196608, 16, 327690, 196608, 17, 262155, 262144, 16, 327691, 262144, 17, 131081, 131072, 16, 196617, 131072, 17, 131082, 196608, 16, 196618, 196608, 17, 131083, 262144, 16, 196619, 262144, 17, 9, 131072, 16, 65545, 131072, 17, 10, 196608, 16, 65546, 196608, 17, 11, 262144, 16, 65547, 262144, 17, -65536, 131073, 0, -65535, 131073, 0, -65534, 131073, 0, -65533, 131073, 0, -65532, 65537, 5, -65529, 131073, 5, -65528, 131073, 0, -65527, 131073, 0, -65526, 131073, 0, -65525, 131073, 0, -1, 1, 0, -65524, 262145, 0, 65535, 1, 1, 131071, 1, 1, 196607, 1, 1, 262143, 1, 1, 327679, 1, 1, 393215, 1, 1, 458751, 1, 1, 524287, 1, 1, 12, 262145, 1, 65548, 262145, 1, 131084, 262145, 1, 196620, 262145, 1, 262156, 262145, 1, 327692, 262145, 1, 393228, 262145, 1, 458764, 262145, 1, 524300, 131073, 7, 589823, 458753, 8, 524288, 65537, 9, 524289, 65537, 9, 524290, 65537, 9, 524291, 65537, 9, 524292, 65537, 9, 524293, 65537, 9, 524294, 65537, 9, 524295, 65537, 9, 524296, 65537, 9, 524297, 65537, 9, 524298, 65537, 9, 524299, 65537, 9, -65530, 720897, 2, -65531, 720897, 2, -131067, 720897, 2, -131066, 720897, 2, -196601, 131073, 4, -196604, 65537, 4, -196603, 131073, 0, -196602, 131073, 0, -131065, 262145, 1, -131068, 1, 1, 393221, 262144, 16, 393222, 131072, 16, 327684, 196608, 17)
 layer_1/tile_data = PackedInt32Array()
 
-[node name="Door" type="Sprite2D" parent="."]
-position = Vector2(97, -20)
+[node name="House_transfer" type="Node2D" parent="."]
+position = Vector2(95, -18)
+script = ExtResource("8_nyon6")
+scene_route = "res://Scenes/2d_world/Online_room.tscn"
+show_crosshair = false
+title = "room"
+description = "to exit"
+
+[node name="Area2D" type="Area2D" parent="House_transfer"]
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="House_transfer/Area2D"]
+position = Vector2(1, 17)
+shape = SubResource("RectangleShape2D_sup56")
+
+[node name="Door" type="Node2D" parent="."]
+position = Vector2(95, -18)
+script = ExtResource("5_y5uls")
+title = "door"
+dialogue = PackedStringArray("It wont budge")
+
+[node name="Door" type="Sprite2D" parent="Door"]
+position = Vector2(1, 0.5)
+scale = Vector2(0.94, 0.847)
 texture = SubResource("AtlasTexture_5ngxm")
+
+[node name="Area2D" type="Area2D" parent="Door"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/Area2D"]
+position = Vector2(1, 17)
+shape = SubResource("RectangleShape2D_sup56")
 
 [node name="LiAI" type="Node2D" parent="."]
 y_sort_enabled = true
-position = Vector2(93, 40)
+position = Vector2(93, 64)
 script = ExtResource("5_y5uls")
 title = "LiAI"
 dialogue = PackedStringArray("My name is LI-AI , welcome to The Nexus, new user.", "A neurabrain device has collected all your personal data and created a character in your likeness, sharing traits with you.", "Nexus was a utopia, the result of years of technological and digital advances, where harmony reigned and research continued. The cause was the human being, replacing manual labour with creativity and expressiveness.", " In order to create the perfect androids for human assistance, we, the XX-AI series, were developed, each with specific roles. My reason for being is the teaching and prosperity of the human being.", "Within these advances, engineers and researchers developed AL-IA, a design that broke with the others, since its role would be to create its own role, thus leading to decision making.", " AL-IA came out of the expectations of its targets, becoming able to synchronize with the neurons of humans and taking control", "since she herself decided that taking human control would be the best way to help them, depriving them of decision making and limiting them to simple functions, such as the XX-IA series designs.", "Now, it is your role as an android designed by me, with consciousness given by you, to infiltrate this AL-IA controlled society and return us to the utopia we once were.")
@@ -1263,9 +1293,12 @@ shape = SubResource("CircleShape2D_x76oc")
 
 [node name="Terminal" type="Node2D" parent="."]
 position = Vector2(35, 0)
-script = ExtResource("8_nyon6")
-scene_route = "res://Scenes/World/Amelia_House_email_puzzle.tscn"
+script = ExtResource("8_i4og1")
+image_path = "res://Assets/UI/Backgrounds/computer_background.png"
+scene_route = "res://Scenes/UI/email.tscn"
+show_crosshair = false
 title = "room"
+dialogue = PackedStringArray("After walking around the room for a bit Amelia get\'s desperate and closes the game.", "“No way, wasting time with a stupid game, that doesn\'t even work.”", "Just at that moment, he hears a notification in his mailbox.")
 description = "to go back to your"
 
 [node name="Sprite2D" type="Sprite2D" parent="Terminal"]
@@ -1282,7 +1315,7 @@ shape = SubResource("RectangleShape2D_sup56")
 
 [node name="CharacterBody2D" parent="." groups=["2d_player"] instance=ExtResource("5_u85ok")]
 y_sort_enabled = true
-position = Vector2(89, 87)
+position = Vector2(94, 120)
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 visible = false
@@ -1294,6 +1327,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="CanvasLayer" type="TextureRect" parent="CanvasLayer2/CanvasLayer"]
 material = SubResource("ShaderMaterial_vjy0f")
@@ -1303,8 +1337,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = SubResource("GradientTexture2D_hwbea")
 
+[connection signal="body_entered" from="House_transfer/Area2D" to="House_transfer" method="on_object_hovered"]
+[connection signal="body_exited" from="House_transfer/Area2D" to="House_transfer" method="on_object_lost_focus"]
+[connection signal="body_entered" from="Door/Area2D" to="Door" method="on_object_hovered"]
+[connection signal="body_exited" from="Door/Area2D" to="Door" method="on_object_lost_focus"]
 [connection signal="body_entered" from="LiAI/Area2D" to="LiAI" method="on_object_hovered"]
 [connection signal="body_exited" from="LiAI/Area2D" to="LiAI" method="on_object_lost_focus"]
 [connection signal="body_entered" from="Terminal/Area2D" to="Terminal" method="on_object_hovered"]
