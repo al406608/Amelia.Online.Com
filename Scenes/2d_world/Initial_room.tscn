@@ -1298,7 +1298,7 @@ image_path = "res://Assets/UI/Backgrounds/computer_background.png"
 scene_route = "res://Scenes/UI/email.tscn"
 show_crosshair = false
 title = "room"
-dialogue = PackedStringArray("After walking around the room for a bit Amelia get\'s desperate and closes the game.", "“No way, wasting time with a stupid game, that doesn\'t even work.”", "Just at that moment, he hears a notification in his mailbox.")
+dialogue = PackedStringArray("After walking around the room for a bit Amelia get\'s desperate and closes the game.", "“No way, wasting time with a stupid game, that doesn\'t even work.”", "Just at that moment, she hears a notification in her mailbox.")
 description = "to go back to your"
 
 [node name="Sprite2D" type="Sprite2D" parent="Terminal"]

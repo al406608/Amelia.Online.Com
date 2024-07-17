@@ -1,8 +1,9 @@
-[gd_scene load_steps=45 format=3 uid="uid://0mx0kc825ml7"]
+[gd_scene load_steps=47 format=3 uid="uid://0mx0kc825ml7"]
 
 [ext_resource type="Script" path="res://Scenes/2d_world/Online_room.gd" id="1_hc8du"]
 [ext_resource type="Shader" path="res://Materials/VHS_Filter.gdshader" id="2_ha535"]
 [ext_resource type="PackedScene" uid="uid://cn1dnyen7xdck" path="res://Scenes/Character/character_body_2d.tscn" id="3_bs7mn"]
+[ext_resource type="Script" path="res://Scripts/scripts_2d/interaction_transfer2d.gd" id="6_o3isl"]
 [ext_resource type="TileSet" uid="uid://bf4lp77wa66pn" path="res://Scenes/2d_world/Online_room.tres" id="7_k3541"]
 [ext_resource type="Texture2D" uid="uid://i7f2liatl80" path="res://Assets/2D/Interiors/Pixel 16 Interiors/Pixel 16 Interiors/interiors/furniture set and decorations.png" id="9_xofh8"]
 [ext_resource type="Texture2D" uid="uid://ceww76jhuaiog" path="res://Assets/2D/Interiors/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="10_ln02p"]
@@ -30,37 +31,6 @@ shader_parameter/warp_amount = 1.0
 shader_parameter/clip_warp = false
 shader_parameter/vignette_intensity = 0.4
 shader_parameter/vignette_opacity = 0.5
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_vl1os"]
-shader = ExtResource("2_ha535")
-shader_parameter/overlay = true
-shader_parameter/scanlines_opacity = 0.031
-shader_parameter/scanlines_width = 0.063
-shader_parameter/grille_opacity = 0.022
-shader_parameter/resolution = Vector2(1920, 1080)
-shader_parameter/pixelate = false
-shader_parameter/roll = true
-shader_parameter/roll_speed = 2.0
-shader_parameter/roll_size = 100.0
-shader_parameter/roll_variation = 0.1
-shader_parameter/distort_intensity = 0.0
-shader_parameter/noise_opacity = 0.0
-shader_parameter/noise_speed = 3.0
-shader_parameter/static_noise_intensity = 0.015
-shader_parameter/aberration = 0.00100005
-shader_parameter/brightness = 1.2
-shader_parameter/discolor = true
-shader_parameter/warp_amount = 0.15
-shader_parameter/clip_warp = false
-shader_parameter/vignette_intensity = 0.4
-shader_parameter/vignette_opacity = 0.35
-
-[sub_resource type="Gradient" id="Gradient_tbqle"]
-offsets = PackedFloat32Array(0, 0.505714, 1)
-colors = PackedColorArray(0, 0, 0, 0, 0.505882, 0.505882, 0.505882, 0, 1, 1, 1, 0)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_a24rr"]
-gradient = SubResource("Gradient_tbqle")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xc62f"]
 atlas = ExtResource("9_xofh8")
@@ -153,6 +123,9 @@ region = Rect2(229, 138, 9, 20)
 atlas = ExtResource("9_xofh8")
 region = Rect2(339, 188, 10, 19)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j5ltj"]
+size = Vector2(30, 26.5)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_6w4xy"]
 atlas = ExtResource("10_ln02p")
 region = Rect2(193, 387, 15, 28)
@@ -189,31 +162,40 @@ size = Vector2(12, 14)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00m5m"]
 size = Vector2(16, 27)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vl1os"]
+shader = ExtResource("2_ha535")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.031
+shader_parameter/scanlines_width = 0.063
+shader_parameter/grille_opacity = 0.022
+shader_parameter/resolution = Vector2(1920, 1080)
+shader_parameter/pixelate = false
+shader_parameter/roll = true
+shader_parameter/roll_speed = 2.0
+shader_parameter/roll_size = 100.0
+shader_parameter/roll_variation = 0.1
+shader_parameter/distort_intensity = 0.0
+shader_parameter/noise_opacity = 0.0
+shader_parameter/noise_speed = 3.0
+shader_parameter/static_noise_intensity = 0.015
+shader_parameter/aberration = 0.00100005
+shader_parameter/brightness = 1.2
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 0.15
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.35
+
+[sub_resource type="Gradient" id="Gradient_aje8t"]
+offsets = PackedFloat32Array(0, 0.505714, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.505882, 0.505882, 0.505882, 0, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a24rr"]
+gradient = SubResource("Gradient_aje8t")
+
 [node name="OnlineRoom" type="Node2D"]
 material = SubResource("ShaderMaterial_pfbvf")
 script = ExtResource("1_hc8du")
-
-[node name="CanvasLayer2" type="CanvasLayer" parent="."]
-
-[node name="CanvasLayer" type="Control" parent="CanvasLayer2"]
-visible = false
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="CanvasLayer" type="TextureRect" parent="CanvasLayer2/CanvasLayer"]
-material = SubResource("ShaderMaterial_vl1os")
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = SubResource("GradientTexture2D_a24rr")
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1
@@ -344,10 +326,23 @@ flip_h = true
 position = Vector2(120, -118)
 texture = SubResource("AtlasTexture_kvh36")
 
-[node name="Puerta" type="Node2D" parent="Cocina"]
+[node name="House_transfer" type="Node2D" parent="Cocina"]
+position = Vector2(95, -18)
+script = ExtResource("6_o3isl")
+scene_route = "res://Scenes/2d_world/plaza.tscn"
+show_crosshair = false
+title = "plaza"
+description = "to go to"
 
-[node name="Puerta3" type="Sprite2D" parent="Cocina/Puerta"]
-position = Vector2(88, -205)
+[node name="Area2D" type="Area2D" parent="Cocina/House_transfer"]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cocina/House_transfer/Area2D"]
+position = Vector2(-9, -171.25)
+shape = SubResource("RectangleShape2D_j5ltj")
+
+[node name="Puerta3" type="Sprite2D" parent="Cocina/House_transfer"]
+position = Vector2(-7, -187)
 texture = SubResource("AtlasTexture_6w4xy")
 flip_h = true
 
@@ -416,3 +411,28 @@ shape = SubResource("RectangleShape2D_00m5m")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_bs7mn")]
 position = Vector2(73, 63)
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="CanvasLayer" type="Control" parent="CanvasLayer2"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CanvasLayer" type="TextureRect" parent="CanvasLayer2/CanvasLayer"]
+material = SubResource("ShaderMaterial_vl1os")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_a24rr")
+
+[connection signal="body_entered" from="Cocina/House_transfer/Area2D" to="Cocina/House_transfer" method="on_object_hovered"]
+[connection signal="body_exited" from="Cocina/House_transfer/Area2D" to="Cocina/House_transfer" method="on_object_lost_focus"]
